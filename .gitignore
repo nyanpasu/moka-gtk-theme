@@ -1,0 +1,12 @@
+*~
+*.bak
+*.orig
+
+debian/files
+debian/moka-gtk-theme.debhelper.log
+debian/moka-gtk-theme.postinst.debhelper
+debian/moka-gtk-theme.prerm.debhelper
+debian/moka-gtk-theme.substvars
+debian/moka-gtk-theme
+
+moka-gtk-theme.zip

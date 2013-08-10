@@ -1,0 +1,24 @@
+/***********
+ * Sidebar *
+ ***********/
+
+.sidebar,
+.sidebar.view,
+.sidebar .view,
+.sidebar GtkScrolledWindow {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+.sidebar .frame {
+    border-width: 1;
+}
+
+.sidebar.view.separator,
+.view.separator,
+.separator {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.9);
+    color: shade(@theme_bg_color, 0.9);
+}
