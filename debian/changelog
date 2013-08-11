@@ -1,5 +1,11 @@
+moka-gtk-theme (0.0.2) UNRELEASED; urgency=low
+
+  * Beta release
+
+ -- Sam Hewitt <hewittsamuel@gmail.com>  Sun, 11 Aug 2013 15:25:45 -0400
+
 moka-gtk-theme (0.0.1) UNRELEASED; urgency=low
 
   * Initial release.
 
- -- Sam Hewitt <hewittsamuel@gmail.com>  Tue, 11 Aug 2013 15:25:45 -0400
+ -- Sam Hewitt <hewittsamuel@gmail.com>  Tue, 6 Aug 2013 15:25:45 -0400
