@@ -252,28 +252,46 @@
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
-/* Link color */
-@define-color link_color @selection_color;
-
 /* Hightlight & shadow colors */
 @define-color highlight #fff;
 @define-color shadow #000;
 
- /* Infobar colors */
-@define-color info_fg_color rgb (58, 135, 173);
-@define-color info_bg_color rgb (217, 237, 247);
-@define-color warning_fg_color rgb (192, 152, 83);
-@define-color warning_bg_color rgb (252, 248, 227);
-@define-color question_fg_color rgb (214, 73, 55);
-@define-color question_bg_color rgb (252, 229, 213);
-@define-color error_fg_color rgb (185, 74, 72);
-@define-color error_bg_color rgb (242, 222, 222);
+/******************
+ * Infobar colors *
+ ******************/
+@define-color link_color @selection_color;
+@define-color question_color #60ade8;
+@define-color warning_color #f49f25;
+@define-color error_color #e50e0e;
+@define-color success_color #6bc810;
 
-@define-color success_color #53a93f;
-@define-color warning_color #f57900;
-@define-color error_color #cc0000;
+/* Info colors */
+@define-color info_fg_color black;
+@define-color info_text_shadow alpha(black, 0.1);
+@define-color info_bg_color #f5f697;
+@define-color info_borders_color shade(@info_bg_color, 0.8);
 
-/* WM */
+/* Warning colors */
+@define-color warning_fg_color black;
+@define-color warning_text_shadow alpha(black, 0.1);
+@define-color warning_bg_color @warning_color;
+@define-color warning_borders_color shade(@warning_bg_color, 0.8);
+
+/* Question colors */
+@define-color question_fg_color white;
+@define-color question_text_shadow alpha(black, 0.3);
+@define-color question_bg_color @question_color;
+@define-color question_borders_color shade(@question_bg_color, 0.8);
+
+/* Error colors */
+@define-color error_fg_color white;
+@define-color error_text_shadow alpha(black, 0.5);
+@define-color error_bg_color @error_color;
+@define-color error_borders_color shade(@error_bg_color, 0.8);
+
+/*************
+ * WM colors *
+ *************/
 @define-color wm_bg @text_color;
 @define-color wm_title_focused @bg_color;
 @define-color wm_title_unfocused #555555;
