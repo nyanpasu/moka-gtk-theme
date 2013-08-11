@@ -14,7 +14,7 @@
 @define-color unfocused_bg_color shade(@bg_color, 0.98);
 @define-color unfocused_fg_color shade(@fg_color, 0.98);
 @define-color unfocused_borders shade(@borders, 0.98);
-@define-color unfocused_text_color shade(@text_color, 0.98);
+@define-color unfocused_text_color shade(@text_color, 2.1);
 
 /* Active/Hover colors */
 @define-color hover_base_color shade(@base_color, 1.05);
@@ -170,7 +170,7 @@
  * Entry colors *
  ****************/
 @define-color entry_text_color @text_color;
-@define-color entry_base_color @white;
+@define-color entry_base_color @base_color;
 
 @define-color entry_inset black;
 

@@ -11,18 +11,38 @@ GtkComboBox {
 
 }
 
-GtkComboBox *:backdrop {
-    color: @unfocused_fg_color;
+
+GtkCombobox *:insensitive {
+    background-color: @insensitive_bg_color;
+    background-image: none;
+    color: @insensitive_text_color;
 }
 
-GtkComboBox *:insensitive:backdrop {
-    color: @unfocused_insensitive_fg_color;
+GtkCombobox *:selected {
+    color: @selected_fg_color;
+    background-color: @selected_bg_color;
+    border-color: @selected_bg_color;
 }
 
-GtkComboBox *:insensitive {
-    text-shadow: none;
-    color: @insensitive_fg_color;
+GtkCombobox *:insensitive {
+    background-color: @insensitive_bg_color;
+    color: @insensitive_text_color;
 }
+
+GtkCombobox *:backdrop {
+    background-color: @unfocused_bg_color;
+    color: @unfocused_text_color;
+}
+
+GtkCombobox *:insensitive:backdrop {
+    color: mix(@unfocused_text_color, @insensitive_text_color, 0.2);
+}
+
+GtkCombobox *:selected:backdrop {
+    color: @unfocused_selected_fg_color;
+    background-color: @unfocused_selected_bg_color
+}
+
 
 GtkComboBox .separator {
     /* always disable separators */

@@ -18,7 +18,7 @@
 }
 
 .entry:insensitive {
-    background-color: @insensitive_bg_color
+    background-color: @insensitive_bg_color;
     background-image: none;
     color: @insensitive_text_color;
 }
@@ -30,15 +30,17 @@
 }
 
 .entry:insensitive {
-    color: @insensitive_fg_color;
+    background-color: @insensitive_bg_color;
+    color: @insensitive_text_color;
 }
 
 .entry:backdrop {
+    background-color: @unfocused_bg_color;
     color: @unfocused_text_color;
 }
 
 .entry:insensitive:backdrop {
-    color: @unfocused_insensitive_fg_color;
+    color: @unfocused_text_color;
 }
 
 .entry:selected:backdrop {

@@ -54,6 +54,16 @@ GtkScrolledWindow GtkViewport.frame {
 }
 
 /* Treeview */
+
+GtkTreeView.view.separator,
+GtkTreeView.separator,
+.separator,
+.separator:hover {
+    color: @borders;
+    background-color: @borders;
+}
+
+
 GtkTreeView {
     -GtkTreeView-vertical-separator: 0;
     -GtkWidget-focus-line-width: 1;

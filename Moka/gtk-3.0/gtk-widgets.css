@@ -41,7 +41,7 @@
     -GtkWindow-resize-grip-width: 0;
     -GtkWindow-resize-grip-height: 0;   
 
-    outline-color: alpha(@theme_text_color, 0.3);
+    outline-color: alpha(@text_color, 0.3);
     outline-style: dashed;
     outline-offset: 2px;
 }
