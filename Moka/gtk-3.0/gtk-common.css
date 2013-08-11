@@ -2,10 +2,6 @@
  * Common Definitions *
   *********************/
 
-/* Basic colors */
-@define-color white #fff;
-@define-color black #000;
-
 /* OSD */
 @define-color osd_base @panel_bg_color;
 @define-color @osd_fg @text_color;

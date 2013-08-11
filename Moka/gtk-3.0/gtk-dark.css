@@ -2,24 +2,26 @@
  * Main colors *
   **************/
 
+/* Basic colors */
+
 /* Base colors */
-@define-color base_color #fefefe; /* Base color */
-@define-color bg_color #f7f7f7; /* Background color */
-@define-color fg_color #444444; /* Foreground color */
+@define-color base_color #555555; /* Base color */
+@define-color bg_color #444444; /* Background color */
+@define-color fg_color #f7f7f7; /* Foreground color */
 @define-color borders shade(@bg_color, 0.8); /* Borders color */
 @define-color text_color @fg_color; /* Text color */
 @define-color panel_color #444444; /* Panel color */
 @define-color selection_color #a172d2; /* Selection color */
 @define-color gradient_color_a @bg_color; /* Gradient color A */
 @define-color gradient_color_b shade(@bg_color, 0.92); /* Gradient color B */
-@define-color view_bg_color #ffffff; /* View background */
+@define-color view_bg_color #555555; /* View background */
 
 /* Insensitive colors */
-@define-color insensitive_base_color shade(@base_color, 0.95);
-@define-color insensitive_bg_color shade(@bg_color, 0.95);
-@define-color insensitive_fg_color shade(@fg_color, 0.95);
-@define-color insensitive_borders shade(@borders, 0.95);
-@define-color insensitive_text_color shade(@text_color 0.95);
+@define-color insensitive_base_color shade(@base_color, 0.0);
+@define-color insensitive_bg_color shade(@bg_color, 0.0);
+@define-color insensitive_fg_color shade(@fg_color, 0.0);
+@define-color insensitive_borders shade(@borders, 0.0);
+@define-color insensitive_text_color shade(@text_color 0.0);
 
 /* Unfocused colors */
 @define-color unfocused_base_color shade(@base_color, 0.98);
@@ -169,7 +171,10 @@
 /***************
  * View colors *
  ***************/
-@define-color view_base_color @bg_color;
+@define-color view_base_color @base_color;
+@define-color view_bg_color @bg_color;
+@define-color view_fg_color @fg_color;
+
 
 /******************
  * Sidebar colors *

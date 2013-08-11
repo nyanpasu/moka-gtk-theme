@@ -10,7 +10,7 @@
 }
 
 .view {
-    background-color: white;
+    background-color: @view_bg_color;
     color: @text_color;
 }
 
@@ -69,19 +69,19 @@ GtkTreeView.dnd {
 
 GtkTreeView .entry {
     border-radius: 0;
-    background-color: white;
+    background-color: @view_bg_color;
     background-image: none;
 }
 
 /* Textview */
 GtkTextView {
-    background-color: white;
+    background-color: @view_bg_color;
     color: @text_color;
 }
 
 /* Iconview */
 GtkIconView.view {
-    background-color: @view_bg_color;
+    background-color: @view_base_color;
 }
  
 GtkIconView.view.cell:selected,
@@ -96,7 +96,7 @@ GtkIconView.view.cell:selected:focus {
 
 /* Content view */
 .content-view.view {
-    background-color: white;
+    background-color: @view_bg_color;
 }
 
 .content-view.view:prelight {

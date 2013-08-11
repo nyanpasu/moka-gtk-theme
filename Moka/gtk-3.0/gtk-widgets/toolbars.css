@@ -237,10 +237,10 @@
 .inline-toolbar.toolbar:last-child {
     border-width: 0 1px 1px 1px;
     border-color: @borders;
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
-/* Bottom */
+/* Top */
 .inline-toolbar.toolbar:first-child {
     border-top: 1px;
     border-color: @borders;
