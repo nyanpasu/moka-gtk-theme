@@ -21,16 +21,6 @@ GtkComboBox .menu {
     color: @menu_fg_color;
 }
 
-.menu.button:hover,
-.menu.button:active,
-.menu.button:active:insensitive,
-.menu.button:insensitive,
-.menu.button {
-    border-width: 0;
-    background-color: shade(@menu_fg_color, 1.05);
-    background-image: none;
-}
-
 /*************
  * Menu Item *
  *************/
