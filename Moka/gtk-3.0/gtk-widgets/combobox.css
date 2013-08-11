@@ -1,6 +1,99 @@
+/************
+ * Combobox *
+ ************/
+
+GtkComboBox {
+    padding: 0;
+
+    -GtkComboBox-arrow-scaling: 0.5;
+    -GtkComboBox-shadow-type: none;
+    color: @text_color;
+
+}
+
+GtkComboBox *:backdrop {
+    color: @unfocused_fg_color;
+}
+
+GtkComboBox *:insensitive:backdrop {
+    color: @unfocused_insensitive_fg_color;
+}
+
+GtkComboBox *:insensitive {
+    text-shadow: none;
+    color: @insensitive_fg_color;
+}
+
+GtkComboBox .separator {
+    /* always disable separators */
+    -GtkWidget-wide-separators: true;
+    -GtkWidget-horizontal-separator: 0;
+    -GtkWidget-vertical-separator: 0;
+}
+
 /******************
  * Combobox Entry *
  ******************/
+.primary-toolbar GtkComboBox.combobox-entry .entry:first-child,
+.primary-toolbar GtkComboBox.combobox-entry .button:first-child {
+    border-image-width: 4px 0 4px 4px;
+    border-radius: 3px 0 0 3px;
+    border-right-width: 0;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .entry:last-child,
+.primary-toolbar GtkComboBox.combobox-entry .button:last-child {
+    border-image-width: 4px 4px 4px 0;
+    border-radius: 0 3px 3px 0;
+    border-left-width: 0;
+}
+
+GtkComboBox.combobox-entry .entry:focus:first-child {
+    box-shadow: inset 1px 2px alpha(@selected_bg_color, 0.1),
+                inset 1px 1px alpha(@selected_bg_color, 0.1),
+                inset 0 -1px alpha(@selected_bg_color, 0.2);
+}
+
+GtkComboBox.combobox-entry .entry:focus:last-child {
+    box-shadow: inset -1px 2px alpha(@selected_bg_color, 0.1),
+                inset -1px 1px alpha(@selected_bg_color, 0.1),
+                inset 0 -1px alpha(@selected_bg_color, 0.2);
+}
+
+GtkComboBox.combobox-entry .button:last-child,
+GtkComboBox.combobox-entry .button:hover:last-child,
+GtkComboBox.combobox-entry .button:active:last-child,
+GtkComboBox.combobox-entry .button:hover:active:last-child {
+    box-shadow: inset 1px 0 @inset_dark_color, 
+                inset 0 1px @entry_inset,
+}
+
+GtkComboBox.combobox-entry .button:first-child,
+GtkComboBox.combobox-entry .button:hover:first-child,
+GtkComboBox.combobox-entry .button:active:first-child,
+GtkComboBox.combobox-entry .button:hover:active:first-child {
+    box-shadow: inset -1px 0 @inset_dark_color, 
+                inset 0 1px @entry_inset,
+}
+
+GtkComboBox.combobox-entry .button:insensitive:first-child {
+    box-shadow: inset -1px 0 @inset_dark_color;
+}
+
+GtkComboBox.combobox-entry .button:insensitive:last-child {
+    box-shadow: inset 1px 0 @inset_dark_color;
+}
+
+GtkComboBox.combobox-entry .button:backdrop:first-child,
+GtkComboBox.combobox-entry .button:backdrop:last-child {
+    box-shadow: none;
+}
+
+GtkComboBox.combobox-entry .button *:active,
+GtkComboBox.combobox-entry .button *:active:hover {
+    color: @text_color;
+}
+
 
 .primary-toolbar GtkComboBox.combobox-entry .entry,
 .primary-toolbar GtkComboBox.combobox-entry .entry:active,
@@ -10,8 +103,7 @@ GtkComboBox.combobox-entry .entry,
 GtkComboBox.combobox-entry .entry:active,
 GtkComboBox.combobox-entry .entry:focus,
 GtkComboBox.combobox-entry .entry:insensitive {
-    border-top: 1px;
-    border-bottom: 1px;
+    border-right: 0px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -24,16 +116,14 @@ GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:active,
 GtkComboBox.combobox-entry .button:insensitive {
-    border-width: 1px 1px 1px 1px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
 
-GtkComboBox .separator {
-    border-style: dotted;
-
-    /* always disable separators */
-    -GtkWidget-wide-separators: true;
-    -GtkWidget-horizontal-separator: 1px;
-    -GtkWidget-vertical-separator: 1px;
+GtkComboBox.combobox-entry:insensitive,
+GtkComboBox.combobox-entry .entry:insensitive,
+.primary-toolbar GtkComboBox.combobox-entry:insensitive,
+.primary-toolbar GtkComboBox.combobox-entry .entry:insensitive {
+    color: @insensitive_text_color;
 }
+    

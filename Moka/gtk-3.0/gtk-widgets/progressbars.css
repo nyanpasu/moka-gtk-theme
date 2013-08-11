@@ -15,14 +15,21 @@ GtkProgressBar {
 .progressbar row:selected:focus {
     border-width: 1px;
     border-style: solid;
-    border-color: @borders;
-    background-color: @progressbar_bg_color;
-    background-image: none;
+    border-color: shade(@selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      @progressbar_bg_color_a,
+                                      @progressbar_bg_color_b
+                                      );
 }
 
 .progressbar.vertical {
-    background-color: @progressbar_bg_color;
-    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      @progressbar_bg_color_a,
+                                      @progressbar_bg_color_b
+                                      );
 }
 
 
@@ -38,8 +45,8 @@ GtkProgressBar {
     border-style: solid;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
-                                      mix(@trough_bg_color_a, @selected_bg_color, 0.0),
-                                      mix(@trough_bg_color_b, @selected_bg_color, 0.0)
+                                      @trough_bg_color_a,
+                                      @trough_bg_color_b
                                       );
 }
 

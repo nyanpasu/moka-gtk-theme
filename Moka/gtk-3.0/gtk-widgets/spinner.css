@@ -1,5 +1,5 @@
 /***********
- * spinner *
+ * Spinner *
  ***********/
 @keyframes spinner {
     0.00% { background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(currentColor), to(transparent)),
