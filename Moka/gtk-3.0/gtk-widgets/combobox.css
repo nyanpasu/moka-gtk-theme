@@ -11,7 +11,6 @@ GtkComboBox {
 
 }
 
-
 GtkCombobox *:insensitive {
     background-color: @insensitive_bg_color;
     background-image: none;
@@ -146,4 +145,35 @@ GtkComboBox.combobox-entry .entry:insensitive,
 .primary-toolbar GtkComboBox.combobox-entry .entry:insensitive {
     color: @insensitive_text_color;
 }
-    
+   
+
+GtkComboBox.combobox-entry:insensitive {
+    background-color: @insensitive_bg_color;
+    background-image: none;
+    color: @insensitive_text_color;
+}
+
+GtkComboBox.combobox-entry:selected {
+    color: @selected_fg_color;
+    background-color: @selected_bg_color;
+    border-color: @selected_bg_color;
+}
+
+GtkComboBox.combobox-entry:insensitive {
+    background-color: @insensitive_bg_color;
+    color: @insensitive_text_color;
+}
+
+GtkComboBox.combobox-entry:backdrop {
+    background-color: @unfocused_bg_color;
+    color: @unfocused_text_color;
+}
+
+GtkComboBox.combobox-entry:insensitive:backdrop {
+    color: mix(@unfocused_text_color, @insensitive_text_color, 0.2);
+}
+
+GtkComboBox.combobox-entry:selected:backdrop {
+    color: @unfocused_selected_fg_color;
+    background-color: @unfocused_selected_bg_color
+} 
