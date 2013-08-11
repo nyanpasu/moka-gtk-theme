@@ -10,7 +10,8 @@ GtkComboBox.combobox-entry .entry,
 GtkComboBox.combobox-entry .entry:active,
 GtkComboBox.combobox-entry .entry:focus,
 GtkComboBox.combobox-entry .entry:insensitive {
-    border-width: 1px 0 1px 1px;
+    border-top: 1px;
+    border-bottom: 1px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -29,10 +30,10 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 GtkComboBox .separator {
-    border-style: none;
+    border-style: dotted;
 
     /* always disable separators */
     -GtkWidget-wide-separators: true;
-    -GtkWidget-horizontal-separator: 0;
-    -GtkWidget-vertical-separator: 0;
+    -GtkWidget-horizontal-separator: 1px;
+    -GtkWidget-vertical-separator: 1px;
 }

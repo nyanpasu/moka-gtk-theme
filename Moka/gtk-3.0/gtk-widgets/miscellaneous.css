@@ -37,7 +37,7 @@
 }
 
 .floating-bar .button {
-    -GtkButton-image-spacing: 0;
+    -GtkButton-image-spacing: 2px;
     -GtkButton-inner-border: 0;
 
     border-style: none;

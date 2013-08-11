@@ -27,14 +27,13 @@ GtkComboBox .menu {
 .menu.button:insensitive,
 .menu.button {
     border-width: 0;
-    background-color: shade(@menu_fg_color, 1.5);
+    background-color: shade(@menu_fg_color, 1.05);
     background-image: none;
 }
 
 /*************
  * Menu Item *
  *************/
-
 GtkTreeMenu .menuitem {
     padding: 0;
     border-width: 0;
@@ -60,8 +59,8 @@ GtkTreeMenu .menuitem * {
 
 .menu .menuitem:active,
 .menu .menuitem:hover {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@selected_bg_color, 0.9);
+    background-color: @selected_bg_color;
     background-image: none;
 }
 
@@ -69,12 +68,12 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
-    color: @theme_selected_fg_color;
+    color: @selected_fg_color;
 }
 
 .menu .menuitem:insensitive,
 .menu .menuitem *:insensitive {
-    color: shade(@menu_fg_color, 5.0);
+    color: shade(@menu_fg_color, 1.05);
 }
 
 .menuitem.check,
@@ -94,17 +93,20 @@ GtkTreeMenu .menuitem * {
     background-color: transparent;
 }
 
+/* Arrow color */
 .menuitem.arrow {
     color: alpha(@menu_fg_color, 0.6);
 }
 
+/* Separator color */
 .menuitem.separator {
-    -GtkMenuItem-horizontal-padding: 3px;
-    -GtkWidget-separator-height: 1;
     border-style: none;
-    color: shade(@menu_fg_color, 6.6);
+    color: shade(@menu_fg_color, 3.2);    
+    -GtkMenuItem-horizontal-padding: 0;
+    -GtkWidget-separator-height: 1;
 }
 
+/* Calendar */
 .menuitem GtkCalendar:inconsistent {
     color: mix(@menu_fg_color, @menu_bg_color, 0.5);
 }
@@ -132,7 +134,7 @@ GtkTreeMenu .menuitem * {
 }
 
 .menuitem .accelerator:hover {
-    color: alpha(@theme_selected_fg_color, 0.8);
+    color: alpha(@selected_fg_color, 0.8);
 }
 
 .menuitem .accelerator:insensitive {
@@ -152,9 +154,6 @@ GtkTreeMenu .menuitem * {
     color: @menubar_fg_color;
 }
 
-/****************
- * Menubar Item *
- ****************/
 .menubar.menuitem,
 .menubar .menuitem {
     padding: 3px 5px;
@@ -178,8 +177,8 @@ GtkTreeMenu .menuitem * {
 }
 
 .menubar.menuitem.separator {
-    -GtkMenuItem-horizontal-padding: 3px;
+    -GtkMenuItem-horizontal-padding: 0;
     -GtkWidget-separator-height: 1;
     border-style: none;
-    color: shade(@menu_fg_color, 6.6);
+    color: shade(@menu_fg_color, 3.2);
 }

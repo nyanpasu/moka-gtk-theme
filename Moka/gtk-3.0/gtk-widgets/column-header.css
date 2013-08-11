@@ -1,6 +1,7 @@
 /*****************
- * column-header *
+ * Column header *
  *****************/
+ 
 column-header .button,
 column-header .button:active {
     border-width: 0 1px 1px 0;
@@ -11,9 +12,8 @@ column-header .button,
 column-header .button:active,
 column-header .button:focus,
 column-header .button:active:focus {
-    border-color: shade(@theme_base_color, 0.9);
-    border-bottom-color: shade(@theme_base_color, 0.8);
-    background-color: shade(@theme_base_color, 0.97);
+    border-color: @borders; 
+    background-color: @bg_color;
     background-image: none;
 }
 
@@ -21,9 +21,8 @@ column-header .button:hover,
 column-header .button:active:hover,
 column-header .button:hover:focus,
 column-header .button:active:hover:focus {
-    border-color: shade(@theme_base_color, 0.9);
-    border-bottom-color: shade(@theme_base_color, 0.8);
-    background-color: shade(@theme_base_color, 0.99);
+    border-color: @borders;
+    background-color: @bg_color;
     background-image: none;
 }
 

@@ -1,0 +1,66 @@
+/**********************
+ * Common Definitions *
+  *********************/
+
+/* Basic colors */
+@define-color white #fff;
+@define-color black #000;
+
+/* OSD */
+@define-color osd_base @panel_bg_color;
+@define-color @osd_fg @text_color;
+@define-color @osd_br @base_color;
+
+/* Tooltips */
+@define-color tooltip_bg_color @text_color;
+@define-color tooltip_fg_color @bg_color;
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+
+/* Link color */
+@define-color link_color #fc6f5d;
+
+/* Hightlight & shadow colors */
+@define-color highlight #fff;
+@define-color shadow #000;
+
+ /* Infobar colors */
+@define-color info_fg_color rgb (58, 135, 173);
+@define-color info_bg_color rgb (217, 237, 247);
+@define-color warning_fg_color rgb (192, 152, 83);
+@define-color warning_bg_color rgb (252, 248, 227);
+@define-color question_fg_color rgb (214, 73, 55);
+@define-color question_bg_color rgb (252, 229, 213);
+@define-color error_fg_color rgb (185, 74, 72);
+@define-color error_bg_color rgb (242, 222, 222);
+
+@define-color success_color #53a93f;
+@define-color warning_color #f57900;
+@define-color error_color #cc0000;
+
+/* WM */
+@define-color wm_bg @text_color;
+@define-color wm_title_focused @bg_color;
+@define-color wm_title_unfocused #555555;
+@define-color wm_border_focused @text_color;
+@define-color wm_border_unfocused #777777;
+@define-color wm_title @theme_fg_color;
+@define-color wm_unfocused_title @theme_unfocused_fg_color;
+@define-color wm_highlight @base_color;
+@define-color wm_title_highlight_dark alpha(@base_color, 0.0);
+@define-color wm_title_highlight @base_color;
+@define-color wm_title_shadow @wm_title_highlight;
+@define-color wm_bg_a shade(@theme_bg_color, 1.1);
+@define-color wm_bg_b @theme_bg_color;
+@define-color wm_shadow alpha(black, 0.7);
+@define-color wm_button_bg_a shade(@theme_bg_color, 1.0);
+@define-color wm_button_bg_b shade(@theme_bg_color, 0.85);
+@define-color wm_button_bg_c shade(@theme_bg_color, 0.8);
+@define-color wm_button_bg_d shade(@theme_bg_color, 0.9);
+@define-color wm_button_bg_hover_a shade(@wm_button_bg_a, 1.1);
+@define-color wm_button_bg_hover_b shade(@wm_button_bg_b, 1.1);
+@define-color wm_button_bg_hover_c shade(@wm_button_bg_c, 1.1);
+@define-color wm_button_bg_hover_d shade(@wm_button_bg_d, 1.1);
+@define-color wm_button_bg_active_a shade(@theme_bg_color, 0.7);
+@define-color wm_button_bg_active_b shade(@theme_bg_color, 0.9);
+@define-color wm_button_bg_active_c shade(@theme_bg_color, 0.9);

@@ -1,6 +1,6 @@
-/************
- * Toolbars *
- ************/
+/***********
+ * Toolbar *
+ ***********/
 
 /* Padding */
 .toolbar {
@@ -33,24 +33,24 @@
 .toolbar .button.text-button,
 .toolbar .button.image-button {
     background-image: linear-gradient(to bottom,
-                                      @button_gradient_color_a,
-                                      @button_gradient_color_b
+                                      @toolbar_button_gradient_color_a,
+                                      @toolbar_button_gradient_color_b
                                       );
 }
 
 /* Hover Gradient */
 .toolbar .button:hover {
     background-image: linear-gradient(to bottom,
-                                      @button_hover_gradient_color_a,
-                                      @button_hover_gradient_color_b
+                                      @toolbar_button_hover_gradient_color_a,
+                                      @toolbar_button_hover_gradient_color_b
                                       );
 }
 
 /* Active Gradient */
 .toolbar .button:active {
     background-image: linear-gradient(to bottom,
-                                      @button_active_gradient_color_a,
-                                      @button_active_gradient_color_b
+                                      @toolbar_button_active_gradient_color_a,
+                                      @toolbar_button_active_gradient_color_b
                                       );
 }
 
@@ -70,7 +70,7 @@
 .toolbar .entry,
 .toolbar .entry:active,
 .toolbar .entry:focus {
-    border-color: shade(@borders, 1.4);
+    border-color: @borders;
 }
 
 /* Menubar toolbars */
@@ -85,20 +85,20 @@
 }
 
 .toolbar .button:insensitive {
-    border-color: shade(@borders, 1.4);
+    border-color: @insensitive_borders;
     background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
 }
 
 .toolbar .button:active:insensitive {
-    border-color: shade(@borders, 1.0);
+    border-color: @insensitive_borders;
     background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
 }
 
 .toolbar .button .separator:insensitive,
 .toolbar .button.separator:insensitive {
-    border-color: shade(@borders, 1.45);
+    border-color: @insensitive_borders;
 }
 
 /*******************
@@ -110,9 +110,11 @@
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
     padding: 3px;
-    border-width: 0 0 1px 0;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-bottom-color: #000;
     border-style: solid;
-    border-color: shade(@borders, 1.4);
+    border-color: @borders;
     background-image: linear-gradient(to bottom,
                                       @toolbar_gradient_color_a,
                                       @toolbar_gradient_color_b
@@ -132,22 +134,22 @@
 .primary-toolbar .raised .button,
 .primary-toolbar .raised.button {
     background-image: linear-gradient(to bottom,
-                                      @button_gradient_color_a,
-                                      @button_gradient_color_b
+                                      @toolbar_button_gradient_color_a,
+                                      @toolbar_button_gradient_color_b
                                       );
 }
 
 .primary-toolbar .button:hover {
     background-image: linear-gradient(to bottom,
-                                      @button_hover_gradient_color_a,
-                                      @button_hover_gradient_color_b
+                                      @toolbar_button_hover_gradient_color_a,
+                                      @toolbar_button_hover_gradient_color_b
                                       );
 }
 
 .primary-toolbar .button:active {
     background-image: linear-gradient(to bottom,
-                                      @button_active_gradient_color_a,
-                                      @button_active_gradient_color_b
+                                      @toolbar_button_active_gradient_color_a,
+                                      @toolbar_button_active_gradient_color_b
                                       );
 }
 
@@ -162,36 +164,33 @@
 .primary-toolbar .entry:active,
 .primary-toolbar .entry:focus,
 .primary-toolbar .raised .button,
-.primary-toolbar .raised.button {
-    border-color: shade(@borders, 1.4);
-}
-
+.primary-toolbar .raised.button,
 .primary-toolbar .button .separator,
 .primary-toolbar .button.separator {
-    border-color: shade(@borders, 0.95);
+    border-color: @borders
 }
 
 .primary-toolbar GtkSeparatorToolItem,
 .primary-toolbar .separator {
-    border-color: shade(@toolbar_bg_color, 0.95);
-    color: shade(@toolbar_bg_color, 0.95);
+    border-color: @toolbar_separator;
+    color: @toolbar_separator;
 }
 
 /* Insensitive */
 .primary-toolbar .button:insensitive {
-    border-color: shade(@borders, 1.4);
+    border-color: @insensitive_borders;
     background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
 }
 
 .primary-toolbar .button:active:insensitive {
-    border-color: shade(@borders, 1.0);
+    border-color: @insensitive_borders;
     background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
 }
 
 .primary-toolbar .separator:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.95);
+    border-color: @insensitive_borders;
     color: shade(@toolbar_bg_color, 0.95);
 }
 
@@ -204,61 +203,88 @@
  * Inline Toolbar *
  ******************/
 
+ .inline-toolbar GtkComboBox,
+.inline-toolbar .button {
+    padding: 1px;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+
 .inline-toolbar.toolbar {
     -GtkToolbar-button-relief: normal;
 
-    padding: 1px;
-    border-width: 1px;
+    border-width: 0px 1px 1px 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-    background-color: @theme_bg_color;
-    background-image: none;
-}
-
-.inline-toolbar.toolbar:last-child {
-    border-width: 0 1px 1px 1px;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-}
-
-.inline-toolbar.toolbar .button {
-    padding: 1px;
-    border-width: 1px 0 1px 1px;
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
-    color: @theme_fg_color;
-}
-
-.inline-toolbar.toolbar .button:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
-    background-image: none;
-}
-
-.inline-toolbar.toolbar .button:active {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: none;
-}
-
-.inline-toolbar.toolbar .button:active:hover {
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: @borders;
+    border-radius: 0px;
+    background-image: linear-gradient(to bottom,
+                                      @inline_toolbar_gradient_color_a,
+                                      @inline_toolbar_gradient_color_b
+                                      );
 }
 
 .inline-toolbar.toolbar .button:focus,
 .inline-toolbar.toolbar .button:hover:focus,
 .inline-toolbar.toolbar .button:active:focus,
-.inline-toolbar.toolbar .button:active:hover:focus {
-    border-color: shade(@theme_bg_color, 0.7);
+.inline-toolbar.toolbar .button:active:hover:focus,
+.inline-toolbar .button .separator,
+.inline-toolbar .button.separator {
+    border-color: @borders
 }
+
+/* Bottom */
+.inline-toolbar.toolbar:last-child {
+    border-width: 0 1px 1px 1px;
+    border-color: @borders;
+    border-radius: 4px;
+}
+
+/* Bottom */
+.inline-toolbar.toolbar:first-child {
+    border-top: 1px;
+    border-color: @borders;
+    border-radius: 0px;
+}
+
+
+
+/* Gradients */
+.inline-toolbar GtkComboBox,
+.inline-toolbar .button,
+.inline-toolbar .raised .button,
+.inline-toolbar .raised.button {
+    background-image: linear-gradient(to bottom,
+                                      @inline_toolbar_button_gradient_color_a,
+                                      @inline_toolbar_button_gradient_color_b
+                                      );
+}
+
+.inline-toolbar .button:hover {
+    background-image: linear-gradient(to bottom,
+                                      @toolbar_button_hover_gradient_color_a,
+                                      @toolbar_button_hover_gradient_color_b
+                                      );
+}
+
+.inline-toolbar .button:active {
+    background-image: linear-gradient(to bottom,
+                                      @toolbar_button_active_gradient_color_a,
+                                      @toolbar_button_active_gradient_color_b
+                                      );
+}
+
+.inline-toolbar .button:insensitive,
+.inline-toolbar.toolbar .button *:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive {
+    background-image: linear-gradient(to bottom,
+                                      @toolbar_button_insensitive_gradient_color_a,
+                                      @toolbar_button_insensitive_gradient_color_b
+                                      );
+}
+
 
 .inline-toolbar.toolbar .button *:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
+    border-color: @insensitive_borders
 }

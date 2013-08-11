@@ -34,17 +34,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="470.14893"
-     inkscape:cy="75.078482"
-     inkscape:current-layer="g4532"
+     inkscape:cx="256.02363"
+     inkscape:cy="106.94432"
+     inkscape:current-layer="svg11300"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="718"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -3115,9 +3115,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect3405"
          width="16"
-         height="20"
+         height="16"
          x="230"
-         y="260"
+         y="262"
          inkscape:label="16x16" />
     </g>
     <g
@@ -3152,9 +3152,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-down-hover</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="260"
+         y="262"
          x="230"
-         height="20"
+         height="16"
          width="16"
          id="rect4308"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
@@ -3193,9 +3193,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect3429"
          width="16"
-         height="20"
+         height="16"
          x="230"
-         y="230"
+         y="232"
          inkscape:label="16x16" />
     </g>
     <g
@@ -3230,9 +3230,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-down-backdrop</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="200"
+         y="202"
          x="230"
-         height="20"
+         height="16"
          width="16"
          id="rect3441"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
@@ -3271,9 +3271,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4290"
          width="16"
-         height="20"
+         height="16"
          x="230"
-         y="170"
+         y="172"
          inkscape:label="16x16" />
     </g>
     <g
@@ -3380,9 +3380,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-up</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="260"
+         y="262"
          x="260"
-         height="20"
+         height="16"
          width="16"
          id="rect4322"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
@@ -3421,9 +3421,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4334"
          width="16"
-         height="20"
+         height="16"
          x="260"
-         y="260"
+         y="262"
          inkscape:label="16x16" />
     </g>
     <g
@@ -3458,9 +3458,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-up-active</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="230"
+         y="232"
          x="260"
-         height="20"
+         height="16"
          width="16"
          id="rect4346"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
@@ -3499,9 +3499,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4358"
          width="16"
-         height="20"
+         height="16"
          x="260"
-         y="200"
+         y="202"
          inkscape:label="16x16" />
     </g>
     <g
@@ -3536,9 +3536,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-up-insensitive</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="170"
+         y="172"
          x="260"
-         height="20"
+         height="16"
          width="16"
          id="rect4370"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
@@ -3650,9 +3650,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4410"
          width="16"
-         height="20"
+         height="16"
          x="-278"
-         y="288"
+         y="290"
          inkscape:label="16x16"
          transform="matrix(0,-1,1,0,0,0)" />
     </g>
@@ -3688,9 +3688,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-left-hover</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="288"
+         y="290"
          x="-278"
-         height="20"
+         height="16"
          width="16"
          id="rect4422"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -3730,9 +3730,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4434"
          width="16"
-         height="20"
+         height="16"
          x="-248"
-         y="288"
+         y="290"
          inkscape:label="16x16"
          transform="matrix(0,-1,1,0,0,0)" />
     </g>
@@ -3768,9 +3768,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-left-backdrop</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="288"
+         y="290"
          x="-218"
-         height="20"
+         height="16"
          width="16"
          id="rect4446"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -3810,9 +3810,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4458"
          width="16"
-         height="20"
+         height="16"
          x="-188"
-         y="288"
+         y="290"
          inkscape:label="16x16"
          transform="matrix(0,-1,1,0,0,0)" />
     </g>
@@ -3923,9 +3923,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4498"
          width="16"
-         height="20"
+         height="16"
          x="262"
-         y="-338"
+         y="-336"
          inkscape:label="16x16"
          transform="matrix(0,1,-1,0,0,0)" />
     </g>
@@ -3961,9 +3961,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-right-hover</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="-338"
+         y="-336"
          x="262"
-         height="20"
+         height="16"
          width="16"
          id="rect4510"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -4003,9 +4003,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4522"
          width="16"
-         height="20"
+         height="16"
          x="232"
-         y="-338"
+         y="-336"
          inkscape:label="16x16"
          transform="matrix(0,1,-1,0,0,0)" />
     </g>
@@ -4041,9 +4041,9 @@
            style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">scale-slider-right-backdrop</tspan></text>
       <rect
          inkscape:label="16x16"
-         y="-338"
+         y="-336"
          x="202"
-         height="20"
+         height="16"
          width="16"
          id="rect4534"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -4083,9 +4083,9 @@
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4546"
          width="16"
-         height="20"
+         height="16"
          x="172"
-         y="-338"
+         y="-336"
          inkscape:label="16x16"
          transform="matrix(0,1,-1,0,0,0)" />
     </g>
@@ -4565,7 +4565,8 @@
          sodipodi:cy="272"
          sodipodi:rx="7"
          sodipodi:ry="7"
-         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z" />
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-39.599449)" />
       <path
          d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
          sodipodi:ry="7"
@@ -4573,9 +4574,10 @@
          sodipodi:cy="272"
          sodipodi:cx="358"
          id="path4679"
-         style="opacity:0.5;color:#bebebe;fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.5;color:#bebebe;fill:none;stroke:#000000;stroke-width:1.72993207;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc"
-         clip-path="url(#clipPath4683)" />
+         clip-path="url(#clipPath4683)"
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-39.599449)" />
       <path
          d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
          sodipodi:ry="7"
@@ -4585,20 +4587,20 @@
          id="path4687"
          style="color:#bebebe;fill:url(#linearGradient4692);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc"
-         transform="translate(0,-30)" />
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-69.599449)" />
       <path
          clip-path="url(#clipPath4683)"
          sodipodi:type="arc"
-         style="opacity:0.69999999999999996;color:#bebebe;fill:none;stroke:#d3b3f3;stroke-width:2;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.7;color:#bebebe;fill:none;stroke:#d3b3f3;stroke-width:1.72993207;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="path4689"
          sodipodi:cx="358"
          sodipodi:cy="272"
          sodipodi:rx="7"
          sodipodi:ry="7"
          d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
-         transform="translate(0,-30)" />
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-69.599449)" />
       <path
-         transform="translate(0,-60)"
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-99.599449)"
          sodipodi:type="arc"
          style="color:#bebebe;fill:url(#linearGradient4698);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="path4694"
@@ -4608,14 +4610,14 @@
          sodipodi:ry="7"
          d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z" />
       <path
-         transform="translate(0,-60)"
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-99.599449)"
          d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
          sodipodi:ry="7"
          sodipodi:rx="7"
          sodipodi:cy="272"
          sodipodi:cx="358"
          id="path4696"
-         style="opacity:0.2;color:#bebebe;fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.2;color:#bebebe;fill:none;stroke:#000000;stroke-width:1.72993207;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc"
          clip-path="url(#clipPath4683)" />
       <path
@@ -4627,18 +4629,18 @@
          id="path4700"
          style="color:#bebebe;fill:#dddddd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc"
-         transform="translate(0,-90)" />
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-129.59945)" />
       <path
          clip-path="url(#clipPath4683)"
          sodipodi:type="arc"
-         style="opacity:0.1;color:#bebebe;fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.1;color:#bebebe;fill:none;stroke:#000000;stroke-width:1.72993207;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="path4702"
          sodipodi:cx="358"
          sodipodi:cy="272"
          sodipodi:rx="7"
          sodipodi:ry="7"
          d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
-         transform="translate(0,-90)" />
+         transform="matrix(1.1666667,0,0,1.1456583,-59.666679,-129.59945)" />
     </g>
     <g
        style="display:inline"

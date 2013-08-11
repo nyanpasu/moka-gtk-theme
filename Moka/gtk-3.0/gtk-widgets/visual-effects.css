@@ -12,24 +12,10 @@
 }
 
 .entry:focus {
-    transition: border 100ms ease-in;
+    transition: all 100ms ease-in;
 }
 
 /* Inset Shadows */
-.button:active,
-.primary-toolbar .button:active,
-.toolbar .button:active,
-.header-bar .button:active {
-             /* inset h-shadow v-shadow blur spread color; */
-    box-shadow: inset 0px 1px alpha(@dark_shadow, 1.0),
-}
-
-.entry {
-    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.10),
-                inset 0 1px alpha(@dark_shadow, 0.12),
-                inset -1px 0 alpha(@dark_shadow, 0.10),
-                inset 0 -1px alpha(@dark_shadow, 0.05);
-}
 
 .button:active:insensitive,
 .primary-toolbar .button:active:insensitive,
@@ -37,4 +23,10 @@
 .header-bar .button:active:insensitive,
 .entry:insensitive {
     box-shadow: none;
+}
+
+.entry:focus {
+    box-shadow: inset 1px 2px alpha(@selected_bg_color, 0.1),
+            inset 1px 1px alpha(@selected_bg_color, 0.1),
+            inset -1px -1px alpha(@selected_bg_color, 0.2); 
 }

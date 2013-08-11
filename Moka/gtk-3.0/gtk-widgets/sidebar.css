@@ -6,12 +6,14 @@
 .sidebar.view,
 .sidebar .view,
 .sidebar GtkScrolledWindow {
-    background-color: @theme_bg_color;
-    color: @theme_fg_color;
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
 }
 
 .sidebar .frame {
-    border-width: 1;
+    border-right: 1px;
+    border-style: solid;
+    border-color: @borders;
 }
 
 .sidebar.view.separator,
@@ -19,6 +21,6 @@
 .separator {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.9);
-    color: shade(@theme_bg_color, 0.9);
+    border-color: @borders;
+    color: @base_color;
 }

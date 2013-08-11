@@ -1,6 +1,7 @@
-/*************
- * scrollbar *
- *************/
+/**************
+ * Scrollbars *
+ **************/
+ 
 .scrollbar {
     border-width: 1px;
     border-style: solid;
@@ -11,7 +12,7 @@
 .scrollbar.trough {
     border-width: 0;
     border-radius: 0;
-    background-color: @theme_bg_color;
+    background-color: @bg_color;
     background-image: none;
 }
 
@@ -22,44 +23,44 @@
     border-radius: 0;
     background-color: transparent;
     background-image: none;
-    color: shade(@theme_bg_color, 0.6);
+    color: shade(@bg_color, 0.6);
 }
 
 .scrollbar.slider {
     border-width: 1px;
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: @borders;
     border-radius: 0;
-    background-color: shade(@theme_bg_color, 0.9);
+    background-color: shade(@bg_color, 0.9);
 }
 
 .scrollbar.slider:hover,
 .scrollbar.slider.vertical:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@borders, 1.1);
+    background-color: shade(@bg_color, 0.8);
 }
 
 .scrollbar.slider:active,
 .scrollbar.slider.vertical:active {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@selected_bg_color, 0.9);
+    background-color: @selected_bg_color;
 }
 
-/* overlay scrollbar */
+/* Overlay scrollbar */
 OsThumb {
-    color: shade(@theme_bg_color, 0.7);
+    color: shade(@selected_bg_color, 0.9);
 }
 
 OsThumb:selected,
 OsScrollbar:selected {
-    background-color: @theme_selected_bg_color;
+    background-color: @selected_bg_color;
 }
 
 OsThumb:active,
 OsScrollbar:active {
-    background-color: @theme_selected_bg_color;
+    background-color: @selected_bg_color;
 }
 
 OsThumb:insensitive,
 OsScrollbar:insensitive {
-    background-color: shade(@theme_bg_color, 0.9);
+    background-color: shade(@bg_color, 0.9);
 }
