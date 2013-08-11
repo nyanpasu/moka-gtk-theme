@@ -47,6 +47,7 @@ GtkInfoBar {
 .error .button,
 .error .button:insensitive,
 .error .button:active {
+    text-shadow: none;
     border-color: @borders;
     border-style: solid;
     border-width: 1px;
@@ -57,6 +58,7 @@ GtkInfoBar {
 .question .button,
 .question .button:insensitive,
 .question .button:active {
+    text-shadow: none;
     border-color: @question_borders_color;
     border-style: solid;
     border-width: 1px;
@@ -78,6 +80,7 @@ GtkInfoBar {
 .error .button:backdrop,
 .error .button:insensitive:backdrop,
 .error .button:active:backdrop {
+    text-shadow: none;
     border-image: none;
     border-color: @unfocused_borders;
     border-style: solid;
