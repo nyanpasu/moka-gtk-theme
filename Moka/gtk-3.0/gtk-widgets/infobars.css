@@ -27,9 +27,9 @@ GtkInfoBar {
 .question:backdrop,
 .error:backdrop {
     text-shadow: none;
-    background-color: @base_color;
+    background-color: @unfocused_base_color;
     color: @unfocused_fg_color;
-    border-color: @unfocused_fg_color;
+    border-color: @unfocused_borders;
 }
 
 .info .entry,
@@ -82,12 +82,12 @@ GtkInfoBar {
     border-color: @unfocused_borders;
     border-style: solid;
     border-width: 1px;
+    color: @unfocused_bg_color;
 }
 
 .info {
     background-color: @info_bg_color;
     color: @info_fg_color;
-
     border-color: @info_borders_color;
 }
 

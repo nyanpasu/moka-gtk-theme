@@ -162,7 +162,7 @@
 /******************
  * Sidebar colors *
  *****************/
-@define-color sidebar_bg_color @base_color;
+@define-color sidebar_bg_color @bg_color;
 @define-color sidebar_fg_color @text_color;
 
 

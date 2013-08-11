@@ -110,7 +110,6 @@
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
     padding: 3px;
-    border-top: 1px;
     border-bottom: 1px;
     border-bottom-color: #000;
     border-style: solid;

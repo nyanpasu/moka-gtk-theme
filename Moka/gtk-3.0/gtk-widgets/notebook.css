@@ -13,6 +13,31 @@
     color: @text_color;
 }
 
+.notebook:insensitive {
+    color: @insensitive_text_color;
+}
+
+.notebook:selected {
+    color: @selected_fg_color;
+    border-color: @selected_bg_color;
+}
+
+.notebook:insensitive {
+    color: @insensitive_text_color;
+}
+
+.notebook:backdrop {
+    color: @unfocused_text_color;
+}
+
+.notebook:insensitive:backdrop {
+    color: mix(@unfocused_text_color, @insensitive_text_color, 0.2);
+}
+
+.notebook:selected:backdrop {
+    color: @unfocused_selected_fg_color;
+}
+
 /* Background colors */
 .notebook GtkViewport {
     border-style: solid;
@@ -35,18 +60,9 @@
                               );
 }
 
-.notebook tab.left {
-    background-image: linear-gradient(to right,
-                              @notebook_tab_gradient_a,
-                              @notebook_tab_gradient_b
-                              );
-}
-
+.notebook tab.left,
 .notebook tab.right {
-    background-image: linear-gradient(to left,
-                              @notebook_tab_gradient_a,
-                              @notebook_tab_gradient_b
-                              );
+  background-color: @notebook_bg_color;
 }
 
 /* Borders */
@@ -82,17 +98,20 @@
 }
 
 /* Padding */
-.notebook tab.top,
-.notebook tab.top:active,
-.notebook tab.bottom,
-.notebook tab.bottom:active {
-    padding-top: 6px;
-    padding-bottom: 2px;
+.notebook tab.top {
+    padding: 4px 2px 0;
 }
 
-.notebook tab.left,
-.notebook tab.right {
-    padding: 3px;
+.notebook tab.top:active {
+    padding: 7px 2px 0;
+}
+
+.notebook tab.bottom {
+    padding: 0 2px 4px;
+}
+
+.notebook tab.bottom:active {
+    padding: 0 2px 7px;
 }
 
 /* Labels */
