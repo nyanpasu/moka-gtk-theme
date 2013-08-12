@@ -85,7 +85,7 @@ echo "Done."
 
 function set {
 echo "Installation complete!"
-read -p "Do you want to set Moka as desktop icon set? (Y)es, (N)o : " INPUT
+read -p "Do you want to set Moka as desktop theme? (Y)es, (N)o : " INPUT
 case $INPUT in
 	[Yy]* ) settheme;;
     [Nn]* );;

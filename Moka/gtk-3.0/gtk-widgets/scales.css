@@ -23,7 +23,7 @@
 /* Positive color of horizontal scales */
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left {
-    border-color: shade(@selected_bg_color, 0.9);
+    border-color: shade(@selected_bg_color, 0.8);
     background-color: @selected_bg_color;
     background-image: none;
 }
@@ -31,7 +31,7 @@
 /* Positive color of vertical scales */
 .menubar .menuitem.scale.highlight.bottom,
 .scale.vertical.highlight.bottom {
-    border-color: shade(@selected_bg_color, 0.9);
+    border-color: shade(@selected_bg_color, 0.8);
     background-color: @selected_bg_color;
     background-image: none;
 }
@@ -57,7 +57,6 @@
 .scale.trough.vertical,
 .scale.trough:backdrop {
     border-width: 1px;
-    border-image: none;
     border-style: solid;
 }
 

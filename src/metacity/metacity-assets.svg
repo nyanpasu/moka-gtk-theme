@@ -34,17 +34,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="198.96715"
-     inkscape:cy="164.67476"
-     inkscape:current-layer="g3567"
-     showgrid="false"
+     inkscape:cx="213.71994"
+     inkscape:cy="84.734051"
+     inkscape:current-layer="g3614"
+     showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-height="711"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="27"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -4184,6 +4184,45 @@
     </g>
     <g
        inkscape:groupmode="layer"
+       id="g3614"
+       inkscape:label="Baseplate menu_focused_pressed"
+       style="display:none">
+      <text
+         id="text3616"
+         inkscape:label="context"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="15.006836"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3618"
+           sodipodi:role="line"
+           x="15.006836"
+           y="26.115234"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">metacity-1</tspan></text>
+      <text
+         id="text3620"
+         inkscape:label="icon-name"
+         sodipodi:linespacing="125%"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         x="126.48828"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3622"
+           sodipodi:role="line"
+           x="126.48828"
+           y="26.115234"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">menu_focused_pressed</tspan></text>
+      <rect
+         inkscape:label="16x16"
+         y="230"
+         x="200"
+         height="20"
+         width="20"
+         id="rect3624"
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
        id="g3567"
        inkscape:label="Baseplate menu_focused_normal"
        style="display:none">
@@ -4220,45 +4259,6 @@
          width="20"
          id="rect3577"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    </g>
-    <g
-       style="display:none"
-       inkscape:label="Baseplate menu_focused_pressed"
-       id="g3579"
-       inkscape:groupmode="layer">
-      <rect
-         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect3589"
-         width="20"
-         height="20"
-         x="200"
-         y="230"
-         inkscape:label="16x16" />
-      <text
-         y="26.115234"
-         xml:space="preserve"
-         x="15.006836"
-         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
-         inkscape:label="context"
-         id="text3581"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
-           y="26.115234"
-           x="15.006836"
-           sodipodi:role="line"
-           id="tspan3583">metacity-1</tspan></text>
-      <text
-         y="26.115234"
-         xml:space="preserve"
-         x="126.48828"
-         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
-         sodipodi:linespacing="125%"
-         inkscape:label="icon-name"
-         id="text3585"><tspan
-           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
-           y="26.115234"
-           x="126.48828"
-           sodipodi:role="line"
-           id="tspan3587">menu_focused_pressed</tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -4340,30 +4340,30 @@
     </g>
     <g
        inkscape:groupmode="layer"
-       id="g3615"
+       id="g3602"
        inkscape:label="Baseplate menu_unfocused_pressed"
        style="display:none">
       <text
-         id="text3617"
+         id="text3604"
          inkscape:label="context"
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
          x="15.006836"
          xml:space="preserve"
          y="26.115234"><tspan
-           id="tspan3619"
+           id="tspan3606"
            sodipodi:role="line"
            x="15.006836"
            y="26.115234"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">metacity-1</tspan></text>
       <text
-         id="text3621"
+         id="text3608"
          inkscape:label="icon-name"
          sodipodi:linespacing="125%"
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
          x="126.48828"
          xml:space="preserve"
          y="26.115234"><tspan
-           id="tspan3623"
+           id="tspan3610"
            sodipodi:role="line"
            x="126.48828"
            y="26.115234"
@@ -4374,7 +4374,7 @@
          x="200"
          height="20"
          width="20"
-         id="rect3625"
+         id="rect3612"
          style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     </g>
     <g
