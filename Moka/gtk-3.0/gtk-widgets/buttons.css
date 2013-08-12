@@ -10,7 +10,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: @borders;
-    border-radius: 4;
+    border-radius: 4px;
     background-image: linear-gradient(to bottom,
                                   @button_gradient_color_a,
                                   @button_gradient_color_b

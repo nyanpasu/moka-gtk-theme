@@ -11,7 +11,7 @@
 @define-color borders shade(@bg_color, 0.8); /* Borders color */
 @define-color text_color @fg_color; /* Text color */
 @define-color panel_color #444444; /* Panel color */
-@define-color selection_color shade(#a172d2, 1.5); /* Selection color */
+@define-color selection_color #a172d2; /* Selection color */
 @define-color gradient_color_a @bg_color; /* Gradient color A */
 @define-color gradient_color_b shade(@bg_color, 0.92); /* Gradient color B */
 @define-color view_bg_color #555555; /* View background */

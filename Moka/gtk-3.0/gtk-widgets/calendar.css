@@ -1,6 +1,17 @@
 /***********
-* calendar *
+* Calendar *
 ************/
+
+.menuitem GtkCalendar:inconsistent {
+    color: mix(@menu_fg_color, @menu_bg_color, 0.5);
+}
+
+.menuitem GtkCalendar.button {
+    border-style: none;
+    background-color: transparent;
+    background-image: none;
+}
+
 GtkCalendar {
     padding: 3px;
 }

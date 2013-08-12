@@ -271,4 +271,3 @@ GtkProgressBar.osd.progressbar {
     /* when there's no pixbuf yet */
     background-color: @osd_bg;
 }
-}

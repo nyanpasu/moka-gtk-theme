@@ -79,30 +79,6 @@ GtkComboBox.combobox-entry .entry:focus:last-child {
                 inset 0 -1px alpha(@selected_bg_color, 0.2);
 }
 
-GtkComboBox.combobox-entry .button:last-child,
-GtkComboBox.combobox-entry .button:hover:last-child,
-GtkComboBox.combobox-entry .button:active:last-child,
-GtkComboBox.combobox-entry .button:hover:active:last-child {
-    box-shadow: inset 1px 0 @inset_dark_color, 
-                inset 0 1px @entry_inset,
-}
-
-GtkComboBox.combobox-entry .button:first-child,
-GtkComboBox.combobox-entry .button:hover:first-child,
-GtkComboBox.combobox-entry .button:active:first-child,
-GtkComboBox.combobox-entry .button:hover:active:first-child {
-    box-shadow: inset -1px 0 @inset_dark_color, 
-                inset 0 1px @entry_inset,
-}
-
-GtkComboBox.combobox-entry .button:insensitive:first-child {
-    box-shadow: inset -1px 0 @inset_dark_color;
-}
-
-GtkComboBox.combobox-entry .button:insensitive:last-child {
-    box-shadow: inset 1px 0 @inset_dark_color;
-}
-
 GtkComboBox.combobox-entry .button:backdrop:first-child,
 GtkComboBox.combobox-entry .button:backdrop:last-child {
     box-shadow: none;

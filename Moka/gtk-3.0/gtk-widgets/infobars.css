@@ -109,5 +109,5 @@ GtkInfoBar {
 .error {
     background-color: @error_bg_color;
     color: @error_fg_color;
-    border-color: @error_borders_color);
+    border-color: @error_borders_color;
 }

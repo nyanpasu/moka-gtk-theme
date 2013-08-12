@@ -1,8 +1,8 @@
 /**************
- * spinbutton *
+ * Spinbutton *
  **************/
 .spinbutton .button {
-    color: mix(@text_color, @base_color, 0.4);
+    color: @text_color;
     padding: 2px 4px;
     border-width: 0;
     border-radius: 0;
@@ -13,7 +13,7 @@
 }
 
 .spinbutton .button:insensitive {
-    color: mix(@text_color, @base_color, 0.7);
+    color: @insensitive_bg_color;
     box-shadow: inset 1px 0 shade(@bg_color, 0.95);
 }
 
@@ -38,40 +38,40 @@
 .spinbutton.vertical .button {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@bg_color, 0.8);
+    border-color: @borders;
     border-radius: 4px;
-    background-color: shade(@bg_color, 1.08);
+    background-color: @active_bg_color;
     background-image: none;
     color: @fg_color;
     box-shadow: none;
 }
 
 .spinbutton.vertical .button:hover {
-    border-color: shade(@bg_color, 0.7);
-    background-color: shade(@bg_color, 1.10);
+    border-color: @hover_borders;
+    background-color: @hover_bg_color;
     background-image: none;
 }
 
 .spinbutton.vertical .button:active {
-    border-color: shade(@bg_color, 0.8);
-    background-color: shade(@bg_color, 0.95);
+    border-color: @active_borders;
+    background-color: @active_bg_color;
     background-image: none;
 }
 
 .spinbutton.vertical .button:active:hover {
-    border-color: shade(@bg_color, 0.7);
+    border-color: @borders;
 }
 
 .spinbutton.vertical .button:focus,
 .spinbutton.vertical .button:hover:focus,
 .spinbutton.vertical .button:active:focus,
 .spinbutton.vertical .button:active:hover:focus {
-    border-color: shade(@bg_color, 0.7);
+    border-color: @borders
 }
 
 .spinbutton.vertical .button:insensitive {
-    border-color: shade(@bg_color, 0.85);
-    background-color: shade(@bg_color, 0.9);
+    border-color: @insensitive_borders;
+    background-color: @insensitive_bg_color;
     background-image: none;
 }
 
@@ -92,6 +92,7 @@
 }
 
 .spinbutton.vertical.entry {
+    background-color: @bg_color;
     border-width: 1px;
     border-style: solid;
     border-radius: 0;

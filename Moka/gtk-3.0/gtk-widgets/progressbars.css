@@ -13,7 +13,7 @@ GtkProgressBar {
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focus {
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: shade(@selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
@@ -23,7 +23,7 @@ GtkProgressBar {
 }
 
 .progressbar.vertical {
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: shade(@selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,

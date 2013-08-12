@@ -3,7 +3,6 @@
  ************/
 
 .notebook {
-    padding: 0;
     border-style: solid;
     border-width: 1px;
     background-color: @notebook_base_color;
@@ -60,9 +59,23 @@
                               );
 }
 
+.notebook tab.left:active,
+.notebook tab.right:active {
+    background-image: none;
+    background-color: @theme_base_color;
+}
+
+.notebook tab.left:active:backdrop,
+.notebook tab.right:active:backdrop {
+    background-image: none;
+    background-color: @theme_unfocused_base_color;
+}
+
 .notebook tab.left,
 .notebook tab.right {
-  background-color: @notebook_bg_color;
+    background-image: none;
+    background-color: @notebook_bg_color;
+    border-radius: 4px;
 }
 
 /* Borders */
@@ -70,16 +83,25 @@
     border-width: 1px 1px 0px 1px;
 }
 
-.notebook tab.right {
-    border-width: 1px 1px 1px 0;
-}
-
 .notebook tab.bottom {
     border-width: 0 1px 1px 1px;
 }
 
+
 .notebook tab.left {
     border-width: 1px 0 1px 1px;
+}
+
+.notebook tab.right {
+    border-width: 1px 1px 1px 0;
+}
+
+.notebook tab.left:active {
+    border-radius: 3px 0 0 3px;
+}
+
+.notebook tab.right:active {
+    border-radius: 0 3px 3px 0;
 }
 
 .notebook,
@@ -103,7 +125,7 @@
 }
 
 .notebook tab.top:active {
-    padding: 7px 2px 0;
+    padding: 5px 2px 0;
 }
 
 .notebook tab.bottom {
@@ -111,7 +133,15 @@
 }
 
 .notebook tab.bottom:active {
-    padding: 0 2px 7px;
+    padding: 0 2px 5px;
+}
+
+.notebook tab.left:active {
+    padding-left: 1px;
+}
+
+.notebook tab.right:active {
+    padding-right: 1px;
 }
 
 /* Labels */
@@ -131,7 +161,6 @@
 .notebook tab:backdrop {
     border-color: @unfocused_borders;
 }
-
 
 /* Close Button */
 .notebook tab .button,
