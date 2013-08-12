@@ -80,7 +80,7 @@ function settheme {
 echo "Setting Moka as desktop GTK theme..."
 gsettings set org.gnome.desktop.interface gtk-theme "Moka"
 gsettings set org.gnome.desktop.wm.preferences theme "Moka"
-echo "Done.";;
+echo "Done."
 }
 
 function set {
