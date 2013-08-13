@@ -22,18 +22,78 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 clear
-echo '#-----------------------------------------#'
+echo '#----------------------------------------#'
 echo '#     Moka GTK Theme Install Script      #'
-echo '#-----------------------------------------#'
+echo '#----------------------------------------#'
+
 
 function continue {
-echo
+echo ""
 read -p "Do you want to continue? (Y)es, (N)o : " INPUT
 case $INPUT in
-	[Yy]* ) ;;
+	[Yy]* ) main;;
     [Nn]* ) exit 99;;
-    * ) echo; echo "Uh oh, invalid response. Please retry."; continue;;
+    * ) echo; echo "Sorry, try again."; continue;;
 esac
+}
+
+function main {
+if [ "$UID" -eq "$ROOT_UID" ]; then
+	if [ -d /usr/share/themes/Moka ]; then
+		echo
+		read -p "Found an existing installation. Replace it? (Y)es, (N)o : " INPUT
+		case $INPUT in
+			[Yy]* ) rm -Rf /usr/share/themes/Moka 2>/dev/null;;
+			[Nn]* );;
+		    * )
+		    clear && echo 'Sorry, try again.'
+		    main
+		    ;;
+		esac
+	fi
+	cp -R ./Moka/ /usr/share/themes/
+	echo "Installation complete!"
+	set
+elif [ "$UID" -ne "$ROOT_UID" ]; then
+	if [ -d $HOME/.themes/Moka ]; then
+		echo
+		read -p "Found an existing installation. Replace it? (Y)es, (N)o : " INPUT
+		case $INPUT in
+			[Yy]* ) rm -Rf "$HOME/.themes/Moka" 2>/dev/null;;
+			[Nn]* );;
+		    * )
+		    clear && echo 'Sorry, try again.'
+		    main
+		    ;;
+		esac
+	fi
+	cp -R ./Moka/ "$HOME/.themes/"
+	echo "Installation complete!"
+	set
+fi
+}
+
+function set {
+echo ""
+read -p "Do you want to set Moka as desktop theme? (Y)es, (N)o : " INPUT
+case $INPUT in
+	[Yy]* ) settheme;;
+    [Nn]* ) end;;
+    * ) echo; echo "Uh oh, invalid response. Please retry."; set;;
+esac
+}
+
+function settheme {
+echo "Setting Moka as desktop GTK theme..."
+gsettings set org.gnome.desktop.interface gtk-theme "Moka"
+gsettings set org.gnome.desktop.wm.preferences theme "Moka"
+echo "Done."
+end
+}
+
+function end {
+	echo "Exiting"
+	exit 0
 }
 
 ROOT_UID=0
@@ -48,52 +108,3 @@ else
 	echo "It will be available to all users."
 	continue
 fi
-echo
-
-if [ "$UID" -eq "$ROOT_UID" ]; then
-	if [ -d /usr/share/themes/Moka ]; then
-		echo
-		read -p "Found an existing installation. Remove it? (Y)es, (N)o : " INPUT
-		case $INPUT in
-			[Yy]* ) rm -Rf /usr/share/themes/Moka 2>/dev/null;;
-			[Nn]* );;
-		    * ) ;;
-		esac
-	fi
-	cp -R ./Moka/ /usr/share/themes/
-	install_dir=/usr/share/themes/
-elif [ "$UID" -ne "$ROOT_UID" ]; then
-	if [ -d $HOME/.themes/Moka ]; then
-		echo
-		read -p "Found an existing installation. Remove it? (Y)es, (N)o : " INPUT
-		case $INPUT in
-			[Yy]* ) rm -Rf "$HOME/.themes/Moka" 2>/dev/null;;
-			[Nn]* );;
-		    * ) ;;
-		esac
-	fi
-	cp -R ./Moka/ "$HOME/.themes/"
-	install_dir="$HOME/.themes/"
-fi
-
-function settheme {
-echo "Setting Moka as desktop GTK theme..."
-gsettings set org.gnome.desktop.interface gtk-theme "Moka"
-gsettings set org.gnome.desktop.wm.preferences theme "Moka"
-echo "Done."
-}
-
-function set {
-echo "Installation complete!"
-read -p "Do you want to set Moka as desktop theme? (Y)es, (N)o : " INPUT
-case $INPUT in
-	[Yy]* ) settheme;;
-    [Nn]* );;
-    * ) echo; echo "Uh oh, invalid response. Please retry."; set;;
-esac
-}
-
-echo ''
-set
-echo "Exiting"
-exit 0
