@@ -24,7 +24,6 @@
 @import url("gtk-fallback.css");
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
-/* @import url("gtk-widgets-borders.css"); */
 
 /* Import Widget CSS */
 @import url("gtk-widgets/app-notifications.css");

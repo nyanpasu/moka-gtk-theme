@@ -10,11 +10,11 @@
 @define-color insensitive_text_color shade(@text_color, 2.0);
 
 /* Unfocused colors */
-@define-color unfocused_base_color shade(@base_color, 0.98);
-@define-color unfocused_bg_color shade(@bg_color, 0.98);
-@define-color unfocused_fg_color shade(@fg_color, 0.98);
+@define-color unfocused_base_color shade(@base_color, 1.1);
+@define-color unfocused_bg_color shade(@bg_color, 1.1);
+@define-color unfocused_fg_color shade(@fg_color, 1.1);
 @define-color unfocused_borders shade(@borders, 0.98);
-@define-color unfocused_text_color shade(@text_color, 2.1);
+@define-color unfocused_text_color shade(@text_color, 0.8);
 
 /* Active/Hover colors */
 @define-color hover_base_color shade(@base_color, 1.05);
@@ -120,8 +120,8 @@
 @define-color notebook_bg_color @bg_color;
 @define-color notebook_fg_color @fg_color;
 
-@define-color notebook_unfocused_bg_color shade(@notebook_bg_color, 0.98);
-@define-color notebook_unfocused_fg_color shade(@notebook_fg_color, 0.98);
+@define-color notebook_unfocused_bg_color shade(@notebook_bg_color, 1.5);
+@define-color notebook_unfocused_fg_color shade(@notebook_fg_color, 1.5);
 
 @define-color notebook_tab_gradient_color_a @gradient_color_a;
 @define-color notebook_tab_gradient_color_b @gradient_color_b;
@@ -133,7 +133,7 @@
 @define-color notebook_selected_tab_color @selected_bg_color;
 
 @define-color notebook_tab_active_bg_color @bg_color;
-@define-color notebook_tab_bg_color shade(@bg_color, 0.98);
+@define-color notebook_tab_bg_color shade(@bg_color, 1.5);
 @define-color notebook_tab_highlight shade(@theme_bg_color, 1.02);
 
 /***************
