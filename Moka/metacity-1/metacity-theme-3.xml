@@ -24,7 +24,7 @@
 	<distance name="bottom_height" value="0" />
 	<distance name="left_titlebar_edge" value="4" />
 	<distance name="right_titlebar_edge" value="4" />
-	<distance name="title_vertical_pad" value="0" />
+	<distance name="title_vertical_pad" value="3" />
 	<aspect_ratio name="button" value="1.0" />
 	<border name="title_border" left="4" right="4" top="0" bottom="0" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0" />
@@ -42,7 +42,7 @@
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
 	<distance name="right_titlebar_edge" value="0"/>
-	<distance name="title_vertical_pad" value="0"/> <!-- 
+	<distance name="title_vertical_pad" value="5"/> <!-- 
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons. -->

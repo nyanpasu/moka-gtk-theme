@@ -3,7 +3,7 @@
  ******************/
 VteTerminal {
     background-color: @panel_bg_color;
-    color: @fg_color;
+    color: @bg_color;
 }
 
 TerminalWindow GtkNotebook.notebook {
