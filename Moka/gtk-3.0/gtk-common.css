@@ -3,31 +3,35 @@
   *********************/
 
 /* Insensitive colors */
-@define-color insensitive_base_color shade(@base_color, 0.95);
-@define-color insensitive_bg_color shade(@bg_color, 0.95);
-@define-color insensitive_fg_color shade(@fg_color, 0.95);
-@define-color insensitive_borders shade(@borders, 0.95);
-@define-color insensitive_text_color shade(@text_color, 2.0);
+@define-color insensitive_base_color shade(@base_color, 0.98);
+@define-color insensitive_bg_color shade(@bg_color, 0.98);
+@define-color insensitive_fg_color shade(@fg_color, 0.98);
+@define-color insensitive_borders shade(@borders, 0.98);
+@define-color insensitive_text_color shade(@text_color, 0.98);
+@define-color insensitive_selection_color shade(@selection_color, 1.02);
 
 /* Unfocused colors */
-@define-color unfocused_base_color shade(@base_color, 1.1);
-@define-color unfocused_bg_color shade(@bg_color, 1.1);
-@define-color unfocused_fg_color shade(@fg_color, 1.1);
-@define-color unfocused_borders shade(@borders, 0.98);
-@define-color unfocused_text_color shade(@text_color, 0.8);
+@define-color unfocused_base_color shade(@base_color, 0.95);
+@define-color unfocused_bg_color shade(@bg_color, 0.95);
+@define-color unfocused_fg_color shade(@fg_color, 0.95);
+@define-color unfocused_borders shade(@borders, 0.95);
+@define-color unfocused_text_color shade(@text_color, 1.05);
+@define-color unfocused_selection_color shade(@selection_color, 1.05);
 
 /* Active/Hover colors */
 @define-color hover_base_color shade(@base_color, 1.05);
 @define-color hover_bg_color shade(@bg_color, 1.05);
 @define-color hover_fg_color shade(@fg_color, 1.05);
 @define-color hover_borders shade(@borders, 1.05);
-@define-color hover_text_color @text_color;
+@define-color hover_text_color shade(@text_color, 1.05);
+@define-color hover_selection_color shade(@selection_color, 1.05);
 
 @define-color active_base_color @hover_base_color;
 @define-color active_bg_color @hover_bg_color;
 @define-color active_fg_color @hover_fg_color;
 @define-color active_borders @selected_bg_color;
 @define-color active_text_color @text_color;
+@define-color active_selection_color @hover_selection_color;
 
 /* Selected color */
 @define-color selected_bg_color @selection_color;
@@ -59,8 +63,8 @@
 @define-color button_hover_gradient_color_a shade(@gradient_color_a, 1.04);
 @define-color button_hover_gradient_color_b shade(@gradient_color_b, 1.04);
 
-@define-color button_insensitive_gradient_color_a shade(@gradient_color_a, 0.95);
-@define-color button_insensitive_gradient_color_b shade(@gradient_color_b, 0.95);
+@define-color button_insensitive_gradient_color_a shade(@gradient_color_a, 1.1);
+@define-color button_insensitive_gradient_color_b shade(@gradient_color_b, 1.1);
 
 @define-color button_active_text @active_text_color;
 @define-color button_active_text_shadow alpha(@black, 0.4);
@@ -92,7 +96,7 @@
 @define-color toolbar_border_top shade(@borders, 0.9);
 @define-color toolbar_border_bottom shade(@borders, 1.1);
 
-@define-color toolbar_separator shade(@borders, 0.95);
+@define-color toolbar_separator shade(@borders, 1.1);
 
 @define-color primary_toolbar_button_text_shadow alpha(black, 0.1);
 
@@ -198,10 +202,23 @@
 @define-color progressbar_bg_color_a shade(@selected_bg_color, 1.1);
 @define-color progressbar_bg_color_b @selected_bg_color;
 
+@define-color insensitive_progressbar_bg_color_a shade(@progressbar_bg_color_a, 1.1);
+@define-color insensitive_progressbar_bg_color_b shade(@progressbar_bg_color_a, 1.1);
+
+@define-color unfocused_progressbar_bg_color_a shade(@progressbar_bg_color_a, 1.1);
+@define-color unfocused_progressbar_bg_color_b shade(@progressbar_bg_color_a, 1.1);
+
 /* Trough colors */
+@define-color trough_active_color @selected_bg_color;
+
 @define-color trough_bg_color_a shade(@gradient_color_b, 1.05);
 @define-color trough_bg_color_b shade(@gradient_color_a, 1.05);
-@define-color trough_active_color @selected_bg_color;
+
+@define-color insensitive_trough_bg_color_a shade(@trough_bg_color_a, 1.1);
+@define-color insensitive_trough_bg_color_b shade(@trough_bg_color_b, 1.1);
+
+@define-color unfocused_trough_bg_color_a shade(@trough_bg_color_a, 1.1);
+@define-color unfocused_trough_bg_color_b shade(@trough_bg_color_b, 1.1);
 
 /* Scale colors */
 @define-color scale_progress_fill_color @selected_bg_color;
@@ -293,7 +310,7 @@
  * WM colors *
  *************/
 @define-color wm_title @bg_color;
-@define-color wm_title_focused @base_color;
-@define-color wm_title_unfocused @unfocused_base_color;
+@define-color wm_title_focused @text_color;
+@define-color wm_title_unfocused @unfocused_text_color;
 @define-color wm_borders_focused @borders;
 @define-color wm_borders_unfocused @unfocused_borders;

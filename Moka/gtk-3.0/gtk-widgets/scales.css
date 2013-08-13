@@ -20,30 +20,62 @@
     /* background-image in -assets variant */
 }
 
-/* Positive color of horizontal scales */
+/* Horizontal scale colors */
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left {
+    background-color: transparent;
+    border-width: 1px;
     border-color: shade(@selected_bg_color, 0.8);
-    background-color: @selected_bg_color;
-    background-image: none;
+    box-shadow: inset 2px 2px @selected_bg_color,
+          inset -2px -2px @selected_bg_color;
 }
 
-/* Positive color of vertical scales */
+.menubar .menuitem .scale.highlight.left:insensitive,
+.scale.highlight.left:insensitive {
+    background-color: transparent;
+    border-width: 0px;
+    box-shadow: inset 2px 2px shade(@insensitive_bg_color, 0.8),
+          inset -2px -2px shade(@insensitive_bg_color, 0.8);
+}
+
+.menubar .menuitem.scale.highlight.left:backdrop,
+.scale.vertical.highlight.left:backdrop {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: @selected_bg_color;
+    box-shadow: inset 2px 2px @unfocused_selection_color,
+          inset -2px -2px @unfocused_selection_color;
+}
+
+/* Vertical scale colors */
 .menubar .menuitem.scale.highlight.bottom,
 .scale.vertical.highlight.bottom {
+    background-color: transparent;
+    border-width: 1px;
     border-color: shade(@selected_bg_color, 0.8);
-    background-color: @selected_bg_color;
-    background-image: none;
+    box-shadow: inset 2px 2px @selected_bg_color,
+          inset -2px -2px @selected_bg_color;
 }
 
-/* Insensitive color of scales */
-.scale.trough:insensitive,
-.scale.highlight.left:insensitive {
-    border-color: @insensitive_borders;
-    background-color: @insensitive_bg_color;
-    background-image: none;
+.menubar .menuitem .scale.highlight.bottom:insensitive,
+.scale.highlight.bottom:insensitive {
+    background-color: transparent;
+    border-width: 0px;
+    box-shadow: inset 2px 2px shade(@insensitive_bg_color, 0.8),
+          inset -2px -2px shade(@insensitive_bg_color, 0.8);
 }
 
+.menubar .menuitem.scale.highlight.bottom:backdrop,
+.scale.vertical.highlight.bottom:backdrop {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: @selected_bg_color;
+    box-shadow: inset 2px 2px @unfocused_selection_color,
+          inset -2px -2px @unfocused_selection_color;
+}
+
+
+/* Troughs */
 .scale.trough {
     margin: 6px 0;
 }
@@ -53,18 +85,28 @@
 }
 
 .scale.trough,
-.scale.trough.highlight,
-.scale.trough.vertical,
-.scale.trough:backdrop {
-    border-width: 1px;
-    border-style: solid;
+.scale.trough.vertical {
+    border-width: 0;
+    box-shadow: inset 1px 1px @borders,
+          inset -1px -1px @borders; 
 }
 
-.scale.trough,
-.scale.trough.vertical {
-    border-color: @borders;
+
+.scale.trough:insensitive,
+.scale.trough.vertical:insensitive {
+    border-width: 0;
+    box-shadow: inset 1px 1px @insensitive_borders,
+          inset -1px -1px @insensitive_borders; 
+}
+
+
+.scale.trough:backdrop,
+.scale.trough.vertical:backdrop {
+    border-width: 0;
+    box-shadow: inset 1px 1px @unfocused_borders,
+          inset -1px -1px @unfocused_borders; 
 }
 
 .scale.progressbar {
-    background-color: @selected_bg_color;
+    background-color: @base_color;
 }

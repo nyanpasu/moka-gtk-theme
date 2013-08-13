@@ -16,6 +16,13 @@
     background-image: url("assets/checkbox-unchecked-insensitive.png");
 }
 
+/* Unchecked Insensitive Unfocused */
+.check:insensitive:backdrop,
+.check row:selected:insensitive:backdrop,
+.check row:selected:focus:insensitive:backdrop {
+    background-image: url("assets/checkbox-unchecked-insensitive.png");
+}
+
 /* Unchecked Unfocused */
 .check:backdrop,
 .check row:selected:backdrop,
@@ -34,6 +41,13 @@
 .check:active:insensitive,
 .check row:selected:active:insensitive,
 .check row:selected:focus:active:insensitive {
+    background-image: url("assets/checkbox-checked-insensitive.png");
+}
+
+/* Checked Insensitive Unfocused */
+.check:active:insensitive:backdrop,
+.check row:selected:active:insensitive:backdrop,
+.check row:selected:focus:active:insensitive:backdrop {
     background-image: url("assets/checkbox-checked-insensitive.png");
 }
 
@@ -181,14 +195,20 @@
 
 .pane-separator:hover {
     background-image: url("assets/pane-separator-grip-prelight.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pane-separator.vertical {
     background-image: url("assets/pane-separator-grip-vertical.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pane-separator.vertical:hover {
     background-image: url("assets/pane-separator-grip-vertical-prelight.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*********************

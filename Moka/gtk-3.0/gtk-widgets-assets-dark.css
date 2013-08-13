@@ -76,6 +76,13 @@
     background-image: url("assets/radio-unchecked-insensitive-dark.png");
 }
 
+/* Unchecked Insensitive Unfocused */
+.check:insensitive:backdrop,
+.check row:selected:insensitive:backdrop,
+.check row:selected:focus:insensitive:backdrop {
+    background-image: url("assets/checkbox-unchecked-insensitive-dark.png");
+}
+
 /* Unchecked Unfocused */
 .radio:backdrop,
 .radio row:selected:backdrop,
@@ -95,6 +102,13 @@
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive {
     background-image: url("assets/radio-checked-insensitive-dark.png");
+}
+
+/* Checked Insensitive Unfocused */
+.check:insensitive:backdrop,
+.check row:selected:insensitive:backdrop,
+.check row:selected:focus:insensitive:backdrop {
+    background-image: url("assets/checkbox-checked-insensitive-dark.png");
 }
 
 /* Checked Unfocused */

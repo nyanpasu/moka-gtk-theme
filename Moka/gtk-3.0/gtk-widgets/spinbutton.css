@@ -40,7 +40,7 @@
     border-style: solid;
     border-color: @borders;
     border-radius: 4px;
-    background-color: @active_bg_color;
+    background-color: @bg_color;
     background-image: none;
     color: @fg_color;
     box-shadow: none;
