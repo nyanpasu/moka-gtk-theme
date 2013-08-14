@@ -28,7 +28,7 @@ NOTE: Moka uses the Adwaita engine and thus depends on "gnome-themes-standard".
 
 To uninstall, run the uninstall script to remove the locally installed icons. 
 
-    ./INSTALL
+    ./UNINSTALL
 
 Running as root will remove the icon set, if installed, from /usr/share/icons.
     
