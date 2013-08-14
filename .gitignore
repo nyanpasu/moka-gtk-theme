@@ -9,4 +9,7 @@ debian/moka-gtk-theme.prerm.debhelper
 debian/moka-gtk-theme.substvars
 debian/moka-gtk-theme
 
+create-zip.sh
+quick.sh
+
 moka-gtk-theme.zip
