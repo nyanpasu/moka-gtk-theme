@@ -38,6 +38,9 @@
 
 .button:active {
     border-color: @active_borders;
+    box-shadow: inset 1px 2px alpha(@selected_bg_color, 0.1),
+        inset 1px 1px alpha(@selected_bg_color, 0.1),
+        inset -1px -1px alpha(@selected_bg_color, 0.2); 
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_color_b,
                                   @button_active_gradient_color_a
