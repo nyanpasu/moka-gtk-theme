@@ -416,3 +416,47 @@
 .cursor-handle.top {
     background-image: url("assets/scale-slider-down-backdrop-dark.png");
 }
+
+/************
+ * Switches *
+ ************/
+
+GtkSwitch.slider {
+    background-image: url("assets/handle-dark.png");
+}
+ 
+GtkSwitch.slider:active {
+    background-image: url("assets/handle-on-dark.png");
+}
+
+GtkSwitch.slider:insensitive {
+    background-image: url("assets/handle-insensitive-dark.png");
+}
+
+GtkSwitch.slider:backdrop {
+    background-image: url("assets/handle-backdrop-dark.png");
+}
+
+GtkSwitch.trough {
+    background-image: url("assets/switch-off-dark.png");
+}
+
+GtkSwitch.trough:insensitive {
+    background-image: url("assets/switch-off-insensitive-dark.png");
+}
+
+GtkSwitch.trough:backdrop {
+    background-image: url("assets/switch-off-backdrop-dark.png");
+}
+
+GtkSwitch.trough:active {
+    background-image: url("assets/switch-on-dark.png");
+}
+
+GtkSwitch.trough:active:insensitive {
+    background-image: url("assets/switch-on-insensitive-dark.png");
+}
+
+GtkSwitch.trough:active:backdrop {
+    background-image: url("assets/switch-on-backdrop-dark.png");
+}
