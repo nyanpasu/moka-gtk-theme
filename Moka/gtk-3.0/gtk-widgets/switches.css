@@ -3,73 +3,51 @@
  *************/
 
 GtkSwitch {
-    font: bold condensed 10;
+    -GtkSwitch-slider-width: 24;
+    -GtkSwitch-slider-height: 24;
+    padding: 1px 1px 1px 1px;
+}
+
+GtkSwitch:active {
+    padding: 1px 1px 1px 1px;
 }
 
 GtkSwitch.slider {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 16px;    
-    border-color: @borders;
-    background-color: @bg_color;
-    background-image: none;
+    background-size: 24px 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-GtkSwitch.slider:backdrop {
-    background-color: @unfocused_base_color;
-    border-color: @unfocused_borders;
-    color: @unfocused_base_color;
-}
-
-GtkSwitch.slider:active {    
-    border-color: shade(@selected_bg_color, 0.8);
-}
-
-GtkSwitch.slider:insensitive {
-    border-color: @insensitive_borders;
-    background-color: @insensitive_bg_color;
-}
-
+GtkSwitch.slider,
+GtkSwitch.slider:backdrop,
+GtkSwitch.slider:active,
+GtkSwitch.slider:active:backdrop,
+GtkSwitch.slider:active:insensitive,
+GtkSwitch.slider:insensitive,
 GtkSwitch.slider:insensitive:backdrop {
-    border-color: @insensitive_borders;
-    background-color: @insensitive_bg_color;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 GtkSwitch.trough {
-    border-radius: 16px;
-    border-color: @borders;
-    background-color: shade(@bg_color, 0.95);
-    background-image: none;
-    color: @fg_color;
+    background-size: 48px 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-GtkSwitch.trough:backdrop {
-    color: @unfocused_fg_color;
-}
-
-GtkSwitch.trough:active {
-    border-width: 1px;
-    border-color: shade(@selection_color, 0.8);
-    background-color:@selected_bg_color;
-    color: @base_color;
-    box-shadow: none;
-}
-
-GtkSwitch.trough:active:backdrop {
-    border-width: 1px;
-    border-color: shade(@unfocused_selection_color, 0.8);
-    background-color: @unfocused_selection_color;
-    color: @unfocused_base_color;
-    box-shadow: none;
-}
-
-GtkSwitch.trough:insensitive {
-    border-color: @insensitive_borders;
-    background-color: shade(@bg_color, 0.9);
-    background-image: none;
-    color: mix(@fg_color, @bg_color, 0.5);
-}
-
+GtkSwitch.trough,
+GtkSwitch.trough:backdrop,
+GtkSwitch.trough:active,
+GtkSwitch.trough:active:backdrop,
+GtkSwitch.trough:active:insensitive,
+GtkSwitch.trough:insensitive,
 GtkSwitch.trough:insensitive:backdrop {
-    color: @insensitive_borders;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: none;
+    text-shadow: none;
 }

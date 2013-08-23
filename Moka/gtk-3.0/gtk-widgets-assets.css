@@ -1,3 +1,22 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+
 /***************
  * Check Boxes *
  ***************/
@@ -402,4 +421,49 @@
 
 .cursor-handle.top {
     background-image: url("assets/scale-slider-down-backdrop.png");
+}
+
+
+/************
+ * Switches *
+ ************/
+
+GtkSwitch.slider {
+    background-image: url("assets/handle.png");
+}
+ 
+GtkSwitch.slider:active {
+    background-image: url("assets/handle-on.png");
+}
+
+GtkSwitch.slider:insensitive {
+    background-image: url("assets/handle-insensitive.png");
+}
+
+GtkSwitch.slider:backdrop {
+    background-image: url("assets/handle-backdrop.png");
+}
+
+GtkSwitch.trough {
+    background-image: url("assets/switch-off.png");
+}
+
+GtkSwitch.trough:insensitive {
+    background-image: url("assets/switch-off-insensitive.png");
+}
+
+GtkSwitch.trough:backdrop {
+    background-image: url("assets/switch-off-backdrop.png");
+}
+
+GtkSwitch.trough:active {
+    background-image: url("assets/switch-on.png");
+}
+
+GtkSwitch.trough:active:insensitive {
+    background-image: url("assets/switch-on-insensitive.png");
+}
+
+GtkSwitch.trough:active:backdrop {
+    background-image: url("assets/switch-on-backdrop.png");
 }

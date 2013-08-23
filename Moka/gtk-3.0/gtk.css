@@ -1,6 +1,24 @@
-/***************
- * Main colors *
-  **************/
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+/**********
+ * Colors *
+ **********/
 
 /* Base colors */
 @define-color base_color #fefefe; /* Base color */
@@ -15,15 +33,25 @@
 @define-color view_bg_color #ffffff; /* View background */
 @define-color inactive_frame_color #cccccc; /* Inactive frame color */
 
+
 /***********
  * Imports *
  ***********/
 
 /* Import Main CSS */
 @import url("gtk-common.css");
+@import url("gtk-widgets-assets.css");
 @import url("gtk-fallback.css");
 @import url("gtk-widgets.css");
-@import url("gtk-widgets-assets.css");
+
+/* Import Specific CSS */
+@import url("apps/fallback-panel.css");
+@import url("apps/gedit.css");
+@import url("apps/pantheon-applications.css");
+@import url("apps/gnome-applications.css");
+@import url("apps/gnome-terminal.css");
+@import url("apps/nautilus.css");
+@import url("apps/unity.css");
 
 /* Import Widget CSS */
 @import url("gtk-widgets/app-notifications.css");
@@ -65,11 +93,3 @@
 @import url("gtk-widgets/touch-text-selections.css");
 @import url("gtk-widgets/views.css");
 @import url("gtk-widgets/visual-effects.css");
-
-/* Import Application-Specific CSS */
-@import url("apps/fallback-panel.css");
-@import url("apps/gedit.css");
-@import url("apps/gnome-applications.css");
-@import url("apps/gnome-terminal.css");
-@import url("apps/nautilus.css");
-@import url("apps/unity.css");

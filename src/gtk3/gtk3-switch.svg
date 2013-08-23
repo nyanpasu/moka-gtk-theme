@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="90.000000"
+   inkscape:export-xdpi="90.000000"
+   width="600"
+   height="300"
+   id="svg11300"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="gtk3-switch.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"
+   style="display:inline;enable-background:new"
+   inkscape:export-filename="/home/sam/moka-template.png">
+  <title
+     id="title3004">Moka Icon Theme Template</title>
+  <sodipodi:namedview
+     stroke="#ef2929"
+     fill="#f57900"
+     id="base"
+     pagecolor="#474747"
+     bordercolor="#666666"
+     borderopacity="0.25490196"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="210.63552"
+     inkscape:cy="4.7603968"
+     inkscape:current-layer="g4865"
+     showgrid="false"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     width="400px"
+     height="300px"
+     inkscape:snap-nodes="true"
+     inkscape:snap-bbox="true"
+     gridtolerance="10000"
+     inkscape:object-nodes="true"
+     inkscape:snap-grids="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       spacingy="1px"
+       spacingx="1px"
+       id="grid5883"
+       type="xygrid"
+       enabled="true"
+       visible="true"
+       empspacing="4"
+       snapvisiblegridlinesonly="true" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid11592"
+       empspacing="2"
+       visible="true"
+       enabled="false"
+       spacingx="0.5px"
+       spacingy="0.5px"
+       color="#ff0000"
+       opacity="0.1254902"
+       empcolor="#ff0000"
+       empopacity="0.25098039"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient4857">
+      <stop
+         style="stop-color:#e5e5e5;stop-opacity:1;"
+         offset="0"
+         id="stop4859" />
+      <stop
+         style="stop-color:#c2c2c2;stop-opacity:1;"
+         offset="1"
+         id="stop4861" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4838">
+      <stop
+         id="stop4840"
+         offset="0"
+         style="stop-color:#a172d2;stop-opacity:1;" />
+      <stop
+         id="stop4842"
+         offset="1"
+         style="stop-color:#875fb1;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4606">
+      <stop
+         id="stop4608"
+         offset="0"
+         style="stop-color:#cbcbcb;stop-opacity:1;" />
+      <stop
+         id="stop4610"
+         offset="1"
+         style="stop-color:#a8a8a8;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4514">
+      <stop
+         style="stop-color:#a172d2;stop-opacity:1;"
+         offset="0"
+         id="stop4516" />
+      <stop
+         style="stop-color:#875fb1;stop-opacity:1;"
+         offset="1"
+         id="stop4518" />
+    </linearGradient>
+    <linearGradient
+       id="shadowGradient">
+      <stop
+         id="stop7201-6-7"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+      <stop
+         id="stop7203-45-1"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0.49803922;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4514"
+       id="linearGradient4521"
+       x1="44"
+       y1="280"
+       x2="44"
+       y2="256"
+       gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4527">
+      <rect
+         style="color:#000000;fill:url(#linearGradient4531);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4529"
+         y="258"
+         x="22"
+         ry="10"
+         rx="10"
+         height="20"
+         width="44" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4514"
+       id="linearGradient4531"
+       gradientUnits="userSpaceOnUse"
+       x1="44"
+       y1="280"
+       x2="44"
+       y2="256" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient4561"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient4627"
+       gradientUnits="userSpaceOnUse"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4857"
+       id="linearGradient4635"
+       x1="44"
+       y1="200"
+       x2="44"
+       y2="176"
+       gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4643">
+      <rect
+         ry="10"
+         rx="10"
+         y="258"
+         x="42"
+         height="20"
+         width="24"
+         id="rect4645"
+         style="color:#000000;fill:#f7f7f7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient4811"
+       gradientUnits="userSpaceOnUse"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4857"
+       id="linearGradient4818"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-156,0)"
+       x1="44"
+       y1="200"
+       x2="44"
+       y2="176" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4606"
+       id="linearGradient4831"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-156,0)"
+       x1="44"
+       y1="280"
+       x2="44"
+       y2="256" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient4833"
+       gradientUnits="userSpaceOnUse"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient4949"
+       x1="100.35"
+       y1="261"
+       x2="100.35"
+       y2="275"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95238095,0,0,1,4.4285714,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient4959"
+       gradientUnits="userSpaceOnUse"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient4984"
+       gradientUnits="userSpaceOnUse"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient5010"
+       gradientUnits="userSpaceOnUse"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#shadowGradient"
+       id="linearGradient5016"
+       gradientUnits="userSpaceOnUse"
+       x1="32"
+       y1="262.85715"
+       x2="32"
+       y2="274" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4683">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.3;color:#bebebe;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4685"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4590"
+       id="linearGradient4677"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)" />
+    <linearGradient
+       id="linearGradient4590">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4592" />
+      <stop
+         style="stop-color:#eeeeee;stop-opacity:1;"
+         offset="1"
+         id="stop4594" />
+    </linearGradient>
+    <linearGradient
+       y2="272"
+       x2="366"
+       y1="272"
+       x1="350"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3838"
+       xlink:href="#linearGradient4590"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4590"
+       id="linearGradient3888"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4683-2">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.3;color:#bebebe;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4685-9"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4857"
+       id="linearGradient4703"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4857"
+       id="linearGradient4709"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4590"
+       id="linearGradient4713"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4606"
+       id="linearGradient4721"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4514"
+       id="linearGradient4741"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4590"
+       id="linearGradient4743"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,1,-1,0,630,-86)"
+       x1="350"
+       y1="272"
+       x2="366"
+       y2="272" />
+  </defs>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sam Hewitt</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source />
+        <cc:license
+           rdf:resource="" />
+        <dc:title>Moka Icon Theme Template</dc:title>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <dc:date />
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier />
+        <dc:relation />
+        <dc:language />
+        <dc:coverage />
+        <dc:description />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     inkscape:label="Switch On"
+     id="layer1">
+    <g
+       style="display:none"
+       inkscape:label="Baseplate switch-on"
+       id="layer7"
+       inkscape:groupmode="layer">
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="15.006836"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         inkscape:label="context"
+         id="context"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           y="26.115234"
+           x="15.006836"
+           sodipodi:role="line"
+           id="tspan3933">assets</tspan></text>
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="126.48828"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         sodipodi:linespacing="125%"
+         inkscape:label="icon-name"
+         id="icon-name"><tspan
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           y="26.115234"
+           x="126.48828"
+           sodipodi:role="line"
+           id="tspan3937">switch-on</tspan></text>
+      <rect
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect16x16"
+         width="48"
+         height="24"
+         x="20"
+         y="256"
+         inkscape:label="16x16" />
+    </g>
+    <g
+       style="display:none"
+       inkscape:label="Baseplate switch-on-insensitive"
+       id="g3386"
+       inkscape:groupmode="layer">
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="15.006836"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         inkscape:label="context"
+         id="text3388"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           y="26.115234"
+           x="15.006836"
+           sodipodi:role="line"
+           id="tspan3390">assets</tspan></text>
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="126.48828"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         sodipodi:linespacing="125%"
+         inkscape:label="icon-name"
+         id="text3392"><tspan
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           y="26.115234"
+           x="126.48828"
+           sodipodi:role="line"
+           id="tspan3394">switch-on-insensitive</tspan></text>
+      <rect
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3396"
+         width="48"
+         height="24"
+         x="20"
+         y="216"
+         inkscape:label="16x16" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g3439"
+       inkscape:label="Baseplate switch-on-backdrop"
+       style="display:none">
+      <text
+         id="text3441"
+         inkscape:label="context"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="15.006836"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3443"
+           sodipodi:role="line"
+           x="15.006836"
+           y="26.115234"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">assets</tspan></text>
+      <text
+         id="text3445"
+         inkscape:label="icon-name"
+         sodipodi:linespacing="125%"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         x="126.48828"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3447"
+           sodipodi:role="line"
+           x="126.48828"
+           y="26.115234"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">switch-on-backdrop</tspan></text>
+      <rect
+         inkscape:label="16x16"
+         y="176"
+         x="20"
+         height="24"
+         width="48"
+         id="rect3449"
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="Background"
+       style="display:inline">
+      <rect
+         width="44"
+         height="20"
+         rx="10"
+         ry="10"
+         x="22"
+         y="258"
+         id="rect6132-8-2-8-0-0-0-10-0-6-0-6-2-0-5-7-3-3-7-8-4-0-2-5-3-6-7-8"
+         style="display:inline;enable-background:accumulate;color:#000000;fill:url(#linearGradient4521);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994000000003;marker:none;visibility:visible;overflow:visible" />
+      <rect
+         style="display:inline;enable-background:accumulate;color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;marker:none;visibility:visible;overflow:visible;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;opacity:0.20000000000000001"
+         id="rect4523"
+         y="258"
+         x="22"
+         ry="10"
+         rx="10"
+         height="20"
+         width="44"
+         clip-path="url(#clipPath4527)" />
+      <g
+         id="g4575">
+        <path
+           transform="matrix(1.1666667,0,0,1.1666667,-5.3333344,-44.666675)"
+           d="m 38,268 a 6,6 0 1 1 -12,0 6,6 0 1 1 12,0 z"
+           sodipodi:ry="6"
+           sodipodi:rx="6"
+           sodipodi:cy="268"
+           sodipodi:cx="32"
+           id="path4548"
+           style="opacity:0.20000000000000001;color:#000000;fill:url(#linearGradient4561);fill-opacity:1.0;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+        <rect
+           y="263"
+           x="31"
+           height="10"
+           width="2"
+           id="rect4550"
+           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <rect
+           style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.2"
+           id="rect4573"
+           width="2"
+           height="1"
+           x="31"
+           y="273" />
+      </g>
+      <rect
+         style="color:#000000;fill:#dddddd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994000000003;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:1"
+         id="rect4590"
+         y="218"
+         x="22"
+         ry="10"
+         rx="10"
+         height="20"
+         width="44" />
+      <rect
+         clip-path="url(#clipPath4527)"
+         width="44"
+         height="20"
+         rx="10"
+         ry="10"
+         x="22"
+         y="258"
+         id="rect4592"
+         style="opacity:0.1;color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="translate(-2e-7,-40)" />
+      <path
+         transform="matrix(1.1666667,0,0,1.1666667,-5.3333346,-84.666675)"
+         d="m 38,268 a 6,6 0 1 1 -12,0 6,6 0 1 1 12,0 z"
+         sodipodi:ry="6"
+         sodipodi:rx="6"
+         sodipodi:cy="268"
+         sodipodi:cx="32"
+         id="path4596"
+         style="opacity:0.14999999999999999;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <rect
+         y="223"
+         x="31"
+         height="10"
+         width="2"
+         id="rect4598"
+         style="color:#000000;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:1" />
+      <rect
+         width="44"
+         height="20"
+         rx="10"
+         ry="10"
+         x="22"
+         y="178"
+         id="rect4617"
+         style="opacity:1;color:#000000;fill:url(#linearGradient4635);fill-opacity:1.0;fill-rule:nonzero;stroke:none;stroke-width:0.99999994000000003;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="translate(-2e-7,-79.99999)"
+         style="opacity:0.1;color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4619"
+         y="258"
+         x="22"
+         ry="10"
+         rx="10"
+         height="20"
+         width="44"
+         clip-path="url(#clipPath4527)" />
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.1;color:#000000;fill:url(#linearGradient4627);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4621"
+         sodipodi:cx="32"
+         sodipodi:cy="268"
+         sodipodi:rx="6"
+         sodipodi:ry="6"
+         d="m 38,268 a 6,6 0 1 1 -12,0 6,6 0 1 1 12,0 z"
+         transform="matrix(1.1666667,0,0,1.1666667,-5.3333346,-124.66668)" />
+      <rect
+         style="color:#000000;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4623"
+         width="2"
+         height="10"
+         x="31"
+         y="183" />
+      <rect
+         y="193"
+         x="31"
+         height="1"
+         width="2"
+         id="rect4625"
+         style="opacity:0.1;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer6"
+       inkscape:label="Symbols"
+       style="display:inline" />
+  </g>
+  <g
+     id="g3697"
+     inkscape:label="Switch Off"
+     inkscape:groupmode="layer"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="g3699"
+       inkscape:label="Baseplate switch-on"
+       style="display:none">
+      <text
+         id="text3701"
+         inkscape:label="context"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="15.006836"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3703"
+           sodipodi:role="line"
+           x="15.006836"
+           y="26.115234"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">assets</tspan></text>
+      <text
+         id="text3705"
+         inkscape:label="icon-name"
+         sodipodi:linespacing="125%"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         x="126.48828"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3707"
+           sodipodi:role="line"
+           x="126.48828"
+           y="26.115234"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">switch-off</tspan></text>
+      <rect
+         inkscape:label="16x16"
+         y="256"
+         x="88"
+         height="24"
+         width="48"
+         id="rect3709"
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g3711"
+       inkscape:label="Baseplate switch-off-insensitive"
+       style="display:none">
+      <text
+         id="text3713"
+         inkscape:label="context"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="15.006836"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3715"
+           sodipodi:role="line"
+           x="15.006836"
+           y="26.115234"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">assets</tspan></text>
+      <text
+         id="text3717"
+         inkscape:label="icon-name"
+         sodipodi:linespacing="125%"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         x="126.48828"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan3719"
+           sodipodi:role="line"
+           x="126.48828"
+           y="26.115234"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">switch-off-insensitive</tspan></text>
+      <rect
+         inkscape:label="16x16"
+         y="216"
+         x="88"
+         height="24"
+         width="48"
+         id="rect3721"
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       style="display:none"
+       inkscape:label="Baseplate switch-off-backdrop"
+       id="g3723"
+       inkscape:groupmode="layer">
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="15.006836"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         inkscape:label="context"
+         id="text3725"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           y="26.115234"
+           x="15.006836"
+           sodipodi:role="line"
+           id="tspan3727">assets</tspan></text>
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="126.48828"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         sodipodi:linespacing="125%"
+         inkscape:label="icon-name"
+         id="text3729"><tspan
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           y="26.115234"
+           x="126.48828"
+           sodipodi:role="line"
+           id="tspan3731">switch-off-backdrop</tspan></text>
+      <rect
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3733"
+         width="48"
+         height="24"
+         x="88"
+         y="176"
+         inkscape:label="16x16" />
+    </g>
+    <g
+       style="display:inline"
+       inkscape:label="Background"
+       id="g3735"
+       inkscape:groupmode="layer">
+      <rect
+         style="color:#000000;fill:url(#linearGradient4831);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4647"
+         y="258"
+         x="-134"
+         ry="10"
+         rx="10"
+         height="20"
+         width="44"
+         transform="scale(-1,1)" />
+      <rect
+         clip-path="url(#clipPath4527)"
+         width="44"
+         height="20"
+         rx="10"
+         ry="10"
+         x="22"
+         y="258"
+         id="rect4649"
+         style="opacity:0.2;color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="matrix(-1,0,0,1,156,0)" />
+      <path
+         transform="matrix(-1.1666667,0,0,1.1666667,161.33333,-44.666675)"
+         d="m 38,268 a 6,6 0 1 1 -12,0 6,6 0 1 1 12,0 z"
+         sodipodi:ry="6"
+         sodipodi:rx="6"
+         sodipodi:cy="268"
+         sodipodi:cx="32"
+         id="path4653"
+         style="opacity:0.2;color:#000000;fill:url(#linearGradient4833);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         id="path4855"
+         d="M 121.15625,264.75 119.75,266.15625 122.59375,269 119.75,271.84375 121.15625,273.25 124,270.40625 126.84375,273.25 128.25,271.84375 125.40625,269 128.25,266.15625 126.84375,264.75 124,267.59375 121.15625,264.75 z"
+         style="opacity:0.2;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="M 121.15625,263.75 119.75,265.15625 122.59375,268 119.75,270.84375 121.15625,272.25 124,269.40625 126.84375,272.25 128.25,270.84375 125.40625,268 128.25,265.15625 126.84375,263.75 124,266.59375 121.15625,263.75 z"
+         id="rect4655"
+         inkscape:connector-curvature="0" />
+      <rect
+         width="44"
+         height="20"
+         rx="10"
+         ry="10"
+         x="-134"
+         y="218"
+         id="rect4659"
+         style="color:#000000;fill:#dddddd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="scale(-1,1)" />
+      <rect
+         transform="matrix(-1,0,0,1,156,-40)"
+         style="opacity:0.1;color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4661"
+         y="258"
+         x="22"
+         ry="10"
+         rx="10"
+         height="20"
+         width="44"
+         clip-path="url(#clipPath4527)" />
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.15;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4663"
+         sodipodi:cx="32"
+         sodipodi:cy="268"
+         sodipodi:rx="6"
+         sodipodi:ry="6"
+         d="m 38,268 a 6,6 0 1 1 -12,0 6,6 0 1 1 12,0 z"
+         transform="matrix(-1.1666667,0,0,1.1666667,161.33333,-84.666675)" />
+      <rect
+         style="color:#000000;fill:url(#linearGradient4818);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4669"
+         y="178"
+         x="-134"
+         ry="10"
+         rx="10"
+         height="20"
+         width="44"
+         transform="scale(-1,1)" />
+      <rect
+         clip-path="url(#clipPath4527)"
+         width="44"
+         height="20"
+         rx="10"
+         ry="10"
+         x="22"
+         y="258"
+         id="rect4671"
+         style="opacity:0.1;color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="matrix(-1,0,0,1,156,-79.99999)" />
+      <path
+         transform="matrix(-1.1666667,0,0,1.1666667,161.33333,-124.66668)"
+         d="m 38,268 a 6,6 0 1 1 -12,0 6,6 0 1 1 12,0 z"
+         sodipodi:ry="6"
+         sodipodi:rx="6"
+         sodipodi:cy="268"
+         sodipodi:cx="32"
+         id="path4673"
+         style="opacity:0.1;color:#000000;fill:url(#linearGradient4811);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         id="path4851"
+         d="M 121.15625,184.75 119.75,186.15625 122.59375,189 119.75,191.84375 121.15625,193.25 124,190.40625 126.84375,193.25 128.25,191.84375 125.40625,189 128.25,186.15625 126.84375,184.75 124,187.59375 121.15625,184.75 z"
+         style="opacity:0.1;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="M 121.15625,183.75 119.75,185.15625 122.59375,188 119.75,190.84375 121.15625,192.25 124,189.40625 126.84375,192.25 128.25,190.84375 125.40625,188 128.25,185.15625 126.84375,183.75 124,186.59375 121.15625,183.75 z"
+         id="path4849" />
+      <path
+         id="path4847"
+         d="M 121.15625,223.75 119.75,225.15625 122.59375,228 119.75,230.84375 121.15625,232.25 124,229.40625 126.84375,232.25 128.25,230.84375 125.40625,228 128.25,225.15625 126.84375,223.75 124,226.59375 121.15625,223.75 z"
+         style="color:#000000;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="display:inline"
+       inkscape:label="Symbols"
+       id="g3737"
+       inkscape:groupmode="layer" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     inkscape:label="Switch Handle"
+     id="g4863">
+    <g
+       style="display:none"
+       inkscape:label="Baseplate handle"
+       id="g4865"
+       inkscape:groupmode="layer">
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="15.006836"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         inkscape:label="context"
+         id="text4867"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           y="26.115234"
+           x="15.006836"
+           sodipodi:role="line"
+           id="tspan4869">assets</tspan></text>
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="126.48828"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         sodipodi:linespacing="125%"
+         inkscape:label="icon-name"
+         id="text4871"><tspan
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           y="26.115234"
+           x="126.48828"
+           sodipodi:role="line"
+           id="tspan4873">handle</tspan></text>
+      <rect
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4875"
+         width="24"
+         height="24"
+         x="156"
+         y="256"
+         inkscape:label="16x16" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g4723"
+       inkscape:label="Baseplate handle-on"
+       style="display:none">
+      <text
+         id="text4725"
+         inkscape:label="context"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="15.006836"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan4727"
+           sodipodi:role="line"
+           x="15.006836"
+           y="26.115234"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">assets</tspan></text>
+      <text
+         id="text4729"
+         inkscape:label="icon-name"
+         sodipodi:linespacing="125%"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         x="126.48828"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan4731"
+           sodipodi:role="line"
+           x="126.48828"
+           y="26.115234"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">handle-on</tspan></text>
+      <rect
+         inkscape:label="16x16"
+         y="256"
+         x="196"
+         height="24"
+         width="24"
+         id="rect4733"
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       style="display:none"
+       inkscape:label="Baseplate handle-insensitive"
+       id="g4877"
+       inkscape:groupmode="layer">
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="15.006836"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         inkscape:label="context"
+         id="text4879"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           y="26.115234"
+           x="15.006836"
+           sodipodi:role="line"
+           id="tspan4881">assets</tspan></text>
+      <text
+         y="26.115234"
+         xml:space="preserve"
+         x="126.48828"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         sodipodi:linespacing="125%"
+         inkscape:label="icon-name"
+         id="text4883"><tspan
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+           y="26.115234"
+           x="126.48828"
+           sodipodi:role="line"
+           id="tspan4885">handle-insensitive</tspan></text>
+      <rect
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4887"
+         width="24"
+         height="24"
+         x="156"
+         y="216"
+         inkscape:label="16x16" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g4889"
+       inkscape:label="Baseplate handle-backdrop"
+       style="display:none">
+      <text
+         id="text4891"
+         inkscape:label="context"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="15.006836"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan4893"
+           sodipodi:role="line"
+           x="15.006836"
+           y="26.115234"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">assets</tspan></text>
+      <text
+         id="text4895"
+         inkscape:label="icon-name"
+         sodipodi:linespacing="125%"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold"
+         x="126.48828"
+         xml:space="preserve"
+         y="26.115234"><tspan
+           id="tspan4897"
+           sodipodi:role="line"
+           x="126.48828"
+           y="26.115234"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans Bold">handle-backdrop</tspan></text>
+      <rect
+         inkscape:label="16x16"
+         y="176"
+         x="156"
+         height="24"
+         width="24"
+         id="rect4899"
+         style="fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g4901"
+       inkscape:label="Background"
+       style="display:inline">
+      <path
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         sodipodi:ry="7"
+         sodipodi:rx="7"
+         sodipodi:cy="272"
+         sodipodi:cx="358"
+         id="path4700"
+         style="color:#bebebe;fill:#dddddd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc"
+         transform="matrix(1.4285714,0,0,1.4285714,-343.42856,-160.57142)" />
+      <path
+         clip-path="url(#clipPath4683-2)"
+         sodipodi:type="arc"
+         style="opacity:0.1;color:#bebebe;fill:none;stroke:#000000;stroke-width:1.72993207;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4702"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         transform="matrix(1.4285624,0,0,1.4302915,-343.41347,-161.03929)" />
+      <path
+         transform="matrix(1.2857143,0,0,1.2857143,-292.28572,-121.71429)"
+         sodipodi:type="arc"
+         style="color:#bebebe;fill:#dddddd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4692"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g4931"
+       inkscape:label="Symbols"
+       style="display:inline">
+      <path
+         transform="matrix(1.4285714,0,0,-1.4285714,-303.42856,656.57142)"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         sodipodi:ry="7"
+         sodipodi:rx="7"
+         sodipodi:cy="272"
+         sodipodi:cx="358"
+         id="path4735"
+         style="color:#bebebe;fill:url(#linearGradient4741);fill-opacity:1.0;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:type="arc"
+         style="color:#bebebe;fill:url(#linearGradient4721);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4719"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         transform="matrix(1.4285714,0,0,-1.4285714,-343.42856,656.57142)" />
+      <path
+         transform="matrix(-1.4285714,0,0,-1.4285714,679.42856,576.57142)"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         sodipodi:ry="7"
+         sodipodi:rx="7"
+         sodipodi:cy="272"
+         sodipodi:cx="358"
+         id="path4707"
+         style="color:#bebebe;fill:url(#linearGradient4709);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.4267509,0,0,1.4304109,-342.76408,-201.05889)"
+         clip-path="url(#clipPath4683)"
+         sodipodi:type="arc"
+         style="opacity:0.1;color:#bebebe;fill:none;stroke:#000000;stroke-width:1.72993207000000004;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4699"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z" />
+      <path
+         sodipodi:type="arc"
+         style="color:#bebebe;fill:url(#linearGradient4703);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4701"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         transform="matrix(-1.2857143,0,0,-1.2857143,628.28572,537.71429)" />
+      <path
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         sodipodi:ry="7"
+         sodipodi:rx="7"
+         sodipodi:cy="272"
+         sodipodi:cx="358"
+         id="path4679"
+         style="opacity:0.2;color:#bebebe;fill:none;stroke:#000000;stroke-width:1.72993207000000004;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc"
+         clip-path="url(#clipPath4683)"
+         transform="matrix(1.4267509,0,0,1.4304109,-342.76408,-121.05889)" />
+      <path
+         transform="matrix(1.2857143,0,0,1.2857143,-292.28572,-81.71429)"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         sodipodi:ry="7"
+         sodipodi:rx="7"
+         sodipodi:cy="272"
+         sodipodi:cx="358"
+         id="path3886"
+         style="color:#bebebe;fill:url(#linearGradient4713);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.4267509,0,0,1.4304109,-302.76408,-121.05889)"
+         clip-path="url(#clipPath4683)"
+         sodipodi:type="arc"
+         style="opacity:0.2;color:#bebebe;fill:none;stroke:#000000;stroke-width:1.72993207;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4737"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z" />
+      <path
+         sodipodi:type="arc"
+         style="color:#bebebe;fill:url(#linearGradient4743);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4739"
+         sodipodi:cx="358"
+         sodipodi:cy="272"
+         sodipodi:rx="7"
+         sodipodi:ry="7"
+         d="m 365,272 a 7,7 0 1 1 -14,0 7,7 0 1 1 14,0 z"
+         transform="matrix(1.2857143,0,0,1.2857143,-252.28572,-81.71429)" />
+    </g>
+  </g>
+</svg>

@@ -1,3 +1,22 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+
 /**********************
  * Common Definitions *
   *********************/
@@ -36,6 +55,7 @@
 /* Selected color */
 @define-color selected_bg_color @selection_color;
 @define-color selected_fg_color shade(@selected_bg_color, 2.0);
+@define-color selected_borders_color shade(@selection_color, 0.85);
 
 /****************
  * Theme colors *
@@ -71,93 +91,6 @@
 
 @define-color button_text_shadow alpha(@white, 0.4);
 
-
-/******************
- * Toolbar Colors *
- ******************/
-@define-color toolbar_bg_color @bg_color;
-@define-color toolbar_fg_color @fg_color;
-
-@define-color toolbar_gradient_color_a @gradient_color_a;
-@define-color toolbar_gradient_color_b @gradient_color_b;
-
-@define-color toolbar_button_gradient_color_a @button_gradient_color_a;
-@define-color toolbar_button_gradient_color_b @button_gradient_color_b;
-
-@define-color toolbar_button_active_gradient_color_a @button_gradient_color_b;
-@define-color toolbar_button_active_gradient_color_b @button_gradient_color_a;
-
-@define-color toolbar_button_hover_gradient_color_a @button_hover_gradient_color_a;
-@define-color toolbar_button_hover_gradient_color_b @button_hover_gradient_color_b;
-
-@define-color toolbar_button_insensitive_gradient_color_a shade(@button_insensitive_gradient_color_a, 0.99);
-@define-color toolbar_button_insensitive_gradient_color_b shade(@button_insensitive_gradient_color_b, 0.99);
-
-@define-color toolbar_border_top shade(@borders, 0.9);
-@define-color toolbar_border_bottom shade(@borders, 1.1);
-
-@define-color toolbar_separator shade(@borders, 1.1);
-
-@define-color primary_toolbar_button_text_shadow alpha(black, 0.1);
-
-/* Inline Toolbars */
-@define-color inline_toolbar_gradient_color_a shade(@toolbar_gradient_color_a, 0.99);
-@define-color inline_toolbar_gradient_color_b shade(@toolbar_gradient_color_b, 0.99);
-
-@define-color inline_toolbar_button_gradient_color_a @toolbar_button_gradient_color_a;
-@define-color inline_toolbar_button_gradient_color_b @toolbar_button_gradient_color_b;
-
-@define-color inline_toolbar_button_active_gradient_color_a shade(@toolbar_button_gradient_color_b, 0.99);
-@define-color inline_toolbar_button_active_gradient_color_b shade(@toolbar_button_gradient_color_a, 0.99);
-
-@define-color inline_toolbar_button_hover_gradient_color_a shade(@toolbar_button_hover_gradient_color_a, 0.99);
-@define-color inline_toolbar_button_hover_gradient_color_b shade(@toolbar_button_hover_gradient_color_b, 0.99);
-
-@define-color inline_toolbar_button_insensitive_gradient_color_a shade(@toolbar_button_insensitive_gradient_color_a, 0.99);
-@define-color inline_toolbar_button_insensitive_gradient_color_b shade(@toolbar_button_insensitive_gradient_color_b, 0.99);
-
-/*******************
- * Notebook colors *
- *******************/
-@define-color notebook_base_color @base_color;
-
-@define-color notebook_bg_color @bg_color;
-@define-color notebook_fg_color @fg_color;
-
-@define-color notebook_unfocused_bg_color shade(@notebook_bg_color, 1.5);
-@define-color notebook_unfocused_fg_color shade(@notebook_fg_color, 1.5);
-
-@define-color notebook_tab_gradient_color_a @gradient_color_a;
-@define-color notebook_tab_gradient_color_b @gradient_color_b;
-
-@define-color notebook_active_tab_gradient_a @gradient_color_a;
-@define-color notebook_active_tab_gradient_b @base_color;
-
-@define-color notebook_active_tab_border @selected_bg_color;
-@define-color notebook_selected_tab_color @selected_bg_color;
-
-@define-color notebook_tab_active_bg_color @bg_color;
-@define-color notebook_tab_bg_color shade(@bg_color, 1.5);
-@define-color notebook_tab_highlight shade(@theme_bg_color, 1.02);
-
-/***************
- * Menu colors *
- ***************/
-@define-color menu_bg_color @base_color;
-@define-color menu_fg_color @text_color;
-@define-color insensitive_menu_color @insensitive_base_color;
-
-@define-color menubar_bg_color @bg_color;
-@define-color menubar_fg_color @text_color;
-
-
-/****************
- * Panel colors *
- ****************/
-@define-color panel_bg_color @panel_color;
-@define-color panel_fg_color @base_color;
-
-
 /***************
  * View colors *
  ***************/
@@ -168,7 +101,6 @@
  *****************/
 @define-color sidebar_bg_color @bg_color;
 @define-color sidebar_fg_color @text_color;
-
 
 /****************
  * Entry colors *

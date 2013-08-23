@@ -1,3 +1,22 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+
 /***********
  * Toolbar *
  ***********/
@@ -22,8 +41,8 @@
 /* Gradients */
 .toolbar {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_gradient_color_a,
-                                      @toolbar_gradient_color_b
+                                      @gradient_color_a,
+                                      @gradient_color_b
                                       );
 }
 
@@ -33,24 +52,24 @@
 .toolbar .button.text-button,
 .toolbar .button.image-button {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_gradient_color_a,
-                                      @toolbar_button_gradient_color_b
+                                      @button_gradient_color_a,
+                                      @button_gradient_color_b
                                       );
 }
 
 /* Hover Gradient */
 .toolbar .button:hover {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_hover_gradient_color_a,
-                                      @toolbar_button_hover_gradient_color_b
+                                      @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_b
                                       );
 }
 
 /* Active Gradient */
 .toolbar .button:active {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_active_gradient_color_a,
-                                      @toolbar_button_active_gradient_color_b
+                                      @button_active_gradient_color_a,
+                                      @button_active_gradient_color_b
                                       );
 }
 
@@ -80,19 +99,19 @@
 
 /* Insensitive */
 .toolbar:insensitive {
-    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.5);
-    background-color: shade(@toolbar_bg_color, 0.9);
+    color: mix(@fg_color, @bg_color, 0.5);
+    background-color: shade(@bg_color, 0.9);
 }
 
 .toolbar .button:insensitive {
     border-color: @insensitive_borders;
-    background-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
 .toolbar .button:active:insensitive {
     border-color: @insensitive_borders;
-    background-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
@@ -115,8 +134,8 @@
     border-style: solid;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
-                                      @toolbar_gradient_color_a,
-                                      @toolbar_gradient_color_b
+                                      @gradient_color_a,
+                                      @gradient_color_b
                                       );
 }
 
@@ -133,22 +152,22 @@
 .primary-toolbar .raised .button,
 .primary-toolbar .raised.button {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_gradient_color_a,
-                                      @toolbar_button_gradient_color_b
+                                      @button_gradient_color_a,
+                                      @button_gradient_color_b
                                       );
 }
 
 .primary-toolbar .button:hover {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_hover_gradient_color_a,
-                                      @toolbar_button_hover_gradient_color_b
+                                      @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_b
                                       );
 }
 
 .primary-toolbar .button:active {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_active_gradient_color_a,
-                                      @toolbar_button_active_gradient_color_b
+                                      @button_active_gradient_color_a,
+                                      @button_active_gradient_color_b
                                       );
 }
 
@@ -171,26 +190,26 @@
 
 .primary-toolbar GtkSeparatorToolItem,
 .primary-toolbar .separator {
-    border-color: @toolbar_separator;
-    color: @toolbar_separator;
+    border-color: @separator;
+    color: @separator;
 }
 
 /* Insensitive */
 .primary-toolbar .button:insensitive {
     border-color: @insensitive_borders;
-    background-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
 .primary-toolbar .button:active:insensitive {
     border-color: @insensitive_borders;
-    background-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
 .primary-toolbar .separator:insensitive {
     border-color: @insensitive_borders;
-    color: shade(@toolbar_bg_color, 0.95);
+    color: shade(@bg_color, 0.95);
 }
 
 .primary-toolbar .button .separator:insensitive,
@@ -218,8 +237,8 @@
     border-color: @borders;
     border-radius: 0px;
     background-image: linear-gradient(to bottom,
-                                      @inline_toolbar_gradient_color_a,
-                                      @inline_toolbar_gradient_color_b
+                                      @gradient_color_a,
+                                      @gradient_color_b
                                       );
 }
 
@@ -254,22 +273,22 @@
 .inline-toolbar .raised .button,
 .inline-toolbar .raised.button {
     background-image: linear-gradient(to bottom,
-                                      @inline_toolbar_button_gradient_color_a,
-                                      @inline_toolbar_button_gradient_color_b
+                                      @button_gradient_color_a,
+                                      @button_gradient_color_b
                                       );
 }
 
 .inline-toolbar .button:hover {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_hover_gradient_color_a,
-                                      @toolbar_button_hover_gradient_color_b
+                                      @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_b
                                       );
 }
 
 .inline-toolbar .button:active {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_active_gradient_color_a,
-                                      @toolbar_button_active_gradient_color_b
+                                      @button_active_gradient_color_a,
+                                      @button_active_gradient_color_b
                                       );
 }
 
@@ -277,8 +296,8 @@
 .inline-toolbar.toolbar .button *:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive {
     background-image: linear-gradient(to bottom,
-                                      @toolbar_button_insensitive_gradient_color_a,
-                                      @toolbar_button_insensitive_gradient_color_b
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
                                       );
 }
 

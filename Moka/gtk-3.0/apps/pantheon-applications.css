@@ -1,0 +1,272 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+/*************
+ * Wingpanel *
+ *************/
+
+.panel {
+    background-color: alpha(#000, 0.7);
+    color: @base_color;
+}
+
+.panel-shadow {
+    background-color: @transparent;
+    background-image: linear-gradient(to bottom,
+                                  alpha(#000, 0.3),
+                                  alpha(#000, 0.0)
+                                  );
+}
+
+.panel-app-button {
+}
+
+.composited-indicator {
+    background-color: @transparent;
+    color: #fff;
+    padding: 0 2px;
+}
+
+.composited-indicator.menuitem:active,
+.composited-indicator.menuitem:hover {
+    border-style: none;
+    background-image: none;
+}
+
+/**************
+ * SourceList *
+ *************/
+
+.source-list,
+.source-list.view {
+    background-color: @bg_color;
+    border-radius: 0;
+    color: @text_color;
+}
+
+.source-list {
+    -GtkTreeView-horizontal-separator: 1px;
+    -GtkTreeView-vertical-separator: 6px;
+}
+
+.source-list.category-expander {
+    color: @transparent;
+}
+
+.source-list.view:hover:selected,
+.source-list.category-expander:hover {
+
+    color: shade (@bg_color, 0.50);
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+
+    background-image: linear-gradient(to bottom,
+                                  alpha(#000, 0.10),
+                                  alpha(#000, 0.7)
+                                  );
+}
+
+.source-list.view:selected:backdrop,
+.source-list.view:hover:selected:backdrop {
+    background-image: linear-gradient(to bottom,
+                                  alpha(#000, 0.08),
+                                  alpha(#000, 0.04)
+                                  );
+
+}
+
+.source-list.view:hover {
+    background-color: @hover_bg_color;
+}
+
+.source-list.badge,
+.source-list.badge:hover,
+.source-list.badge:selected,
+.source-list.badge:hover:selected {
+    background-image: none;
+    background-color: alpha (#000, 0.4);
+    color: @bg_color;
+    border-radius: 10px;
+    padding: 0 6px;
+    margin: 0 3px;
+    border-width: 0px;
+}
+
+.source-list.badge:selected,
+.source-list.badge:hover:selected {
+    color: @bg_color;
+}
+
+.source-list.badge:selected:backdrop,
+.source-list.badge:selected:hover:backdrop {
+    background-image: none;
+    background-color: alpha (#000, 0.2);
+    color: @unfocused_bg_color;
+}
+
+/********
+ * Gala *
+ *******/
+
+.gala-workspaces-background {
+    border-top: 1px solid alpha(#fff, 0.15);
+    background-image: linear-gradient(to bottom,
+                              #1a1a1a,
+                              #333333
+                              );
+}
+
+.gala-workspace-selected {
+
+    border: 1px solid @borders;
+    border-radius: 4px;
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@selected_bg_color, 1.25)),
+                    to (shade (@selected_bg_color, 0.98)));
+}
+
+/*********
+ * Noise *
+ ********/
+
+.album-list-view,
+.album-list-view GtkLabel,
+.album-list-view:backdrop,
+.album-list-view GtkLabel:backdrop {
+    background-color: @bg_color;
+    color: @selected_fg_color;
+
+    border-radius: 0;
+    border-color: #000;
+}
+
+.album-list-view GtkTreeView,
+.album-list-view GtkTreeView:backdrop {
+    background-color: @bg_color;
+    background-image: -gtk-gradient (linear,
+                                     right bottom,
+                                     left bottom,
+                                     from (@bg_color),
+                                     to (@bg_color));
+    color: @selected_fg_color;
+    -GtkTreeView-vertical-separator: 3;
+    -GtkTreeView-grid-line-width: 0;
+}
+
+.album-list-view GtkTreeView row:nth-child(even),
+.album-list-view GtkTreeView row:nth-child(even):backdrop {
+    background-image: none;
+    background-color: @fg_color;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @borders;
+}
+
+
+.album-list-view GtkTreeView row:nth-child(odd),
+.album-list-view GtkTreeView row:nth-child(odd):backdrop {
+    background-image: none;
+    background-color: @bg_color;
+    border-width: 0px;
+    border-style: none;
+}
+
+.album-list-view GtkTreeView row:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+
+
+/*************
+ * Statusbar *
+ ************/
+
+GraniteWidgetsStatusBar {
+    background-color: @bg_color;
+    border-top-color: @borders;		     
+    border-width: 1px;
+}
+
+/***********
+ * Popover *
+ **********/
+
+GraniteWidgetsPopOver {
+
+    -GraniteWidgetsPopOver-arrow-width: 20;
+    -GraniteWidgetsPopOver-arrow-height: 10;
+    -GraniteWidgetsPopOver-border-radius: 5px;
+    -GraniteWidgetsPopOver-border-width: 1;
+    -GraniteWidgetsPopOver-shadow-size: 6;
+    
+    border-style: solid;
+    border-color: @borders;
+    margin: 0px;
+}
+
+.popover_bg {
+    background-color: @bg_color;
+}
+
+GraniteWidgetsPopOver .sidebar.view,
+GraniteWidgetsPopOver * {
+    background-color: @transparent;
+}
+
+GraniteWidgetsPopOver .button {
+
+    background-image: none;
+    border-width: 0px;    
+    background-color: alpha(#fff, 0.0);
+}
+
+GraniteWidgetsPopOver .button:active,
+GraniteWidgetsPopOver .button:hover:active {
+
+	background-image: none;    
+    border-width: 0px;
+    background-color: alpha(#000, 0.05);
+}
+
+GraniteWidgetsPopOver .entry {
+
+    background-image: -gtk-gradient (linear,
+			         left top,
+			         left bottom,
+			         from (shade (@base_color, 0.88)),
+                     color-stop (0.20, shade (@base_color, 0.94)),
+			         to (shade (@base_color, 0.96)));
+    border-color: @borders;
+    border-width: 1px;
+}
+
+.button.app {
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.app:hover {
+    background-color: alpha(#000, 0.08);   
+}
+
+.app:focus {
+    background-color: alpha(#000, 0.20);
+}

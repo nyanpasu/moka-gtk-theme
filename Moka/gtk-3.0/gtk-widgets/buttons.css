@@ -1,3 +1,22 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+
 /***********
  * Buttons *
  ***********/
@@ -36,14 +55,12 @@
                                   );
 }
 
+/* Active/Pressed Button */
 .button:active {
-    border-color: @active_borders;
-    box-shadow: inset 1px 2px alpha(@selected_bg_color, 0.1),
-        inset 1px 1px alpha(@selected_bg_color, 0.1),
-        inset -1px -1px alpha(@selected_bg_color, 0.2); 
+    border-color: @active_borders; 
     background-image: linear-gradient(to bottom,
-                                  @button_active_gradient_color_b,
-                                  @button_active_gradient_color_a
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
                                   );
     color: @active_text_color;
 }

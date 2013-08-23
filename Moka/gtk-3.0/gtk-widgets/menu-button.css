@@ -1,3 +1,21 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
 /***************
  * Menu Button *
  ***************/
@@ -11,7 +29,7 @@
 
 .menu.button.separator {
     border-style: none;
-    color: shade(@menu_fg_color, 3.2);    
+    color: shade(@fg_color, 3.2);    
     -GtkMenuItem-horizontal-padding: 0;
     -GtkWidget-separator-height: 1;
 }
@@ -38,7 +56,7 @@
 .menu.button:insensitive,
 .menu.button {
     border-width: 0;
-    background-color: shade(@menu_fg_color, 1.05);
+    background-color: shade(@text_color, 1.05);
     background-image: none;
 }
 
@@ -50,9 +68,9 @@ GtkMenuButton.button:active,
 .toolbar .linked.raised GtkMenuButton.button:active,
 .toolbar GtkMenuButton.button.linked.raised:active {
     background-image: none;
-    background-color: @menu_bg_color;
+    background-color: @bg_color;
     border-image: none;
-    border-color: @menu_bg_color;
+    border-color: @bg_color;
     border-radius: 4px 4px 0 0;
     color: @text_color;
 }
@@ -79,12 +97,12 @@ GtkMenuButton.button *:active,
 
 .button.menuitem.menubar:active {
     background-image: none;
-    background-color: @menu_bg_color;
+    background-color: @bg_color;
 
     border-radius: 4px 4px 0 0;
     border-image: none;
     border-width: 1px 1px 0 1px;
-    border-color: @menu_bg_color;
+    border-color: @bg_color;
     border-style: solid;
 }
 
