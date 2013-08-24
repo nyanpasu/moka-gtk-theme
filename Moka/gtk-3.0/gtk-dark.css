@@ -22,17 +22,17 @@
  **********/
 
 /* Base colors */
-@define-color base_color #555555; /* Base color */
-@define-color bg_color #444444; /* Background color */
-@define-color fg_color #eeeeee; /* Foreground color */
-@define-color borders shade(@bg_color, 0.8); /* Borders color */
+@define-color base_color #555; /* Base color */
+@define-color bg_color #444; /* Background color */
+@define-color fg_color alpha(#fff, 0.8); /* Foreground color */
+@define-color borders alpha(#000, 0.2); /* Borders color */
 @define-color text_color @fg_color; /* Text color */
-@define-color panel_color #444444; /* Panel color */
-@define-color selection_color #a172d2; /* Selection color */
+@define-color panel_color #444; /* Panel color */
+@define-color selection_color shade(#a172d2, 0.8); /* Selection color */
 @define-color gradient_color_a @bg_color; /* Gradient color A */
-@define-color gradient_color_b shade(@bg_color, 0.92); /* Gradient color B */
-@define-color view_bg_color #555555; /* View background */
-@define-color inactive_frame_color #cccccc; /* Inactive frame color */
+@define-color gradient_color_b shade(@bg_color, 0.95); /* Gradient color B */
+@define-color view_bg_color #555; /* View background */
+@define-color inactive_frame_color alpha(#000, 0.2); /* Inactive frame color */
 
 
 /***********
@@ -45,52 +45,48 @@
 @import url("gtk-fallback.css");
 @import url("gtk-widgets.css");
 
-/* Import Specific CSS */
+/* Import App-Specific CSS */
 @import url("apps/fallback-panel.css");
 @import url("apps/gedit.css");
 @import url("apps/pantheon-applications.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/gnome-terminal.css");
 @import url("apps/nautilus.css");
+@import url("apps/noise.css");
 @import url("apps/unity.css");
 
 /* Import Widget CSS */
-@import url("gtk-widgets/app-notifications.css");
-@import url("gtk-widgets/assistant.css");
-@import url("gtk-widgets/base-states.css");
-@import url("gtk-widgets/buttons.css");
-@import url("gtk-widgets/calendar.css");
-@import url("gtk-widgets/cell-row.css");
-@import url("gtk-widgets/check-radio.css");
-@import url("gtk-widgets/color-chooser.css");
-@import url("gtk-widgets/column-header.css");
-@import url("gtk-widgets/combobox.css");
-@import url("gtk-widgets/entry.css");
-@import url("gtk-widgets/expander.css");
-@import url("gtk-widgets/gtkhtml.css");
-@import url("gtk-widgets/header-bar.css");
-@import url("gtk-widgets/image.css");
-@import url("gtk-widgets/infobars.css");
-@import url("gtk-widgets/label.css");
-@import url("gtk-widgets/levelbars.css");
-@import url("gtk-widgets/linked-buttons.css");
-@import url("gtk-widgets/menu-button.css");
-@import url("gtk-widgets/menus.css");
-@import url("gtk-widgets/miscellaneous.css");
-@import url("gtk-widgets/notebook.css");
-@import url("gtk-widgets/osd.css");
-@import url("gtk-widgets/progressbars.css");
-@import url("gtk-widgets/scales.css");
-@import url("gtk-widgets/scrollbars.css");
-@import url("gtk-widgets/selection-mode.css");
-@import url("gtk-widgets/separator.css");
-@import url("gtk-widgets/sidebar.css");
-@import url("gtk-widgets/spinbutton.css");
-@import url("gtk-widgets/spinner.css");
-@import url("gtk-widgets/statusbar.css");
-@import url("gtk-widgets/switches.css");
-@import url("gtk-widgets/toolbars.css");
-@import url("gtk-widgets/tooltips.css");
-@import url("gtk-widgets/touch-text-selections.css");
-@import url("gtk-widgets/views.css");
-@import url("gtk-widgets/visual-effects.css");
+@import url("widgets/base-states.css");
+@import url("widgets/buttons.css");
+@import url("widgets/calendar.css");
+@import url("widgets/cell-row.css");
+@import url("widgets/check-radio.css");
+@import url("widgets/color-chooser.css");
+@import url("widgets/column-header.css");
+@import url("widgets/combobox.css");
+@import url("widgets/entry.css");
+@import url("widgets/floating-bar.css");
+@import url("widgets/header-bar.css");
+@import url("widgets/images.css");
+@import url("widgets/infobars.css");
+@import url("widgets/label.css");
+@import url("widgets/levelbars.css");
+@import url("widgets/linked-buttons.css");
+@import url("widgets/menu-button.css");
+@import url("widgets/menus.css");
+@import url("widgets/miscellaneous.css");
+@import url("widgets/notebook.css");
+@import url("widgets/osd.css");
+@import url("widgets/progressbars.css");
+@import url("widgets/scales.css");
+@import url("widgets/scrollbars.css");
+@import url("widgets/selection-mode.css");
+@import url("widgets/separators.css");
+@import url("widgets/sidebar.css");
+@import url("widgets/spinbutton.css");
+@import url("widgets/spinner.css");
+@import url("widgets/statusbar.css");
+@import url("widgets/switches.css");
+@import url("widgets/toolbars.css");
+@import url("widgets/tooltips.css");
+@import url("widgets/views.css");

@@ -436,6 +436,7 @@ GtkSwitch.slider:active {
     background-image: url("assets/handle-on.png");
 }
 
+GtkSwitch.slider:insensitive:backdrop,
 GtkSwitch.slider:insensitive {
     background-image: url("assets/handle-insensitive.png");
 }
@@ -448,6 +449,7 @@ GtkSwitch.trough {
     background-image: url("assets/switch-off.png");
 }
 
+GtkSwitch.trough:insensitive:backdrop,
 GtkSwitch.trough:insensitive {
     background-image: url("assets/switch-off-insensitive.png");
 }
@@ -460,6 +462,7 @@ GtkSwitch.trough:active {
     background-image: url("assets/switch-on.png");
 }
 
+GtkSwitch.trough:active:insensitive:backdrop,
 GtkSwitch.trough:active:insensitive {
     background-image: url("assets/switch-on-insensitive.png");
 }

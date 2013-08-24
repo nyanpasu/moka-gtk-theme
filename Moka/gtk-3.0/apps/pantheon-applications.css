@@ -21,29 +21,30 @@
  *************/
 
 .panel {
-    background-color: alpha(#000, 0.7);
+    background-color: alpha(#000, 0.9);
     color: @base_color;
 }
 
 .panel-shadow {
-    background-color: @transparent;
+    background-color: transparent;
     background-image: linear-gradient(to bottom,
-                                  alpha(#000, 0.3),
-                                  alpha(#000, 0.0)
+                                  alpha (#000, 0.3),
+                                  alpha (#000, 0.0)
                                   );
 }
 
 .panel-app-button {
+	-GtkMenuitem-horizontal-padding: 6px;
 }
 
 .composited-indicator {
-    background-color: @transparent;
+    background-color: transparent;
     color: #fff;
     padding: 0 2px;
 }
 
 .composited-indicator.menuitem:active,
-.composited-indicator.menuitem:hover {
+.composited-indicator.menuitem:prelight {
     border-style: none;
     background-image: none;
 }
@@ -65,29 +66,21 @@
 }
 
 .source-list.category-expander {
-    color: @transparent;
-}
+    color: transparent;
+}swi
 
 .source-list.view:hover:selected,
 .source-list.category-expander:hover {
-
-    color: shade (@bg_color, 0.50);
+    color: @bg_color;
     border-style: solid;
     border-width: 1px 0 1px 0;
-
-    background-image: linear-gradient(to bottom,
-                                  alpha(#000, 0.10),
-                                  alpha(#000, 0.7)
-                                  );
+    border-color: @selected_borders_color;
+    background-color: @active_selection_color;
 }
 
 .source-list.view:selected:backdrop,
 .source-list.view:hover:selected:backdrop {
-    background-image: linear-gradient(to bottom,
-                                  alpha(#000, 0.08),
-                                  alpha(#000, 0.04)
-                                  );
-
+	background-color: @unfocused_selection_color;
 }
 
 .source-list.view:hover {
@@ -99,7 +92,7 @@
 .source-list.badge:selected,
 .source-list.badge:hover:selected {
     background-image: none;
-    background-color: alpha (#000, 0.4);
+    background-color: @active_bg_color;
     color: @bg_color;
     border-radius: 10px;
     padding: 0 6px;
@@ -115,7 +108,7 @@
 .source-list.badge:selected:backdrop,
 .source-list.badge:selected:hover:backdrop {
     background-image: none;
-    background-color: alpha (#000, 0.2);
+    background-color: @unfocused_bg_color;
     color: @unfocused_bg_color;
 }
 
@@ -143,56 +136,20 @@
 }
 
 /*********
- * Noise *
+ * Files *
  ********/
 
-.album-list-view,
-.album-list-view GtkLabel,
-.album-list-view:backdrop,
-.album-list-view GtkLabel:backdrop {
-    background-color: @bg_color;
-    color: @selected_fg_color;
-
-    border-radius: 0;
-    border-color: #000;
+.files-overlay-bar {
+    background-color: alpha (black, 0.6);
+    border-radius: 3px;
+    border: 0;
+    padding: 3px 6px;
+    margin: 3px;
 }
 
-.album-list-view GtkTreeView,
-.album-list-view GtkTreeView:backdrop {
-    background-color: @bg_color;
-    background-image: -gtk-gradient (linear,
-                                     right bottom,
-                                     left bottom,
-                                     from (@bg_color),
-                                     to (@bg_color));
-    color: @selected_fg_color;
-    -GtkTreeView-vertical-separator: 3;
-    -GtkTreeView-grid-line-width: 0;
+.files-overlay-bar GtkLabel {
+    color: white;
 }
-
-.album-list-view GtkTreeView row:nth-child(even),
-.album-list-view GtkTreeView row:nth-child(even):backdrop {
-    background-image: none;
-    background-color: @fg_color;
-    border-width: 1px;
-    border-style: solid;
-    border-color: @borders;
-}
-
-
-.album-list-view GtkTreeView row:nth-child(odd),
-.album-list-view GtkTreeView row:nth-child(odd):backdrop {
-    background-image: none;
-    background-color: @bg_color;
-    border-width: 0px;
-    border-style: none;
-}
-
-.album-list-view GtkTreeView row:selected {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
-}
-
 
 
 /*************
@@ -201,7 +158,7 @@
 
 GraniteWidgetsStatusBar {
     background-color: @bg_color;
-    border-top-color: @borders;		     
+    border-color: @borders;		     
     border-width: 1px;
 }
 
@@ -215,9 +172,8 @@ GraniteWidgetsPopOver {
     -GraniteWidgetsPopOver-arrow-height: 10;
     -GraniteWidgetsPopOver-border-radius: 5px;
     -GraniteWidgetsPopOver-border-width: 1;
-    -GraniteWidgetsPopOver-shadow-size: 6;
     
-    border-style: solid;
+    border-style: none;
     border-color: @borders;
     margin: 0px;
 }
@@ -228,7 +184,7 @@ GraniteWidgetsPopOver {
 
 GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
-    background-color: @transparent;
+    background-color: transparent;
 }
 
 GraniteWidgetsPopOver .button {
@@ -243,7 +199,7 @@ GraniteWidgetsPopOver .button:hover:active {
 
 	background-image: none;    
     border-width: 0px;
-    background-color: alpha(#000, 0.05);
+    background-color: @active_bg_color;
 }
 
 GraniteWidgetsPopOver .entry {
@@ -269,4 +225,16 @@ GraniteWidgetsPopOver .entry {
 
 .app:focus {
     background-color: alpha(#000, 0.20);
+}
+
+/************
+ * Terminal *
+ ***********/
+
+TerminalScreen {
+    -TerminalScreen-background-darkness: 0.85;
+
+    background-color: #000;
+
+    color: #fff;
 }
