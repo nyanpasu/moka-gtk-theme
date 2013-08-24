@@ -1,0 +1,105 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+/**************
+ * Scrollbars *
+ **************/
+ 
+.scrollbar {
+    border-width: 1px;
+    border-style: solid;
+    padding: 2;
+}
+
+.scrollbars-junction,
+.scrollbar.trough {
+    border-width: 0;
+    border-radius: 0;
+    background-color: @bg_color;
+    background-image: none;
+}
+
+.scrollbar.button,
+.scrollbar.button:active,
+.scrollbar.button:active:hover {
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: none;
+    color: @active_fg_color;
+}
+
+.scrollbar.slider {
+    background-color: shade(@bg_color, 0.9);
+}
+
+.scrollbar.slider.vertical {
+    /* Borders are opposite what you'd expect */
+    border-left: 1px; 
+    border-right: 1px;
+    border-color: @borders;
+    border-radius: 0px;
+}
+.scrollbar.slider.horizontal {
+    /* Borders are opposite what you'd expect */
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: @borders;
+    border-radius: 0px;
+}
+
+.scrollbar.slider:hover,
+.scrollbar.slider.vertical:hover {
+    border-color: @borders;
+    background-color: alpha(@fg_color, 0.2);
+}
+
+.scrollbar.slider:active,
+.scrollbar.slider.vertical:active {
+    border-color: @borders;
+    background-color: shade(@selection_color, 1.4);
+}
+
+/**********************
+ * Overlay Scrollbars *
+ *********************/
+OsThumb {
+    color: @selection_color;
+}
+
+OsThumb:selected,
+OsScrollbar:selected {
+    background-color: @selection_color;
+}
+
+OsThumb:active,
+OsScrollbar:active {
+    background-color: @selection_color;
+}
+
+OsThumb:active:backdrop,
+OsScrollbar:active:backdrop,
+OsThumb:backdrop,
+OsScrollbar:backdrop {
+    background-color: @unfocused_selection_color;
+}
+
+OsThumb:insensitive,
+OsScrollbar:insensitive {
+    background-color: @insensitive_selection_color;
+}

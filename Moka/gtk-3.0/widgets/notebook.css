@@ -1,0 +1,226 @@
+/* Copyright 2013 Sam Hewitt.
+*
+* This file is part of the Moka GTK theme.
+*
+* The Moka GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Moka GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+/************
+ * Notebook *
+ ************/
+
+.notebook {
+    border-style: solid;
+    border-width: 1px;
+    background-color: @base_color;
+    -GtkNotebook-tab-overlap: 12;
+    -GtkNotebook-tab-curvature: 8;
+    -GtkNotebook-initial-gap: 4;
+    color: @text_color;
+}
+
+.notebook:insensitive {
+    background-color: @insensitive_bg_color;
+    color: @insensitive_text_color;
+}
+
+.notebook:selected {
+    color: @selected_fg_color;
+    border-color: @selected_bg_color;
+}
+
+.notebook:backdrop {
+    background-color: @unfocused_bg_color;
+    color: @unfocused_text_color;
+}
+
+.notebook:insensitive:backdrop {
+    background-color: mix(@insensitive_bg_color, @unfocused_bg_color, 0.5);
+    color: mix(@unfocused_text_color, @insensitive_text_color, 0.5);
+}
+
+.notebook:selected:backdrop {
+    background-color: mix(@active_bg_color, @unfocused_bg_color, 0.5);
+    color: mix(@unfocused_text_color, @active_text_color, 0.5);
+}
+
+/* Background colors */
+.notebook GtkViewport {
+    border-style: solid;
+    border-width: 1px;
+    border-color: @borders;
+    background-color: @base_color;
+}
+
+.notebook tab {
+    background-image: linear-gradient(to bottom,
+                              @gradient_color_a,
+                              @gradient_color_b
+                              );
+}
+
+.notebook tab.bottom {
+    background-image: linear-gradient(to top,
+                              @gradient_color_a,
+                              @gradient_color_b
+                              );
+}
+
+.notebook tab.left:active,
+.notebook tab.right:active {
+    background-image: none;
+    background-color: @base_color;
+}
+
+.notebook tab.left:active:backdrop,
+.notebook tab.right:active:backdrop {
+    background-image: none;
+    background-color: @unfocused_base_color;
+}
+
+.notebook tab.left,
+.notebook tab.right {
+    background-image: none;
+    background-color: @bg_color;
+    border-radius: 4px;
+}
+
+/* Borders */
+.notebook tab.top {
+    border-width: 1px 1px 0px 1px;
+}
+
+.notebook tab.bottom {
+    border-width: 0 1px 1px 1px;
+}
+
+.notebook tab.left {
+    border-width: 1px 0 1px 1px;
+}
+
+.notebook tab.right {
+    border-width: 1px 1px 1px 0;
+}
+
+.notebook tab.left:active {
+    border-radius: 3px 0 0 3px;
+}
+
+.notebook tab.right:active {
+    border-radius: 0 3px 3px 0;
+}
+
+.notebook,
+.notebook tab {
+    border-color: @borders;
+}
+
+/* Active tab colors */
+.notebook tab:active {
+    border-color: @selected_bg_color;
+    background-image: linear-gradient(to bottom,
+                              @gradient_color_a,
+                              @base_color
+                              );
+    color: @text_color;
+}
+
+/* Padding */
+.notebook tab.top {
+    padding: 4px 2px 0;
+}
+
+.notebook tab.top:active {
+    padding: 5px 2px 0;
+}
+
+.notebook tab.bottom {
+    padding: 0 2px 4px;
+}
+
+.notebook tab.bottom:active {
+    padding: 0 2px 5px;
+}
+
+.notebook tab.left:active {
+    padding-left: 1px;
+}
+
+.notebook tab.right:active {
+    padding-right: 1px;
+}
+
+/* Labels */
+.notebook tab GtkLabel {
+    color: @text_color;
+}
+
+/* Unfocused Tab Colors */
+.notebook:backdrop,
+.notebook tab:backdrop,
+.notebook GtkViewport:backdrop {
+    background-image: none;
+    background-color: @unfocused_bg_color;
+}
+
+.notebook:backdrop,
+.notebook tab:backdrop {
+    border-color: @unfocused_borders;
+}
+
+/* Close Button */
+.notebook tab .button,
+.notebook tab .button:active,
+.notebook tab .button:hover {
+    border-image: none;
+    border-style: none;
+    background-image: none;
+    background-color: transparent;
+}
+
+.notebook tab .button GtkImage {
+    border-radius: 3px;
+    color: mix(@fg_color, @base_color, 0.6);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 1px;
+    icon-shadow: 0 1px @button_text_shadow;
+}
+
+.notebook tab .button GtkImage:hover {
+    color: @fg_color;
+    border-color: alpha(black, 0.1);
+}
+
+.notebook tab .button GtkImage:active,
+.notebook tab .button GtkImage:active:hover {
+    background-color: alpha(black, 0.08);
+    box-shadow: inset 0 1px alpha(black, 0.05);
+    color:  @button_active_text;
+    icon-shadow: 0 1px @button_active_text_shadow;
+    border-color: alpha(black, 0.27) 
+                  alpha(black, 0.13) 
+                  alpha(black, 0.13) 
+                  alpha(black, 0.13);
+}
+
+.notebook tab .button GtkImage:backdrop {
+    color: mix(@fg_color, @base_color, 0.7);
+    icon-shadow: none;
+}
+
+.notebook tab .button GtkImage:backdrop:hover {
+    color: @fg_color;
+}
