@@ -29,9 +29,3 @@ UnityPanelWidget,
     background-image: none;
     color: @base_color;
 }
-
-.unity-panel.menuitem,
-.unity-panel .menuitem {
-    border-width: 0 1px;
-    color: @base_color;
-}

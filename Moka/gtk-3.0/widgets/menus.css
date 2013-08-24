@@ -115,7 +115,7 @@ GtkTreeMenu .menuitem * {
 }
 
 .menuitem .entry {
-    border-color: shade(@base_color, 0.7);
+    border-color: @borders;
     background-color: @base_color;
     background-image: none;
     color: @text_color;
@@ -123,19 +123,20 @@ GtkTreeMenu .menuitem * {
 
 .menuitem .entry:active,
 .menuitem .entry:focus {
-    border-color: shade(@base_color, 0.7);
+    border-color: @borders;
 }
 
+/* Accelerators */
 .menuitem .accelerator {
-    color: alpha(@selected_fg_color, 0.6);
+    color: @insensitive_text_color;
 }
 
 .menuitem .accelerator:hover {
-    color: alpha(@selected_fg_color, 0.8);
+    color: @insensitive_text_color;
 }
 
 .menuitem .accelerator:insensitive {
-    color: alpha(@insensitive_base_color, 0.6);
+    color: @insensitive_text_color;
 }
 
 
@@ -163,17 +164,15 @@ GtkTreeMenu .menuitem * {
 }
 
 .menubar.menuitem:hover,
-.menubar .menuitem:hover {
+.menubar .menuitem:hover,
+.menubar .menuitem *:hover {
     border-color: @selected_borders_color;
     background-color: @selected_bg_color;
     background-image: none;
-    color: @base_color;
+    color: @bg_color;
 }
 
-.menubar .menuitem *:hover {
-    color: shade(@fg_color, 1.08);
-}
-
+/* Separator */
 .menubar .menuitem.separator,
 .menubar.menuitem.separator {
     -GtkMenuItem-horizontal-padding: 0;
@@ -182,9 +181,16 @@ GtkTreeMenu .menuitem * {
     color: alpha(#000, 0.2);
 }
 
-/***********************
- * Unity Panel Menubar *
- ***********************/
+/*********************
+ * Unity Panel Menus *
+ *********************/
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+    border-width: 0 1px;
+    color: @panel_color;
+}
+
 .unity-panel.menubar {
     -GtkWidget-window-dragging: true;
 
@@ -202,15 +208,15 @@ GtkTreeMenu .menuitem * {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: @base_color;
+    color: @bg_color;
 }
 
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem:hover {
-    border-color: shade(@borders, 1.05);
-    background-color: shade(@panel_color, 3.2);
+    border-color: @borders;
+    background-color: shade(@fg_color, 1.1);
     background-image: none;
-    color: @text_color;
+    color: @bg_color;
 }
 
 .unity-panel.menubar .menuitem *:hover {

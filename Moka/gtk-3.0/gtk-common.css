@@ -22,12 +22,12 @@
   *********************/
 
 /* Insensitive colors */
-@define-color insensitive_base_color shade(@base_color, 0.9);
-@define-color insensitive_bg_color shade(@bg_color, 0.9);
-@define-color insensitive_fg_color shade(@fg_color, 0.9);
-@define-color insensitive_borders shade(@borders, 0.9);
-@define-color insensitive_text_color shade(@text_color, 0.9);
-@define-color insensitive_selection_color shade(@selection_color, 1.02);
+@define-color insensitive_base_color alpha(@base_color, 0.5);
+@define-color insensitive_bg_color alpha(@bg_color, 0.5);
+@define-color insensitive_fg_color alpha(@fg_color, 0.5);
+@define-color insensitive_borders alpha(@borders, 0.5);
+@define-color insensitive_text_color alpha(@text_color, 0.5);
+@define-color insensitive_selection_color alpha(@selection_color, 0.5);
 
 /* Unfocused colors */
 @define-color unfocused_base_color shade(@base_color, 0.95);
@@ -38,12 +38,12 @@
 @define-color unfocused_selection_color shade(@selection_color, 1.05);
 
 /* Hover colors */
-@define-color hover_base_color shade(@base_color, 1.05);
-@define-color hover_bg_color shade(@bg_color, 1.05);
-@define-color hover_fg_color shade(@fg_color, 1.05);
-@define-color hover_borders shade(@borders, 1.05);
-@define-color hover_text_color shade(@text_color, 1.05);
-@define-color hover_selection_color shade(@selection_color, 1.05);
+@define-color hover_base_color shade(@base_color, 1.1);
+@define-color hover_bg_color shade(@bg_color, 1.1);
+@define-color hover_fg_color shade(@fg_color, 1.1);
+@define-color hover_borders shade(@borders, 1.1);
+@define-color hover_text_color shade(@text_color, 1.1);
+@define-color hover_selection_color shade(@selection_color, 1.1);
 
 /* Active colors */
 @define-color active_base_color @hover_base_color;
@@ -54,8 +54,8 @@
 
 /* Selected color */
 @define-color selected_bg_color @selection_color;
-@define-color selected_fg_color shade(@selected_bg_color, 2.0);
-@define-color selected_borders_color shade(@selection_color, 0.85);
+@define-color selected_fg_color @fg_color;
+@define-color selected_borders_color shade(@selection_color, 0.95);
 
 /****************
  * Theme colors *
@@ -91,10 +91,6 @@
 
 @define-color button_text_shadow alpha(@white, 0.4);
 
-/***************
- * View colors *
- ***************/
-@define-color view_base_color @bg_color;
 
 /******************
  * Sidebar colors *
@@ -128,7 +124,7 @@
 @define-color list_box_bg @bg_color;
 
 @define-color view_separators shade(@borders, 1.30);
-@define-color view_symbolic_color shade(@internal_element_color, 0.80);
+@define-color view_symbolic_color shade(@internal_element_color, 0.50);
 
 /* Progressbar colors */
 @define-color progressbar_bg_color_a shade(@selected_bg_color, 1.1);
@@ -143,8 +139,8 @@
 /* Trough colors */
 @define-color trough_active_color @selected_bg_color;
 
-@define-color trough_bg_color_a shade(@gradient_color_b, 1.05);
-@define-color trough_bg_color_b shade(@gradient_color_a, 1.05);
+@define-color trough_bg_color_a shade(@gradient_color_b, 0.95);
+@define-color trough_bg_color_b shade(@gradient_color_a, 0.95);
 
 @define-color insensitive_trough_bg_color_a shade(@trough_bg_color_a, 1.1);
 @define-color insensitive_trough_bg_color_b shade(@trough_bg_color_b, 1.1);
@@ -187,7 +183,7 @@
 @define-color selection_toolbar_suggested_button_border_backdrop @selection_toolbar_button_border_backdrop;
 
 @define-color selection_menu_fg @selection_toolbar_fg;
-@define-color selection_menu_hover shade(@selection_menu_fg, 0.80);
+@define-color selection_menu_hover shade(@selection_menu_fg, 0.50);
 @define-color selection_menu_active shade(@selection_menu_fg, 0.60);
 
 /* OSD */
@@ -218,25 +214,25 @@
 @define-color info_fg_color black;
 @define-color info_text_shadow alpha(black, 0.1);
 @define-color info_bg_color #f5f697;
-@define-color info_borders_color shade(@info_bg_color, 0.8);
+@define-color info_borders_color shade(@info_bg_color, 0.5);
 
 /* Warning colors */
 @define-color warning_fg_color black;
 @define-color warning_text_shadow alpha(black, 0.1);
 @define-color warning_bg_color @warning_color;
-@define-color warning_borders_color shade(@warning_bg_color, 0.8);
+@define-color warning_borders_color shade(@warning_bg_color, 0.5);
 
 /* Question colors */
 @define-color question_fg_color white;
 @define-color question_text_shadow alpha(black, 0.3);
 @define-color question_bg_color @question_color;
-@define-color question_borders_color shade(@question_bg_color, 0.8);
+@define-color question_borders_color shade(@question_bg_color, 0.5);
 
 /* Error colors */
 @define-color error_fg_color white;
 @define-color error_text_shadow alpha(black, 0.5);
 @define-color error_bg_color @error_color;
-@define-color error_borders_color shade(@error_bg_color, 0.8);
+@define-color error_borders_color shade(@error_bg_color, 0.5);
 
 /*************
  * WM colors *

@@ -45,7 +45,7 @@
 
 .sidebar.view:selected,
 .sidebar.view:hover:selected {
-    color: @borders;
+    color: @base_color;
     border-style: solid;
     border-width: 1px;
     background-color: @active_bg_color;

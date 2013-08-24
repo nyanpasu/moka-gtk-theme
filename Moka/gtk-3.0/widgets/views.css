@@ -9,7 +9,7 @@
 }
 
 .view {
-    background-color: @view_bg_color;
+    background-color: @base_color;
     color: @text_color;
 }
 
@@ -71,25 +71,25 @@ GtkTreeView {
 GtkTreeView.dnd {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@selected_bg_color, 0.9);
+    border-color: @selected_borders_color;
     border-radius: 0;
 }
 
 GtkTreeView .entry {
     border-radius: 0;
-    background-color: @view_bg_color;
+    background-color: @base_color;
     background-image: none;
 }
 
 /* Textview */
 GtkTextView {
-    background-color: @view_bg_color;
+    background-color: @base_color;
     color: @text_color;
 }
 
 /* Iconview */
 GtkIconView.view {
-    background-color: @view_base_color;
+    background-color: @bg_color;
 }
  
 GtkIconView.view.cell:selected,
@@ -104,7 +104,7 @@ GtkIconView.view.cell:selected:focus {
 
 /* Content view */
 .content-view.view {
-    background-color: @view_bg_color;
+    background-color: @base_color;
 }
 
 .content-view.view:hover {
@@ -117,11 +117,11 @@ GtkIconView.view.cell:selected:focus {
 }
 
 .content-view.view:insensitive {
-    background-color: @insensitive_base_color;
+    background-color: @insensitive_bg_color;
 }
 
 GdMainIconView.content-view {
-    -GdMainIconView-icon-size: 40;
+    -GdMainIconView-icon-size: 48px;
 }
 
 GtkIconView.content-view.check {
