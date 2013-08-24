@@ -73,13 +73,13 @@
 }
 
 .spinbutton.vertical .button:hover {
-    border-color: @hover_borders;
+    border-color: @hover_borders_color;
     background-color: @hover_bg_color;
     background-image: none;
 }
 
 .spinbutton.vertical .button:active {
-    border-color: @active_borders;
+    border-color: @active_borders_color;
     background-color: @active_bg_color;
     background-image: none;
 }
@@ -96,7 +96,7 @@
 }
 
 .spinbutton.vertical .button:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     background-color: @insensitive_bg_color;
     background-image: none;
 }

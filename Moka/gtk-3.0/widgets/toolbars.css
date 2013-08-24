@@ -105,20 +105,20 @@
 }
 
 .toolbar .button:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
 .toolbar .button:active:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
 .toolbar .button .separator:insensitive,
 .toolbar .button.separator:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
 }
 
 /*******************
@@ -197,19 +197,19 @@
 
 /* Insensitive */
 .primary-toolbar .button:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
 .primary-toolbar .button:active:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     background-color: shade(@bg_color, 1.0);
     background-image: none;
 }
 
 .primary-toolbar .separator:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     color: shade(@bg_color, 0.95);
 }
 

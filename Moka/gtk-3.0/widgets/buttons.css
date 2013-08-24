@@ -45,12 +45,12 @@
 .button:hover:focus,
 .button:active:focus,
 .button:active:hover:focus {
-    border-color: @active_borders;
+    border-color: @active_borders_color;
 }
 
 
 .button:hover {
-    border-color: @hover_borders;
+    border-color: @hover_borders_color;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_color_a,
                                   @button_hover_gradient_color_b
@@ -59,7 +59,7 @@
 
 /* Active/Pressed Button */
 .button:active {
-    border-color: @active_borders; 
+    border-color: @active_borders_color; 
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_color_a,
                                   @button_active_gradient_color_b
@@ -75,31 +75,31 @@
 
 .button .separator:insensitive,
 .button.separator:insensitive {
-    color: @insensitive_borders;
+    color: @insensitive_borders_color;
 }
 
 /* Insensitive Button */
 .button:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     background-color: @insensitive_bg_color;
     background-image: none;
 }
 
 .button:active:insensitive {
-    border-color: @insensitive_borders;
+    border-color: @insensitive_borders_color;
     background-color: @insensitive_bg_color;
     background-image: none;
 }
 
 /* Unfocused Button */
 .button:backdrop {
-    border-color: @unfocused_borders;
+    border-color: @unfocused_borders_color;
     background-color: @unfocused_bg_color;
     background-image: none;
 }
 
 .button:active:backdrop {
-    border-color: @unfocused_borders;
+    border-color: @unfocused_borders_color;
     background-color: @unfocused_bg_color;
     background-image: none;
 }

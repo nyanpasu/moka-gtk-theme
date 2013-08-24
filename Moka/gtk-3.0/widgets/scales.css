@@ -34,66 +34,65 @@
     border-radius: 0;
     border-style: none;
     background-color: transparent;
+    background-size: 16px 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: transparent;
 
     /* background-image in -assets variant */
 }
 
-/* Horizontal scale colors */
+/* Positive fill colors */
 .menubar .menuitem .scale.highlight.left,
-.scale.highlight.left {
-    background-color: transparent;
-    border-width: 1px;
-    border-color: shade(@selected_bg_color, 0.8);
-    box-shadow: inset 2px 2px @selected_bg_color,
-          inset -2px -2px @selected_bg_color;
-}
-
-.menubar .menuitem .scale.highlight.left:insensitive,
-.scale.highlight.left:insensitive {
-    background-color: transparent;
-    border-width: 0px;
-    box-shadow: inset 2px 2px shade(@insensitive_bg_color, 0.8),
-          inset -2px -2px shade(@insensitive_bg_color, 0.8);
-}
-
-.menubar .menuitem.scale.highlight.left:backdrop,
-.scale.vertical.highlight.left:backdrop {
-    background-color: transparent;
-    border-width: 1px;
-    border-color: @selected_bg_color;
-    box-shadow: inset 2px 2px @unfocused_selection_color,
-          inset -2px -2px @unfocused_selection_color;
-}
-
-/* Vertical scale colors */
+.scale.highlight.left,
 .menubar .menuitem.scale.highlight.bottom,
 .scale.vertical.highlight.bottom {
     background-color: transparent;
     border-width: 1px;
-    border-color: shade(@selected_bg_color, 0.8);
-    box-shadow: inset 2px 2px @selected_bg_color,
-          inset -2px -2px @selected_bg_color;
+    border-color: @selected_borders_color;
+    box-shadow: inset 0px 0px 2px 1px @selection_color;
 }
 
+/* Insensitive fill colors */
+.menubar .menuitem .scale.highlight.left:insensitive,
+.scale.highlight.left:insensitive,
 .menubar .menuitem .scale.highlight.bottom:insensitive,
 .scale.highlight.bottom:insensitive {
     background-color: transparent;
-    border-width: 0px;
-    box-shadow: inset 2px 2px shade(@insensitive_bg_color, 0.8),
-          inset -2px -2px shade(@insensitive_bg_color, 0.8);
+    border-width: 1px;
+    border-color: @insensitive_borders_color;
+    box-shadow: inset 0px 0px 2px 1px shade(@insensitive_bg_color, 0.9);
 }
 
+/* Hover fill colors */
+.menubar .menuitem .scale.highlight.left:hover,
+.scale.highlight.left:hover,
+.menubar .menuitem .scale.highlight.bottom:hover,
+.scale.highlight.bottom:hover {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: @selected_borders_color;
+    box-shadow: inset 0px 0px 2px 1px @hover_selection_color;
+}
+
+/* Backdrop/unfocused fill colors */
+.menubar .menuitem.scale.highlight.left:backdrop,
+.scale.vertical.highlight.left:backdrop,
 .menubar .menuitem.scale.highlight.bottom:backdrop,
 .scale.vertical.highlight.bottom:backdrop {
     background-color: transparent;
     border-width: 1px;
-    border-color: @selected_bg_color;
-    box-shadow: inset 2px 2px @unfocused_selection_color,
-          inset -2px -2px @unfocused_selection_color;
+    border-color: @unfocused_borders_color;
+    box-shadow: inset 0px 0px 2px 1px @unfocused_bg_color;
 }
 
 
-/* Troughs */
+
+/***********
+ * Troughs *
+ ***********/
+
+/* Margins */
 .scale.trough {
     margin: 6px 0;
 }
@@ -102,27 +101,33 @@
     margin: 0 6px;
 }
 
+/* Trough colors */
 .scale.trough,
 .scale.trough.vertical {
     border-width: 0;
-    box-shadow: inset 1px 1px @borders,
-          inset -1px -1px @borders; 
+    box-shadow: inset 0px 0px 1px 1px @borders;
 }
 
+/* Hover trough colors */
+.scale.trough:hover,
+.scale.trough.vertical:hover {
+    border-width: 1px;
+    border-color: shade(@borders, 0.95);
+    box-shadow: inset 0px 0px 1px 1px shade(@borders, 0.95);
+}
 
+/* Insensitive trough colors */
 .scale.trough:insensitive,
 .scale.trough.vertical:insensitive {
-    border-width: 0;
-    box-shadow: inset 1px 1px @insensitive_borders,
-          inset -1px -1px @insensitive_borders; 
+    
+    box-shadow: inset 0px 0px 1px 1px @insensitive_borders_color;
 }
 
-
+/* Backdrop/unfocused trough colors */
 .scale.trough:backdrop,
 .scale.trough.vertical:backdrop {
     border-width: 0;
-    box-shadow: inset 1px 1px @unfocused_borders,
-          inset -1px -1px @unfocused_borders; 
+    box-shadow: inset 0px 0px 1px 1px @unfocused_borders_color; 
 }
 
 .scale.progressbar {

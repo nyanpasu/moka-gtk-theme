@@ -172,11 +172,12 @@
 .notebook GtkViewport:backdrop {
     background-image: none;
     background-color: @unfocused_bg_color;
+    color: @unfocused_fg_color
 }
 
 .notebook:backdrop,
 .notebook tab:backdrop {
-    border-color: @unfocused_borders;
+    border-color: @unfocused_borders_color;
 }
 
 /* Close Button */
