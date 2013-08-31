@@ -1,4 +1,4 @@
-# Google Chrome/Chromium Styles (requires 9.0.597 or newer)
+# CHROME/-IUM SPECIFIC SETTINGS
 
 style "chromium-toolbar-button" {
   engine "murrine" {

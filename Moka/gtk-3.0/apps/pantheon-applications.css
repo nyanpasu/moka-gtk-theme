@@ -21,16 +21,12 @@
  *************/
 
 .panel {
-    background-color: alpha(#000, 0.9);
+    background-color: alpha (#000, 0.9);
     color: @base_color;
 }
 
 .panel-shadow {
     background-color: transparent;
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.3),
-                                  alpha (#000, 0.0)
-                                  );
 }
 
 .panel-app-button {

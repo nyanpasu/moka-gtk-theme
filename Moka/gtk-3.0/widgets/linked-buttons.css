@@ -14,9 +14,9 @@
 .inline-toolbar.toolbar GtkToolButton .button:active,
 .inline-toolbar.toolbar GtkToolButton > .button:active {
     box-shadow: inset -1px 0 shade(@bg_color, 0.9),
-                inset 1px 0 alpha(@shadow, 0.07),
-                inset 0 1px alpha(@shadow, 0.08),
-                inset 0 -1px alpha(@shadow, 0.05);
+                inset 1px 0 alpha(black, 0.07),
+                inset 0 1px alpha(black, 0.08),
+                inset 0 -1px alpha(black, 0.05);
 }
 
 .linked .button:insensitive,
@@ -55,9 +55,9 @@
 .inline-toolbar.toolbar .button:active:only-child,
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:active,
 .inline-toolbar.toolbar GtkToolButton:only-child > .button:active {
-    box-shadow: inset 1px 0 alpha(@shadow, 0.07),
-                inset 0 1px alpha(@shadow, 0.08),
-                inset -1px 0 alpha(@shadow, 0.07);
+    box-shadow: inset 1px 0 alpha(black, 0.07),
+                inset 0 1px alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.07);
 }
 
 /* middle button */
@@ -92,9 +92,9 @@
 .inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive {
     border-width: 1px;
     border-radius: 4px;
-    border-right-width: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+    border-right-width: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 /* rightmost button */
@@ -111,9 +111,9 @@
 .inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive {
     border-width: 1px;
     border-radius: 4px;
-    border-left-width: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    border-left-width: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
 }
 
 /* linked single button */
@@ -143,9 +143,9 @@
 .inline-toolbar.toolbar.vertical .button:active,
 .inline-toolbar.toolbar.vertical GtkToolButton > .button:active {
     box-shadow: inset 0 -1px shade(@bg_color, 0.9),
-                inset 1px 0 alpha(@shadow, 0.07),
-                inset 0 1px alpha(@shadow, 0.08),
-                inset -1px 0 alpha(@shadow, 0.07);
+                inset 1px 0 alpha(black, 0.07),
+                inset 0 1px alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.07);
 }
 
 .linked.vertical .button:insensitive,
@@ -183,9 +183,9 @@
 .inline-toolbar.toolbar.vertical .button:active:only-child,
 .inline-toolbar.toolbar.vertical GtkToolButton:last-child > .button:active,
 .inline-toolbar.toolbar.vertical GtkToolButton:only-child > .button:active {
-    box-shadow: inset 1px 0 alpha(@shadow, 0.07),
-                inset 0 1px alpha(@shadow, 0.08),
-                inset -1px 0 alpha(@shadow, 0.07);
+    box-shadow: inset 1px 0 alpha(black, 0.07),
+                inset 0 1px alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.07);
 }
 
 /* middle button (vertical) */
@@ -253,9 +253,9 @@
 .header-bar .button.raised.linked:active,
 .header-bar .raised.linked .button:active {
     box-shadow: inset -1px 0 shade(@toolbar_bg_color, 0.9),
-                inset 1px 0 alpha(@shadow, 0.07),
-                inset 0 1px alpha(@shadow, 0.08),
-                inset 0 -1px alpha(@shadow, 0.05);
+                inset 1px 0 alpha(black, 0.07),
+                inset 0 1px alpha(black, 0.08),
+                inset 0 -1px alpha(black, 0.05);
 }
 
 .primary-toolbar .button.raised.linked:insensitive,
@@ -320,9 +320,9 @@
 .header-bar .button:active.raised.linked:only-child,
 .header-bar .raised.linked .button:active:last-child,
 .header-bar .raised.linked .button:active:only-child {
-    box-shadow: inset 1px 0 alpha(@shadow, 0.07),
-                inset 0 1px alpha(@shadow, 0.08),
-                inset -1px 0 alpha(@shadow, 0.07);
+    box-shadow: inset 1px 0 alpha(black, 0.07),
+                inset 0 1px alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.07);
 }
 
 /* middle button */

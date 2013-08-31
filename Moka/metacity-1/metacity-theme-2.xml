@@ -18,7 +18,7 @@
 <!-- GEOMETRY -->
 
 <!-- Focused window -->
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="0" rounded_top_right="0">
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
 	<distance name="left_width" value="1" />
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
@@ -27,12 +27,17 @@
 	<distance name="title_vertical_pad" value="0" />
 	<aspect_ratio name="button" value="1.0" />
 	<border name="title_border" left="4" right="4" top="4" bottom="4" />
-	<border name="button_border" left="0" right="0" top="0" bottom="0" />
+	<border name="button_border" left="0" right="0" top="1" bottom="0" />
 </frame_geometry>
 
-
 <!-- Unfocused window -->
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="normal" >
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="4" rounded_top_right="4" parent="normal" >
+	<distance name="left_width" value="1" />
+	<distance name="right_width" value="1" />
+	<distance name="bottom_height" value="1" />
+	<distance name="left_titlebar_edge" value="4"/>
+	<distance name="right_titlebar_edge" value="4"/>
+	<border name="button_border" left="0" right="0" top="1" bottom="0" />
 </frame_geometry>
 
 <!-- Maximized window -->

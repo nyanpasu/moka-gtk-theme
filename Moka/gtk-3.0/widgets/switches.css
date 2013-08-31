@@ -34,7 +34,42 @@ GtkSwitch:active,
 GtkSwitch:active .menuitem,
 GtkSwitch:active .menuitem:hover {
     padding: 1px 1px 1px 1px;
+    color: transparent;
 }
+
+GtkSwitch,
+GtkSwitch:backdrop,
+GtkSwitch:active,
+GtkSwitch:active:backdrop,
+GtkSwitch:active:insensitive,
+GtkSwitch:insensitive,
+GtkSwitch:insensitive:backdrop,
+GtkSwitch .menuitem,
+GtkSwitch:hover .menuitem,
+GtkSwitch:backdrop .menuitem,
+GtkSwitch:active .menuitem,
+GtkSwitch:active:backdrop .menuitem,
+GtkSwitch:active:insensitive .menuitem,
+GtkSwitch:insensitive .menuitem,
+GtkSwitch:insensitive:backdrop .menuitem
+GtkSwitch .menuitem:hover,
+GtkSwitch:hover .menuitem:hover,
+GtkSwitch:backdrop .menuitem:hover,
+GtkSwitch:active .menuitem:hover,
+GtkSwitch:active:backdrop .menuitem:hover,
+GtkSwitch:active:insensitive .menuitem:hover,
+GtkSwitch:insensitive .menuitem:hover,
+GtkSwitch:insensitive:backdrop .menuitem:hover {
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+/**********
+ * Slider *
+ **********/
 
 
 GtkSwitch.slider,
