@@ -25,12 +25,12 @@
 .sidebar .view,
 .sidebar GtkScrolledWindow {
     background-color: @bg_color;
-    color: @fg_color;
+    color: @fg_color;    
+    border: 0px;
+    border-style: solid;
 }
 
 .sidebar .frame {
-    border-right: 1px;
-    border-style: solid;
     border-color: @borders;
 }
 
@@ -44,8 +44,6 @@
 }
 
 .sidebar .frame:insensitive {
-    border-right: 1px;
-    border-style: solid;
     border-color: @insensitive_borders_color;
 }
 
@@ -59,8 +57,6 @@
 }
 
 .sidebar .frame:backdrop {
-    border-right: 1px;
-    border-style: solid;
     border-color: @unfocused_borders_color;
 }
 

@@ -3,7 +3,7 @@
  *********/
 
 .frame {
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: @borders;
 }
@@ -89,7 +89,7 @@ GtkTextView {
 
 /* Iconview */
 GtkIconView.view {
-    background-color: @bg_color;
+    background-color: @base_color;
 }
  
 GtkIconView.view.cell:selected,

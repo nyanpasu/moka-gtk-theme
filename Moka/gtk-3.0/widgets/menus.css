@@ -80,7 +80,7 @@ GtkTreeMenu .menuitem * {
 
 .menu .menuitem:insensitive,
 .menu .menuitem *:insensitive {
-    color: @insensitive_fg_color;
+    color: @insensitive_text_color;
 }
 
 .menuitem.check,
@@ -196,7 +196,7 @@ GtkTreeMenu .menuitem * {
     border-style: none;
     background-color: @panel_color;
     background-image: none;
-    color: @fg_color;
+    color: @bg_color;
 }
 
 .unity-panel.menubar.menuitem,

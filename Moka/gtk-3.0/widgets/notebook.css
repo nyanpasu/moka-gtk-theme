@@ -128,7 +128,10 @@
 
 /* Active tab colors */
 .notebook tab:active {
-    border-color: @selected_bg_color;
+    border-image: linear-gradient(to bottom,
+                              @selected_bg_color,
+                              @borders
+                              );
     background-image: linear-gradient(to bottom,
                               @gradient_color_a,
                               @base_color

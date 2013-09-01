@@ -40,9 +40,8 @@
 }
 
 .toolbar GtkComboBox,
-.toolbar .button,
-.toolbar .button:active
-.toolbar .button:active:focus {
+.toolbar .button {    
+    padding: 5px 4px 4px 5px;
     color: @text_color;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
@@ -51,24 +50,40 @@
                                   );
 }
 
+.toolbar GtkComboBox:active,
+.toolbar .button:active {
+    color: @text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
+                                  );
+}
+
 .toolbar .separator,
 .toolbar .button .separator,
 .toolbar .button.separator {
-    color: @insensitive_separator_color;
-    border-color: @insensitive_borders_color;
+    color: @separator;
 }
 
 /* Hover */
-.toolbar .button:hover,
-.toolbar .button:active:hover {
+.toolbar .button:hover {
     color: @hover_text_color;
-    border-color: shade(@selected_bg_color, 1.1);
+    border-color: @borders;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_color_a,
                                   @button_hover_gradient_color_b
                                   );
 }
 
+.toolbar .button:active:hover {
+    color: @hover_text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_b,
+                                  @button_hover_gradient_color_a
+                                  );
+}
 
 /* Insensitive */
 .toolbar .button:insensitive,
@@ -130,14 +145,22 @@
 }
 
 .primary-toolbar GtkComboBox,
-.primary-toolbar .button,
-.primary-toolbar .button:active
-.primary-toolbar .button:active:focus {
+.primary-toolbar .button {
     color: @text_color;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
                                   @button_gradient_color_a,
                                   @button_gradient_color_b
+                                  );
+}
+
+.primary-toolbar GtkComboBox:active,
+.primary-toolbar .button:active {
+    color: @text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
                                   );
 }
 
@@ -149,15 +172,24 @@
 }
 
 /* Hover */
-.primary-toolbar .button:hover,
-.primary-toolbar .button:active:hover {
+.primary-toolbar .button:hover {
     color: @hover_text_color;
-    border-color: shade(@selected_bg_color, 1.1);
+    border-color: @borders;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_color_a,
                                   @button_hover_gradient_color_b
                                   );
 }
+
+.primary-toolbar .button:active:hover {
+    color: @hover_text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_b,
+                                  @button_hover_gradient_color_a
+                                  );
+}
+
 
 
 /* Insensitive */
@@ -207,7 +239,6 @@
 
     -GtkToolbar-button-relief: normal;
     box-shadow: inset 0 3px alpha(black, 0.02), inset 0 2px alpha(black, 0.02), inset 0 1px alpha(black, 0.02);
-    padding: 2px;
 }
 
 .inline-toolbar {
@@ -229,14 +260,22 @@
 }
 
 .inline-toolbar GtkComboBox,
-.inline-toolbar .button,
-.inline-toolbar .button:active
-.inline-toolbar .button:active:focus {
+.inline-toolbar .button {
     color: @text_color;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
                                   @button_gradient_color_a,
                                   @button_gradient_color_b
+                                  );
+}
+
+.inline-toolbar GtkComboBox:active,
+.inline-toolbar .button:active {
+    color: @text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
                                   );
 }
 
@@ -248,13 +287,21 @@
 }
 
 /* Hover */
-.inline-toolbar .button:hover,
-.inline-toolbar .button:active:hover {
+.inline-toolbar .button:hover {
     color: @hover_text_color;
-    border-color: shade(@selected_bg_color, 1.1);
+    border-color: @borders;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_color_a,
                                   @button_hover_gradient_color_b
+                                  );
+}
+
+.inline-toolbar .button:active:hover {
+    color: @hover_text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_b,
+                                  @button_hover_gradient_color_a
                                   );
 }
 
@@ -345,9 +392,7 @@
 }
 
 .header-bar GtkComboBox,
-.header-bar .button,
-.header-bar .button:active
-.header-bar .button:active:focus {
+.header-bar .button {
     color: @text_color;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
@@ -356,21 +401,39 @@
                                   );
 }
 
+
+.header-bar GtkComboBox:active,
+.header-bar .button:active {
+    color: @text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
+                                  );
+}
+
 .header-bar .separator,
 .header-bar .button .separator,
 .header-bar .button.separator {
     color: @insensitive_separator_color;
-    border-color: @insensitive_borders_color;
 }
 
 /* Hover */
-.header-bar .button:hover,
-.header-bar .button:active:hover {
+.header-bar .button:hover {
     color: @hover_text_color;
-    border-color: shade(@selected_bg_color, 1.1);
+    border-color: @borders;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_color_a,
                                   @button_hover_gradient_color_b
+                                  );
+}
+
+.header-bar .button:active:hover {
+    color: @hover_text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_b,
+                                  @button_hover_gradient_color_a
                                   );
 }
 
@@ -390,7 +453,6 @@
 .header-bar .button .separator:insensitive,
 .header-bar .button.separator:insensitive {
     color: @insensitive_separator_color;
-    border-color: @insensitive_borders_color;
 }
 
 /* Unfocused */
@@ -408,5 +470,4 @@
 .header-bar .button .separator:backdrop,
 .header-bar .button.separator:backdrop {
     color: @unfocused_separator_color;
-    border-color: @unfocused_borders_color;
 }

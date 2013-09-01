@@ -35,7 +35,7 @@
 .entry:active,
 .entry:focus {
     border-color: shade(@selected_bg_color, 1.1);
-    box-shadow: inset 0px 0px 2px 1px alpha(@selection_color, 0.3);
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
     transition: all 100ms ease-in;
 }
 
