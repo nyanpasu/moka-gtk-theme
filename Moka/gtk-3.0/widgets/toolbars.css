@@ -307,15 +307,10 @@
 }
 
 /* Unfocused */
-.inline-toolbar .button:backdrop {
-    border-color: @unfocused_borders_color;
-    background-image: linear-gradient(to bottom,
-                                      @button_unfocused_gradient_color_a,
-                                      @button_unfocused_gradient_color_b
-                                      );
-}
-
+.inline-toolbar,
+.inline-toolbar .button:backdrop,
 .inline-toolbar .button:active:backdrop {
+    color: @unfocused_text_color;
     border-color: @unfocused_borders_color;
     background-image: linear-gradient(to bottom,
                                       @button_unfocused_gradient_color_a,

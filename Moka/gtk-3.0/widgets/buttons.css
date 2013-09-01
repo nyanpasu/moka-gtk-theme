@@ -45,12 +45,12 @@
 .button:hover:focus,
 .button:active:focus,
 .button:active:hover:focus {
-    border-color: @active_borders_color;
+    border-color: @selected_bg_color;
 }
 
 
 .button:hover {
-    border-color: @hover_borders_color;
+    border-color: shade(@selected_bg_color, 1.1);
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_color_a,
                                   @button_hover_gradient_color_b
@@ -59,7 +59,7 @@
 
 /* Active/Pressed Button */
 .button:active {
-    border-color: @active_borders_color; 
+    border-color: @selected_bg_color; 
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_color_a,
                                   @button_active_gradient_color_b
