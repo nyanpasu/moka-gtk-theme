@@ -59,7 +59,6 @@ GtkTreeMenu .menuitem * {
     border-color: transparent;
     border-radius: 0;
     background-color: transparent;
-    background-image: none;
     color: @text_color;
 
     -GtkMenuItem-arrow-scaling: 0.5;
