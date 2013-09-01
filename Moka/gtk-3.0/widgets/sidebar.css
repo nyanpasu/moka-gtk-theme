@@ -34,6 +34,37 @@
     border-color: @borders;
 }
 
+/* Insensitive */
+.sidebar:insensitive,
+.sidebar.view:insensitive,
+.sidebar .view:insensitive,
+.sidebar GtkScrolledWindow:insensitive {
+    background-color: @insensitive_bg_color;
+    color: @insensitive_fg_color;
+}
+
+.sidebar .frame:insensitive {
+    border-right: 1px;
+    border-style: solid;
+    border-color: @insensitive_borders_color;
+}
+
+/* Backdrop */
+.sidebar:backdrop,
+.sidebar.view:backdrop,
+.sidebar .view:backdrop,
+.sidebar GtkScrolledWindow:backdrop {
+    background-color: @unfocused_bg_color;
+    color: @unfocused_fg_color;
+}
+
+.sidebar .frame:backdrop {
+    border-right: 1px;
+    border-style: solid;
+    border-color: @unfocused_borders_color;
+}
+
+/* Separator */
 .sidebar.view.separator,
 .view.separator,
 .separator {
@@ -43,6 +74,7 @@
     color: @base_color;
 }
 
+/* Selected */
 .sidebar.view:selected,
 .sidebar.view:hover:selected {
     color: @base_color;
@@ -51,11 +83,13 @@
     background-color: @active_bg_color;
 }
 
+/* Selected Backdrop */
 .sidebar.view:selected:backdrop,
 .sidebar.view:hover:selected:backdrop {
-    background-color: @active_bg_color;
+    background-color: @unfocused_selected_bg_color;
 }
 
+/* Hover */
 .sidebar.view:hover {
     background-color: @hover_bg_color;
 }

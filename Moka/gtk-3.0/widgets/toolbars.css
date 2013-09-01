@@ -47,33 +47,6 @@
                                       );
 }
 
-/* Button Gradient */
-.toolbar GtkComboBox,
-.toolbar .button,
-.toolbar .button.text-button,
-.toolbar .button.image-button {
-    background-image: linear-gradient(to bottom,
-                                      @button_gradient_color_a,
-                                      @button_gradient_color_b
-                                      );
-}
-
-/* Hover Gradient */
-.toolbar .button:hover {
-    background-image: linear-gradient(to bottom,
-                                      @button_hover_gradient_color_a,
-                                      @button_hover_gradient_color_b
-                                      );
-}
-
-/* Active Gradient */
-.toolbar .button:active {
-    background-image: linear-gradient(to bottom,
-                                      @button_active_gradient_color_a,
-                                      @button_active_gradient_color_b
-                                      );
-}
-
 /* Border colors */
 .toolbar,
 .toolbar GtkComboBox,
@@ -93,32 +66,52 @@
     border-color: @borders;
 }
 
-/* Menubar toolbars */
-.toolbar.menubar {
-    -GtkToolbar-button-relief: normal;
-}
-
 /* Insensitive */
-.toolbar:insensitive {
-    color: mix(@fg_color, @bg_color, 0.5);
-    background-color: shade(@bg_color, 0.9);
-}
-
 .toolbar .button:insensitive {
     border-color: @insensitive_borders_color;
-    background-color: shade(@bg_color, 1.0);
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
 }
 
 .toolbar .button:active:insensitive {
     border-color: @insensitive_borders_color;
-    background-color: shade(@bg_color, 1.0);
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
 }
 
+.toolbar .separator:insensitive,
 .toolbar .button .separator:insensitive,
 .toolbar .button.separator:insensitive {
+    color: @insensitive_separator_color;
     border-color: @insensitive_borders_color;
+}
+
+/* Unfocused */
+.toolbar .button:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.toolbar .button:active:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.toolbar .separator:backdrop,
+.toolbar .button .separator:backdrop,
+.toolbar .button.separator:backdrop {
+  color: @unfocused_separator_color;
+    border-color: @unfocused_borders_color;
 }
 
 /*******************
@@ -131,7 +124,6 @@
     -GtkWidget-window-dragging: true;
     padding: 3px;
     border-bottom: 1px;
-    border-bottom-color: #000;
     border-style: solid;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
@@ -147,32 +139,7 @@
     border-radius: 4px;
 }
 
-/* Gradients */
-.primary-toolbar GtkComboBox,
-.primary-toolbar .button,
-.primary-toolbar .raised .button,
-.primary-toolbar .raised.button {
-    background-image: linear-gradient(to bottom,
-                                      @button_gradient_color_a,
-                                      @button_gradient_color_b
-                                      );
-}
-
-.primary-toolbar .button:hover {
-    background-image: linear-gradient(to bottom,
-                                      @button_hover_gradient_color_a,
-                                      @button_hover_gradient_color_b
-                                      );
-}
-
-.primary-toolbar .button:active {
-    background-image: linear-gradient(to bottom,
-                                      @button_active_gradient_color_a,
-                                      @button_active_gradient_color_b
-                                      );
-}
-
-.primary-toolbar .button:active
+.primary-toolbar .button:active,
 .primary-toolbar .button:active:hover,
 .primary-toolbar .button:active:focus,
 .primary-toolbar .button:active:hover:focus,
@@ -183,12 +150,12 @@
 .primary-toolbar .entry:active,
 .primary-toolbar .entry:focus,
 .primary-toolbar .raised .button,
-.primary-toolbar .raised.button,
-.primary-toolbar .button .separator,
-.primary-toolbar .button.separator {
+.primary-toolbar .raised.button {
     border-color: @borders
 }
 
+.primary-toolbar .button .separator,
+.primary-toolbar .button.separator,
 .primary-toolbar GtkSeparatorToolItem,
 .primary-toolbar .separator {
     border-color: @separator;
@@ -209,13 +176,60 @@
 }
 
 .primary-toolbar .separator:insensitive {
-    border-color: @insensitive_borders_color;
-    color: shade(@bg_color, 0.95);
+    color: @insensitive_separator_color;
 }
 
 .primary-toolbar .button .separator:insensitive,
 .primary-toolbar .button.separator:insensitive {
     border-color: shade(@borders, 1.45);
+}
+
+/* Insensitive */
+.primary-toolbar .button:insensitive {
+    border-color: @insensitive_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
+}
+
+.primary-toolbar .button:active:insensitive {
+    border-color: @insensitive_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
+}
+
+.primary-toolbar .separator:insensitive,
+.primary-toolbar .button .separator:insensitive,
+.primary-toolbar .button.separator:insensitive {
+  color: @insensitive_separator_color;
+    border-color: @insensitive_borders_color;
+}
+
+/* Unfocused */
+.primary-toolbar .button:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.primary-toolbar .button:active:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.primary-toolbar .separator:backdrop,
+.primary-toolbar .button .separator:backdrop,
+.primary-toolbar .button.separator:backdrop {
+    color: @unfocused_separator_color;
+    border-color: @unfocused_borders_color;
 }
 
 /******************
@@ -251,3 +265,164 @@
     border-radius: 0;
 }
 
+.inline-toolbar,
+.inline-toolbar .toolbar,
+.inline-toolbar.toolbar,
+.inline-toolbar .button:focus,
+.inline-toolbar .button:hover
+.inline-toolbar .button:hover:focus,
+.inline-toolbar .entry,
+.inline-toolbar .entry:active,
+.inline-toolbar .entry:focus,
+.inline-toolbar .raised .button,
+.inline-toolbar .raised.button,
+.inline-toolbar .button .separator,
+.inline-toolbar .button.separator,
+.inline-toolbar GtkComboBox {
+    border-color: @borders;
+}
+
+/* Insensitive */
+.inline-toolbar .button:insensitive {
+    border-color: @insensitive_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
+}
+
+.inline-toolbar .button:active:insensitive {
+    border-color: @insensitive_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
+}
+
+.inline-toolbar .separator:insensitive,
+.inline-toolbar .button .separator:insensitive,
+.inline-toolbar .button.separator:insensitive {
+  color: @insensitive_separator_color;
+    border-color: @insensitive_borders_color;
+}
+
+/* Unfocused */
+.inline-toolbar .button:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.inline-toolbar .button:active:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.inline-toolbar .separator:backdrop,
+.inline-toolbar .button .separator:backdrop,
+.inline-toolbar .button.separator:backdrop {
+  color: @unfocused_separator_color;
+    border-color: @unfocused_borders_color;
+}
+
+/********************
+ * Menubar Toolbars *
+ ********************/
+.toolbar.menubar {
+    -GtkToolbar-button-relief: normal;
+    
+    padding: 6px 6px 5px 6px; /* weird padding to compensate border-images
+                                 and eventual top border presence, 
+                                 see selection mode toolbars */
+
+}
+
+
+/**************
+ * Header Bar *
+ **************/
+
+.header-bar {
+    border-bottom: 1px;
+    border-style: solid;
+    padding: 6px 6px 5px 6px;
+
+    box-shadow: inset 0 -1px shade(@borders, 1.30);
+    background-image: linear-gradient(to bottom,
+                                  @gradient_color_a,
+                                  @gradient_color_b
+                                  );
+}
+
+.header-bar .inline-toolbar.toolbar {
+    border-width: 0px
+}
+
+.header-bar .button.text-button {
+    padding: 2px 16px;
+}
+
+.header-bar .button.image-button {
+    padding: 5px 4px 5px 5px;
+}
+
+.header-bar .title {
+    font: Bold 11;
+}
+
+.header-bar .subtitle {
+    font: 9;
+}
+
+/* Insensitive */
+.header-bar .button:insensitive {
+    border-color: @insensitive_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
+}
+
+.header-bar .button:active:insensitive {
+    border-color: @insensitive_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
+}
+
+.header-bar .separator:insensitive,
+.header-bar .button .separator:insensitive,
+.header-bar .button.separator:insensitive {
+  color: @insensitive_separator_color;
+    border-color: @insensitive_borders_color;
+}
+
+/* Unfocused */
+.header-bar .button:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.header-bar .button:active:backdrop {
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.header-bar .separator:backdrop,
+.header-bar .button .separator:backdrop,
+.header-bar .button.separator:backdrop {
+  color: @unfocused_separator_color;
+    border-color: @unfocused_borders_color;
+}

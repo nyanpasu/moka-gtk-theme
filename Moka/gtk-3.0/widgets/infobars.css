@@ -36,19 +36,33 @@ GtkInfoBar {
 .info .entry:focus,
 .info .button,
 .info .button:insensitive,
-.info .button:active,
+.info .button:active {
+    text-shadow: none;
+    border-color: @info_borders_color;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
 .warning .entry,
 .warning .entry:focus,
 .warning .button,
 .warning .button:insensitive,
-.warning .button:active,
+.warning .button:active {
+    text-shadow: none;
+    border-color: @warning_borders_color;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
 .error .entry,
 .error .entry:focus,
 .error .button,
 .error .button:insensitive,
 .error .button:active {
     text-shadow: none;
-    border-color: @borders;
+    border-color: @error_borders_color;
     border-style: solid;
     border-width: 1px;
 }
@@ -63,6 +77,7 @@ GtkInfoBar {
     border-style: solid;
     border-width: 1px;
 }
+
 
 .info .entry:backdrop,
 .info .button:backdrop,

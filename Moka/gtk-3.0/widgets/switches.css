@@ -24,8 +24,8 @@
 GtkSwitch,
 GtkSwitch .menuitem,
 GtkSwitch .menuitem:hover {
-    -GtkSwitch-slider-width: 24;
-    -GtkSwitch-slider-height: 24;
+    -GtkSwitch-slider-width: 24px;
+    -GtkSwitch-slider-height: 24px;
     padding: 1px 1px 1px 1px;
     color: transparent;
 }
