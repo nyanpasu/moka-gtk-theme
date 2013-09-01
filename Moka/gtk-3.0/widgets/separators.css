@@ -22,6 +22,7 @@
  **************/
  
 .pane-separator {
+    -GtkPaned-handle-size: 2px;
     background-color: @bg_color;
     color: @base_color;
 }
@@ -50,7 +51,7 @@
 .sidebar-pane-separator:hover,
 .sidebar-pane-separator:selected {
     border-width: 0;
-    -GtkPaned-handle-size: 1;
+    -GtkPaned-handle-size: 2px;
     background-image: none;
     background-color: @borders;
     border-color: @borders;

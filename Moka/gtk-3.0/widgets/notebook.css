@@ -36,23 +36,26 @@
 }
 
 .notebook:selected {
-    color: @selected_fg_color;
     border-color: @selected_bg_color;
+    color: @selected_fg_color;
 }
 
 .notebook:backdrop {
     background-color: @unfocused_bg_color;
+    border-color: @unfocused_borders_color;
     color: @unfocused_text_color;
 }
 
 .notebook:insensitive:backdrop {
-    background-color: mix(@insensitive_bg_color, @unfocused_bg_color, 0.5);
-    color: mix(@unfocused_text_color, @insensitive_text_color, 0.5);
+    background-color: @unfocused_insensitive_bg_color;
+    border-color: @unfocused_borders_color;
+    color: @unfocused_insensitive_fg_color;
 }
 
 .notebook:selected:backdrop {
-    background-color: mix(@active_bg_color, @unfocused_bg_color, 0.5);
-    color: mix(@unfocused_text_color, @active_text_color, 0.5);
+    background-color: @unfocused_selected_bg_color;
+    border-color: @unfocused_borders_color;
+    color: @unfocused_text_color;
 }
 
 /* Background colors */
@@ -139,6 +142,14 @@
     color: @text_color;
 }
 
+.notebook tab.left:active,
+.notebook tab.right:active {
+    border-color: @selected_bg_color;
+    background-image: @base_color;
+    color: @text_color;
+}
+
+
 /* Padding */
 .notebook tab.top {
     padding: 4px 2px 0;
@@ -175,13 +186,20 @@
 .notebook GtkViewport:backdrop {
     background-image: none;
     background-color: @unfocused_bg_color;
-    color: @unfocused_fg_color
-}
-
-.notebook:backdrop,
-.notebook tab:backdrop {
+    color: @unfocused_fg_color;
     border-color: @unfocused_borders_color;
 }
+
+/* Insensitive Tab Colors */
+.notebook:insensitive,
+.notebook tab:insensitive,
+.notebook GtkViewport:insensitive {
+    background-image: none;
+    background-color: @insensitive_bg_color;
+    color: @insensitive_fg_color;
+    border-color: @unfocused_borders_color;
+}
+
 
 /* Close Button */
 .notebook tab .button,

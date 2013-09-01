@@ -25,8 +25,7 @@
     padding: 2px 4px;
     border-width: 0;
     border-radius: 0px;
-    border-style: none;
-    
+    border-style: 1px solid;
 }
 
 .spinbutton.entry,
@@ -75,16 +74,22 @@
 .spinbutton:active,
 .spinbutton .button:active,
 .spinbutton .button:active:focus,
-.spinbutton .button:active:hover:focus,
-.spinbutton.vertical .button:active,
-.spinbutton.vertical .button:active:focus,
-.spinbutton.vertical .button:active:hover:focus {
+.spinbutton .button:active:hover:focus {
     color: @text_color;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_color_a,
                                   @button_active_gradient_color_b
                                   );
+}
+
+.spinbutton.vertical:active,
+.spinbutton.vertical .button:active,
+.spinbutton.vertical .button:active:focus,
+.spinbutton.vertical .button:active:hover:focus {
+    color: @text_color;
+    border-color: @borders;
+    background-image: @base_color;
 }
 
 
