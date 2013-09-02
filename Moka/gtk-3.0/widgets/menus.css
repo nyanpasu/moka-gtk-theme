@@ -148,7 +148,7 @@ GtkTreeMenu .menuitem * {
     border-style: none;
     background-color: @bg_color;
     background-image: none;
-    color: @text_color;
+    color: @base_color;
 }
 
 .menubar.menuitem,
@@ -159,7 +159,7 @@ GtkTreeMenu .menuitem * {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: @text_color;
+    color: @base_color;
 }
 
 .menubar.menuitem:hover,
@@ -168,7 +168,7 @@ GtkTreeMenu .menuitem * {
     border-color: @selected_borders_color;
     background-color: @selected_bg_color;
     background-image: none;
-    color: @bg_color;
+    color: @base_color;
 }
 
 /* Separator */
@@ -196,7 +196,7 @@ GtkTreeMenu .menuitem * {
     border-style: none;
     background-color: @panel_color;
     background-image: none;
-    color: @bg_color;
+    color: @base_color;
 }
 
 .unity-panel.menubar.menuitem,
@@ -207,7 +207,7 @@ GtkTreeMenu .menuitem * {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: @bg_color;
+    color: @base_color;
 }
 
 .unity-panel.menubar.menuitem:hover,
@@ -215,7 +215,7 @@ GtkTreeMenu .menuitem * {
     border-color: @borders;
     background-color: shade(@fg_color, 1.1);
     background-image: none;
-    color: @bg_color;
+    color: @base_color;
 }
 
 .unity-panel.menubar .menuitem *:hover {
