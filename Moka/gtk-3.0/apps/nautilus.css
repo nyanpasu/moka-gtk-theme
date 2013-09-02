@@ -47,7 +47,20 @@ NautilusNotebook.notebook {
 }
 
 NautilusNotebook .frame {
-    border-width: 1px 0 0 0;
+    border-width: 0;
+}
+
+NautilusToolbar .button {
+    icon-shadow: 0 1px @button_text_shadow;
+}
+
+NautilusToolbar .button:active {
+    icon-shadow: 0 1px @button_active_text_shadow;
+}
+
+NautilusToolbar .button:insensitive,
+NautilusToolbar .button:active *:insensitive {
+    icon-shadow: none;
 }
 
 NautilusQueryEditor .primary-toolbar.toolbar {
@@ -64,12 +77,21 @@ NautilusQueryEditor .toolbar {
     padding: 4px 4px 3px 4px;
     border-width: 1px 0 0 0;
     border-style: solid;
-    border-color: @toolbar_bg_color;
-    background-color: shade(@toolbar_bg_color, 0.9);
+    border-color: @borders;
+    background-color: shade(@bg_color, 0.9);
 }
 
 NautilusQueryEditor .toolbar:nth-child(2) {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: shade(@bg_color, 0.8);
+}
+
+NautilusQueryEditor .toolbar:backdrop {
+    background-color: @unfocused_base_color;
+    border-color: @unfocused_base_color;
+}
+
+NautilusQueryEditor .toolbar:backdrop:nth-child(2) {
+    border-color: @unfocused_borders;
 }
 
 NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar {
@@ -79,7 +101,7 @@ NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar {
 NautilusNotebook.notebook NautilusQueryEditor .toolbar:last-child,
 NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar:only-child {
     border-bottom-width: 1px;
-    border-bottom-color: shade(@toolbar_bg_color, 0.8);
+    border-bottom-color: shade(@bg_color, 0.8);
 }
 
 .toolbar NautilusPathBar .button {

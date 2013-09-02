@@ -130,7 +130,8 @@
 }
 
 /* Active tab colors */
-.notebook tab:active {
+.notebook tab.top:active,
+.notebook tab.bottom:active {
     border-image: linear-gradient(to bottom,
                               @selected_bg_color,
                               @borders
@@ -200,7 +201,6 @@
     border-color: @unfocused_borders_color;
 }
 
-
 /* Close Button */
 .notebook tab .button,
 .notebook tab .button:active,
@@ -213,17 +213,17 @@
 
 .notebook tab .button GtkImage {
     border-radius: 3px;
-    color: mix(@fg_color, @base_color, 0.6);
+    color:  mix(@fg_color, @base_color, 0.5);
     border-style: solid;
     border-color: transparent;
     border-width: 1px;
     padding: 1px;
-    icon-shadow: 0 1px @button_text_shadow;
+    icon-shadow: 0 1px alpha(black, 0.2);
 }
 
 .notebook tab .button GtkImage:hover {
     color: @fg_color;
-    border-color: alpha(black, 0.1);
+    border-color: alpha(@borders, 0.1);
 }
 
 .notebook tab .button GtkImage:active,
@@ -232,10 +232,7 @@
     box-shadow: inset 0 1px alpha(black, 0.05);
     color:  @button_active_text;
     icon-shadow: 0 1px @button_active_text_shadow;
-    border-color: alpha(black, 0.27) 
-                  alpha(black, 0.13) 
-                  alpha(black, 0.13) 
-                  alpha(black, 0.13);
+    border-color: @borders;
 }
 
 .notebook tab .button GtkImage:backdrop {
