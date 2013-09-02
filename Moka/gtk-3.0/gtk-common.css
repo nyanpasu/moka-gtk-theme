@@ -66,7 +66,7 @@
 
 /* Selected color */
 @define-color selected_bg_color @selection_color;
-@define-color selected_fg_color @fg_color;
+@define-color selected_fg_color shade(@selection_color, 5.0);
 @define-color selected_borders_color shade(@selection_color, 0.95);
 
 /****************

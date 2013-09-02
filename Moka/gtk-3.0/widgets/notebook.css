@@ -146,7 +146,7 @@
 .notebook tab.left:active,
 .notebook tab.right:active {
     border-color: @selected_bg_color;
-    background-image: @base_color;
+    background-color: @base_color;
     color: @text_color;
 }
 
