@@ -31,7 +31,7 @@ For Ubuntu and its derivatives, Moka GTK is available in a Launchpad PPA* which 
 
 **The PPA is synchronized with the git repository and should always deliver the latest version within a few hours, at most a day.*
 
-**Note: not installing system-wide (as root) may cause the window theme not to work.**
+* *Note: not installing system-wide (as root) may cause the window theme not to work.**
 
 ###Uninstall
 
@@ -39,7 +39,7 @@ To uninstall, run* the uninstall script to remove the locally installed theme.
 
     ./UNINSTALL
 
-**Running as root will remove the theme from the system-wide folder (/usr/share/themes), if installed.*
+* *Running as root will remove the theme from the system-wide folder (/usr/share/themes), if installed.*
 
 ###Getting the Source
 
