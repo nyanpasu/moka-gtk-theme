@@ -29,8 +29,7 @@
 .scale.slider,
 .scale.slider:hover,
 .scale.slider:insensitive,
-.scale.slider:backdrop,
-.scale.slider:insensitive:backdrop {
+.scale.slider:backdrop {
     border-radius: 0;
     border-style: none;
     background-color: transparent;
@@ -75,7 +74,7 @@
     box-shadow: inset 0px 0px 2px 1px @hover_selection_color;
 }
 
-/* Backdrop/unfocused fill colors */
+/* Unfocused fill colors */
 .menubar .menuitem.scale.highlight.left:backdrop,
 .scale.vertical.highlight.left:backdrop,
 .menubar .menuitem.scale.highlight.bottom:backdrop,
@@ -121,7 +120,7 @@
     box-shadow: inset 0px 0px 1px 1px @insensitive_borders_color;
 }
 
-/* Backdrop/unfocused trough colors */
+/* Unfocused trough colors */
 .scale.trough:backdrop,
 .scale.trough.vertical:backdrop {
     border-width: 0;

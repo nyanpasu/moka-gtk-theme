@@ -9,17 +9,12 @@
 }
 
 .frame:backdrop {
-    border-width: 1px;
-    border-style: solid;
     border-color: @unfocused_borders_color;
 }
 
 .frame:insensitive {
-    border-width: 1px;
-    border-style: solid;
     border-color: @insensitive_borders_color;
 }
-
 
 /********
  * View *
@@ -119,16 +114,6 @@ GtkTreeView .entry {
 GtkTextView {
     background-color: @base_color;
     color: @text_color;
-}
-
-GtkTextView:backdrop {
-    background-color: @unfocused_base_color;
-    color: @unfocused_text_color;
-}
-
-GtkTextView:insensitive {
-    background-color: @insenstive_base_color;
-    color: @nsenstive_text_color;
 }
 
 /************
