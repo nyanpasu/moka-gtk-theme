@@ -20,14 +20,18 @@
  * Notebook *
  ************/
 
-.notebook {
+.notebook,
+.notebook GtkViewport {
     border-style: solid;
     border-width: 1px;
-    background-color: @base_color;
+    background-color: @base_color;    
+    color: @text_color;    
+    border-color: @borders;
+
+    /* Tab geometry */
     -GtkNotebook-tab-overlap: 12;
     -GtkNotebook-tab-curvature: 8;
     -GtkNotebook-initial-gap: 4;
-    color: @text_color;
 }
 
 .notebook:insensitive {
@@ -58,14 +62,7 @@
     color: @unfocused_text_color;
 }
 
-/* Background colors */
-.notebook GtkViewport {
-    border-style: solid;
-    border-width: 1px;
-    border-color: @borders;
-    background-color: @base_color;
-}
-
+/* Tab background colors */
 .notebook tab {
     background-image: linear-gradient(to bottom,
                               @gradient_color_a,
@@ -79,57 +76,25 @@
                               @gradient_color_b
                               );
 }
-
-.notebook tab.left:active,
-.notebook tab.right:active {
+.notebook tab.left,
+.notebook tab.right {
     background-image: none;
     background-color: @base_color;
 }
 
-.notebook tab.left:active:backdrop,
-.notebook tab.right:active:backdrop {
-    background-image: none;
-    background-color: @unfocused_base_color;
-}
-
-.notebook tab.left,
-.notebook tab.right {
-    background-image: none;
-    background-color: @bg_color;
-    border-radius: 4px;
-}
-
-/* Borders */
-.notebook tab.top {
-    border-radius: 4px 4px 0px 0px;
-    border-width: 1px 1px 0px 1px;
-}
-
-.notebook tab.bottom {
-    border-radius: 0px 0px 4px 4px;
-    border-width: 0 1px 1px 1px;
-}
-
-.notebook tab.left {
-    border-radius: 4px 0 0 4px;
-    border-width: 1px 0 1px 1px;
-}
-
-.notebook tab.right {
-    border-radius: 0px 4px 4px 0px;
-    border-width: 1px 1px 1px 0;
-}
-
-.notebook,
-.notebook tab {
-    border-color: @borders;
-}
-
 /* Active tab colors */
-.notebook tab.top:active,
-.notebook tab.bottom:active {
+.notebook tab.top:active {
     border-color: @selected_bg_color;
     background-image: linear-gradient(to bottom,
+                              @gradient_color_a,
+                              @base_color
+                              );
+    color: @text_color;
+}
+
+.notebook tab.bottom:active {
+    border-color: @selected_bg_color;
+    background-image: linear-gradient(to top,
                               @gradient_color_a,
                               @base_color
                               );
@@ -143,30 +108,70 @@
     color: @text_color;
 }
 
-
-/* Padding */
-.notebook tab.top {
-    padding: 4px 2px 0;
+/* Unfocused Tab Colors */
+.notebook:backdrop,
+.notebook tab:backdrop,
+.notebook tab:active:backdrop,
+.notebook GtkViewport:backdrop {
+    background-image: none;
+    background-color: @unfocused_bg_color;
+    color: @unfocused_text_color;
+    border-color: @unfocused_borders_color;
 }
 
-.notebook tab.top:active {
-    padding: 5px 2px 0;
+/* Insensitive Tab Colors */
+.notebook:insensitive,
+.notebook tab:insensitive,
+.notebook tab:active:insensitive,
+.notebook GtkViewport:insensitive {
+    background-image: none;
+    background-color: @insensitive_bg_color;
+    color: @insensitive_text_color;
+    border-color: @unfocused_borders_color;
+}
+
+/* Tab Borders */
+.notebook tab.top {
+    border-radius: 6px 6px 0px 0px;
+    border-width: 1px 1px 0px 1px;
 }
 
 .notebook tab.bottom {
-    padding: 0 2px 4px;
+    border-radius: 0px 0px 6px 6px;
+    border-width: 0 1px 1px 1px;
 }
 
-.notebook tab.bottom:active {
-    padding: 0 2px 5px;
+.notebook tab.left {
+    border-radius: 6px 0 0 6px;
+    border-width: 1px 0 1px 1px;
 }
 
-.notebook tab.left:active {
-    padding-left: 1px;
+.notebook tab.right {
+    border-radius: 0px 6px 6px 0px;
+    border-width: 1px 1px 1px 0;
 }
 
-.notebook tab.right:active {
-    padding-right: 1px;
+.notebook,
+.notebook tab {
+    border-color: @borders;
+}
+
+/* In-Tab Padding */
+.notebook tab.top {
+ /* padding: top right bottom left; */
+    padding: 5px 8px 1px 8px;
+}
+
+.notebook tab.bottom {
+    padding: 1px 8px 5px 8px;
+}
+
+.notebook tab.left {
+    padding: 2px 2px 2px 2px;
+}
+
+.notebook tab.right {
+    padding: 2px 2px 2px 2px;
 }
 
 /* Labels */
@@ -174,24 +179,8 @@
     color: @text_color;
 }
 
-/* Unfocused Tab Colors */
-.notebook:backdrop,
-.notebook tab:backdrop,
-.notebook GtkViewport:backdrop {
-    background-image: none;
-    background-color: @unfocused_bg_color;
-    color: @unfocused_fg_color;
-    border-color: @unfocused_borders_color;
-}
-
-/* Insensitive Tab Colors */
-.notebook:insensitive,
-.notebook tab:insensitive,
-.notebook GtkViewport:insensitive {
-    background-image: none;
-    background-color: @insensitive_bg_color;
-    color: @insensitive_fg_color;
-    border-color: @unfocused_borders_color;
+.notebook tab:backdrop GtkLabel {
+    color: @unfocused_text_color;
 }
 
 /* Close Button */

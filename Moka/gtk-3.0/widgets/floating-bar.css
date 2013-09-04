@@ -19,16 +19,20 @@
 /****************
  * Floating Bar *
  ****************/
-
 .floating-bar {
-    padding: 4px;
+    background-image: linear-gradient(to bottom, 
+                                      @base_color 20%, 
+                                      shade(@base_color, 0.9)
+                                      );
+    background-color: @base_color;
+    border-color: @borders;
+
+    color: @text_color;
+    text-shadow: 0 1px @button_text_shadow;
+
+    border-radius: 3px;
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0px;
-    background-color: @theme_bg_color;
-    background-image: none;
-    color: @theme_fg_color;
 }
 
 .floating-bar.top {
@@ -56,7 +60,7 @@
 }
 
 .floating-bar .button {
-    -GtkButton-image-spacing: 2px;
+    -GtkButton-image-spacing: 6px;
     -GtkButton-inner-border: 0;
 
     border-style: none;

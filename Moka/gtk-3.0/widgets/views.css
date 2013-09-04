@@ -1,22 +1,47 @@
 /*********
- * Views *
+ * Frame *
  *********/
 
 .frame {
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid;
     border-color: @borders;
 }
 
+.frame:backdrop {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @unfocused_borders_color;
+}
+
+.frame:insensitive {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @insensitive_borders_color;
+}
+
+
+/********
+ * View *
+ ********/
 .view {
     background-color: @base_color;
     color: @text_color;
+    border-color: @borders;
 }
 
 .view:insensitive,
 .view:insensitive:insensitive {
     background-color: @insensitive_bg_color;
     color: @insensitive_fg_color;
+    border-color: @insensitive_borders_color;
+}
+
+.view:backdrop,
+.view:backdrop:backdrop {
+    background-color: @unfocused_bg_color;
+    color: @unfocused_fg_color;
+    border-color: @unfocused_borders_color;
 }
 
 .view:selected,
@@ -35,24 +60,30 @@
     background-color: alpha(@selected_bg_color, 0.3);
 }
 
-/* Viewport */
+/************
+ * Viewport *
+ ************/
 GtkViewport.frame {
     border-width: 0;
 }
 
-/* Scrolled Window */
+/*******************
+ * Scrolled Window *
+ *******************/
 GtkScrolledWindow.frame {
     border-width: 1px;
     border-style: solid;
     border-color: @borders;
-    border-radius: 0;
+    background-color: @bg_color;
 }
 
 GtkScrolledWindow GtkViewport.frame {
     border-style: none; /* To avoid double borders when a viewport is packed into a GtkScrolledWindow */
 }
 
-/* Treeview */
+/************
+ * Treeview *
+ ************/
 
 GtkTreeView.view.separator,
 GtkTreeView.separator,
@@ -81,13 +112,28 @@ GtkTreeView .entry {
     background-image: none;
 }
 
-/* Textview */
+/************
+ * Textview *
+ ************/
+
 GtkTextView {
     background-color: @base_color;
     color: @text_color;
 }
 
-/* Iconview */
+GtkTextView:backdrop {
+    background-color: @unfocused_base_color;
+    color: @unfocused_text_color;
+}
+
+GtkTextView:insensitive {
+    background-color: @insenstive_base_color;
+    color: @nsenstive_text_color;
+}
+
+/************
+ * Iconview *
+ ************/
 GtkIconView.view {
     background-color: @base_color;
 }
@@ -102,7 +148,10 @@ GtkIconView.view.cell:selected:focus {
     color: @selected_fg_color;
 }
 
-/* Content view */
+
+/****************
+ * Content View *
+ ****************/
 .content-view.view {
     background-color: @base_color;
 }

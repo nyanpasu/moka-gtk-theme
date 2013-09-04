@@ -96,10 +96,10 @@ OsThumb:active:backdrop,
 OsScrollbar:active:backdrop,
 OsThumb:backdrop,
 OsScrollbar:backdrop {
-    background-color: @unfocused_selection_color;
+    background-color: @unfocused_fg_color;
 }
 
 OsThumb:insensitive,
 OsScrollbar:insensitive {
-    background-color: @insensitive_selection_color;
+    background-color: @insensitive_fg_color;
 }
