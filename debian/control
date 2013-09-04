@@ -6,9 +6,9 @@ Build-Depends: debhelper (>= 7)
 Standards-Version: 3.9.2
 Homepage: https://github.com/snwh/moka-gtk-theme
 
-
 Package: moka-gtk-theme
 Architecture: all
 Depends: ${misc:Depends}
+Recommends: gnome-themes-standard
 Description: Moka GTK Theme
  Moka GTK theme.
