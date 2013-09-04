@@ -101,27 +101,23 @@
 
 /* Borders */
 .notebook tab.top {
+    border-radius: 4px 4px 0px 0px;
     border-width: 1px 1px 0px 1px;
 }
 
 .notebook tab.bottom {
+    border-radius: 0px 0px 4px 4px;
     border-width: 0 1px 1px 1px;
 }
 
 .notebook tab.left {
+    border-radius: 4px 0 0 4px;
     border-width: 1px 0 1px 1px;
 }
 
 .notebook tab.right {
+    border-radius: 0px 4px 4px 0px;
     border-width: 1px 1px 1px 0;
-}
-
-.notebook tab.left:active {
-    border-radius: 3px 0 0 3px;
-}
-
-.notebook tab.right:active {
-    border-radius: 0 3px 3px 0;
 }
 
 .notebook,
@@ -132,10 +128,7 @@
 /* Active tab colors */
 .notebook tab.top:active,
 .notebook tab.bottom:active {
-    border-image: linear-gradient(to bottom,
-                              @selected_bg_color,
-                              @borders
-                              );
+    border-color: @selected_bg_color;
     background-image: linear-gradient(to bottom,
                               @gradient_color_a,
                               @base_color
