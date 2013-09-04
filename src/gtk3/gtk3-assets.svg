@@ -34,17 +34,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="284.81304"
-     inkscape:cy="106.60489"
-     inkscape:current-layer="g4637"
+     inkscape:cx="463.87542"
+     inkscape:cy="57.049245"
+     inkscape:current-layer="g4532"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="717"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -5315,21 +5315,21 @@
        id="g3692"
        inkscape:groupmode="layer">
       <path
-         style="fill:#a172d2;fill-opacity:1;stroke:none;display:inline;enable-background:new"
-         d="m 412,273 2,-2 3,2 7,-6 0,2 -7,8 z"
-         id="path3934-6"
+         style="opacity:0.20000000000000001;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;enable-background:new"
+         d="m 413,242 3,-1 1,2 6,-5 0,1 c 0,0 -4,4 -6,8 0,0 -2,-3 -4,-5 z"
+         id="path4469-0"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccccc" />
       <path
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
-         id="path3718"
-         d="m 412,243 2,-2 3,2 7,-6 0,2 -7,8 z"
-         style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline;enable-background:new" />
+         id="path4491-4"
+         d="m 413,212 3,-1 1,2 6,-5 0,1 c 0,0 -4,4 -6,8 0,0 -2,-3 -4,-5 z"
+         style="fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;opacity:0.2" />
       <path
-         style="fill:#aaaaaa;fill-opacity:1;stroke:none;display:inline;enable-background:new"
-         d="m 412,213 2,-2 3,2 7,-6 0,2 -7,8 z"
-         id="path3720"
+         style="fill:#a172d2;fill-opacity:1;stroke:none;display:inline;enable-background:new"
+         d="m 413,272 3,-1 1,2 6,-5 0,1 c 0,0 -4,4 -6,8 0,0 -2,-3 -4,-5 z"
+         id="path4503-4"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccccc" />
     </g>
@@ -5469,25 +5469,25 @@
       <rect
          style="color:#bebebe;fill:#a172d2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4538-1-5"
-         width="10"
+         width="8"
          height="2"
-         x="443"
+         x="444"
          y="271"
          ry="0" />
       <rect
          ry="0"
          y="241"
-         x="443"
+         x="444"
          height="2"
-         width="10"
+         width="8"
          id="rect4558-2-1"
          style="color:#bebebe;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <rect
-         style="color:#bebebe;fill:#aaaaaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.2;color:#bebebe;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4570-9-1"
-         width="10"
+         width="8"
          height="2"
-         x="443"
+         x="444"
          y="211"
          ry="0" />
     </g>
@@ -5642,7 +5642,7 @@
          sodipodi:cy="272"
          sodipodi:cx="118"
          id="path4720-8"
-         style="color:#bebebe;fill:#aaaaaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#bebebe;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.2"
          sodipodi:type="arc" />
       <path
          transform="matrix(1.5,0,0,1.5,301,-166)"
