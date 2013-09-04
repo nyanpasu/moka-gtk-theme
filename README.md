@@ -57,9 +57,13 @@ There are scripts to simplify the rendering process; to run them (and edit the G
  * ruby
  * python3
 
-To render new or modified assets from their source SVG files, run the following:
+To render new or modified assets from their source SVG files, run the following to render the respective assets
 
-    ./render-pngs.py
+    ./render-gtk3-assets.py # GTK3 assets
+
+    ./render-metacity-assets.py # Metacity assets
+
+    ./render-unity-assets.py # Unity assets
 
 This script will look in the source directories (../src/*) and render the respective assets (provided there are changes).
 
