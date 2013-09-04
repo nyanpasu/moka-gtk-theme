@@ -21,7 +21,7 @@ Extract and install locally by running* the INSTALL script.
 
     ./INSTALL
 
-*Running as root will install the icon set in '/usr/share/themes' to be available system-wide.
+_*Running as root will install the icon set in '/usr/share/themes' to be available system-wide._
 
 For Ubuntu and its derivatives, Moka GTK is available in a Launchpad PPA* which can be added using:
 
@@ -29,9 +29,9 @@ For Ubuntu and its derivatives, Moka GTK is available in a Launchpad PPA* which 
 
     sudo apt-get update && sudo apt-get install moka-gtk-theme
 
-*The PPA is synchronized with the git repository and should always deliver the latest version within a few hours, at most a day.
+_*The PPA is synchronized with the git repository and should always deliver the latest version within a few hours, at most a day._
 
-*Note: not installing system-wide (as root) may cause the window theme not to work.*
+__Note: not installing system-wide (as root) may cause the window theme not to work.__
 
 ###Uninstall
 
@@ -39,7 +39,7 @@ To uninstall, run* the uninstall script to remove the locally installed theme.
 
     ./UNINSTALL
 
-*Running as root will remove the theme from the system-wide folder (/usr/share/themes), if installed.
+_*Running as root will remove the theme from the system-wide folder (/usr/share/themes), if installed._
 
 ###Getting the Source
 
