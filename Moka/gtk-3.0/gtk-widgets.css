@@ -16,12 +16,8 @@
 * with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
 */
 
-/**********
- * Common *
- **********/
-
 * {
-    engine: adwaita;
+    engine: none;
     padding: 0;
 
     background-clip: padding-box;

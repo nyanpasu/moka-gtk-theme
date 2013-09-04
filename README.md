@@ -5,68 +5,62 @@ Moka GTK Theme
 
 Moka GTK Theme is distributed under the terms the GNU GPL v.3
 
+###Preamble
 
-###Install
+Moka GTK makes use of the Adwaita engine. It isn't necessary to use the theme but it is recommended that you have it installed for the best experience –it is found in the "gnome-themes-standard" or similar package.
 
-To install from source, run the install script to copy the icons to your home folder. 
+Also, if you're feeling awesome, you may contribute a [donation](http://www.snwh.org/donate/ "Donate") to support Moka's developmeny, they are much appreciated. :)
+
+Alternatively, if you find any bugs or issues with Moka or if you have a question, you can visit Moka's issue tracker on [GitHub](https://github.com/snwh/moka-gtk-theme/issues) or its page on [Launchpad](https://launchpad.net/moka-gtk-theme).
+
+###Download & Install
+
+A distro-agnostic zip file for Moka GTK Theme can be found [here](http://www.snwh.org/files/moka-gtk-theme.zip).
+
+Extract and install locally by running* the INSTALL script. 
 
     ./INSTALL
 
-Running as root will copy the icon set to  /usr/share/icons to be available system-wide.
-    
-    sudo ./INSTALL
+*Running as root will install the icon set in '/usr/share/themes' to be available system-wide.
 
-For Ubuntu, Moka is available in a PPA, which can be added using:
+For Ubuntu and its derivatives, Moka GTK is available in a Launchpad PPA* which can be added using:
 
     sudo add-apt-repository ppa:snwh/moka-gtk-theme-daily 
 
     sudo apt-get update && sudo apt-get install moka-gtk-theme
 
-NOTE: Moka uses the Adwaita engine and thus depends on "gnome-themes-standard".
+*The PPA is synchronized with the git repository and should always deliver the latest version within a few hours, at most a day.
+
+**Note: not installing system-wide (as root) may cause the window theme not to work.**
 
 ###Uninstall
 
-To uninstall, run the uninstall script to remove the locally installed icons. 
+To uninstall, run* the uninstall script to remove the locally installed theme. 
 
     ./UNINSTALL
 
-Running as root will remove the icon set, if installed, from /usr/share/icons.
-    
-    sudo ./UNINSTALL
+*Running as root will remove the theme from the system-wide folder (/usr/share/themes), if installed.
 
-###Source
+###Getting the Source
 
-The source for Moka GTK Theme can be found at: https://github.com/snwh/moka-gtk-theme
+The source for Moka GTK Theme can be found [here](https://github.com/snwh/moka-gtk-theme).
 
-You can get the latest version from the git repository:
+Alternatively, you can clone the latest version its git repository:
 
     git clone https://github.com/snwh/moka-gtk-theme.git
 
-NOTE: Moka is very much a WIP.
+###Using the Source
 
-###Modifying the source
-
-To run the provided scripts (and edit the source SVGs) you will need:
+There are scripts to simplify the rendering process; to run them (and edit the GTK assets) you will need:
 
  * inkscape
+ * ruby
  * python3
 
-To render the GTK3 assets, run the following.
+To render new or modified assets from their source SVG files, run the following:
 
-    ./render-gtk3-assets.py
+    ./render-pngs.py
 
-To render the Metacity assets, run the following.
-
-    ./render-metacity-assets.py
-
-To render the Unity assets, run the following.
-
-    ./render-unity-assets.py
-
-These scripts will read the SVGs in their respective sub-directories in the "src" folder, and render the respective assets (provided there are changes).
-
-###Bugs, Issues, Questions, Requests
-
-If you find any bugs or issues with Moka or if you have a question or request, you can visit: https://github.com/snwh/moka-icon-gtk/issues
+This script will look in the source directories (../src/*) and render the respective assets (provided there are changes).
 
 -----------
