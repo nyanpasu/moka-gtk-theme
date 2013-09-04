@@ -7,9 +7,9 @@ Moka GTK Theme is distributed under the terms the GNU GPL v.3
 
 ###Preamble
 
-Moka GTK makes use of the Adwaita engine. It isn't necessary to use the theme but it is recommended that you have it installed for the best experience –it is found in the "gnome-themes-standard" or similar package.
+Moka GTK makes use of the Adwaita engine. While not necessary, it is recommended that you have it installed for the best experience –it is found in the "gnome-themes-standard" or similar package.
 
-Also, if you're feeling awesome, you may contribute a [donation](http://www.snwh.org/donate/ "Donate") to support Moka's developmeny, they are much appreciated. :)
+Also, if you're feeling awesome, you may contribute a [donation](http://www.snwh.org/donate/ "Donate") to support Moka's development, they are appreciated. :)
 
 Alternatively, if you find any bugs or issues with Moka or if you have a question, you can visit Moka's issue tracker on [GitHub](https://github.com/snwh/moka-gtk-theme/issues) or its page on [Launchpad](https://launchpad.net/moka-gtk-theme).
 
