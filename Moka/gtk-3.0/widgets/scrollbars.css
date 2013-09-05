@@ -24,6 +24,7 @@
     border-width: 1px;
     border-style: solid;
     padding: 2px;
+    -GtkRange-slider-width: 10;
 }
 
 .scrollbars-junction,
@@ -71,8 +72,9 @@
 
 .scrollbar.slider:active,
 .scrollbar.slider.vertical:active {
-    border-color: @borders;
-    background-color: shade(@selection_color, 1.4);
+    border-width: 1px;
+    border-color: shade(@selection_color, 0.8);
+    background-color: @selection_color;
 }
 
 /**********************
