@@ -9,6 +9,7 @@ Homepage: https://github.com/snwh/moka-gtk-theme
 Package: moka-gtk-theme
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: gnome-themes-standard
+Recommends:
+ gnome-themes-standard
 Description: Moka GTK Theme
  Moka GTK theme.
