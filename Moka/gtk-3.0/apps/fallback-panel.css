@@ -25,7 +25,7 @@ PanelToplevel {
     padding: 0;
     background-color: @panel_color;
     background-image: none;
-    color: @base_color;
+    color: @panel_text_color;
 }
 
 PanelApplet {
@@ -49,6 +49,7 @@ PanelMenuBar.menubar.menuitem {
     border-width: 0;
     background-color: @panel_color;
     background-image: none;
+    color: @panel_text_color;
 }
 
 PanelAppletFrame {

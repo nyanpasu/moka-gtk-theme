@@ -27,5 +27,5 @@ UnityPanelWidget,
     border-color: @panel_color;
     background-color: @panel_color;
     background-image: none;
-    color: @base_color;
+    color: @panel_text_color;
 }

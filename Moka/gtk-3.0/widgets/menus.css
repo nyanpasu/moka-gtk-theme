@@ -187,7 +187,7 @@ GtkTreeMenu .menuitem * {
 .unity-panel.menuitem,
 .unity-panel .menuitem {
     border-width: 0 1px;
-    color: @panel_color;
+    color: @panel_text_color;
 }
 
 .unity-panel.menubar {
@@ -196,7 +196,7 @@ GtkTreeMenu .menuitem * {
     border-style: none;
     background-color: @panel_color;
     background-image: none;
-    color: @base_color;
+    color: @panel_text_color;
 }
 
 .unity-panel.menubar.menuitem,
@@ -207,7 +207,7 @@ GtkTreeMenu .menuitem * {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: @base_color;
+    color: @panel_text_color;
 }
 
 .unity-panel.menubar.menuitem:hover,
@@ -216,11 +216,11 @@ GtkTreeMenu .menuitem * {
     border-bottom: 0px;
     border-color: shade(@panel_color, 0.7);
     background-color: shade(@panel_color, 0.8);
-    color: @base_color;
+    color: @panel_text_color;
 }
 
 .unity-panel.menubar .menuitem *:hover {
-    color: @base_color;
+    color: @panel_text_color;
 }
 
 .unity-panel.menubar .menuitem.separator,
