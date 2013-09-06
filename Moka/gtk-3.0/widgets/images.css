@@ -46,3 +46,17 @@ GtkImage:insensitive {
 .view.image:selected:hover {
     color: @selected_fg_color;
 }
+
+.image:backdrop,
+.image:backdrop:hover,
+.view.image:backdrop,
+.view.image:backdrop:hover {
+    color: @unfocused_fg_color;
+}
+
+.image:insensitive,
+.image:insensitive:hover,
+.view.image:insensitive,
+.view.image:insensitive:hover {
+    color: @insensitive_fg_color;
+}

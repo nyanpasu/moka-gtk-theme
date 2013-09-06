@@ -36,7 +36,6 @@
 .view:backdrop,
 .view:backdrop:backdrop {
     background-color: @unfocused_bg_color;
-    color: @unfocused_bg_color;
     border-color: @unfocused_borders_color;
 }
 
