@@ -2,8 +2,8 @@
  * GNOME Terminal *
  ******************/
 VteTerminal {
-    background-color: @fg_color;
-    color: @base_color;
+    background-color: @panel_color;
+    color: @panel_text_color;
 }
 
 TerminalWindow GtkNotebook.notebook {
