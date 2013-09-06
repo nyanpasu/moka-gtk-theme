@@ -88,7 +88,10 @@
 .button:active:insensitive {
     border-color: @insensitive_borders_color;
     background-color: @insensitive_bg_color;
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                  @button_insensitive_gradient_color_a,
+                                  @button_insensitive_gradient_color_b
+                                  );
 }
 
 /* Unfocused Button */
@@ -101,7 +104,11 @@
 .button:active:backdrop {
     border-color: @unfocused_borders_color;
     background-color: @unfocused_bg_color;
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                  @button_unfocused_gradient_color_a,
+                                  @button_unfocused_gradient_color_b
+                                  );
+}
 }
 
 
