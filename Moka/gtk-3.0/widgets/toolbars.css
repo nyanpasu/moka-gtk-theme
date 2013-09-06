@@ -53,7 +53,7 @@
 .toolbar GtkComboBox:active,
 .toolbar .button:active {
     color: @text_color;
-    border-color: @borders;
+    border-color: @selected_bg_color; 
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_color_a,
                                   @button_active_gradient_color_b

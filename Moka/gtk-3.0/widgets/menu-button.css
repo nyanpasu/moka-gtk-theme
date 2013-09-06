@@ -24,7 +24,7 @@
     background-image: none;
     background-color: @base_color;
     border-image: none;
-    border-style: none;
+    border-color: @selected_bg_color; 
 }
 
 .menu.button.separator {
@@ -67,11 +67,13 @@ GtkMenuButton.button:active,
 .linked GtkMenuButton.button:active,
 .toolbar .linked.raised GtkMenuButton.button:active,
 .toolbar GtkMenuButton.button.linked.raised:active {
-    background-image: none;
-    background-color: @bg_color;
-    border-image: none;
-    border-color: @bg_color;
-    border-radius: 4px 4px 0 0;
+    border-style: 1px solid;
+    border-color: @selected_bg_color;
+    border-radius: 4px 4px 0px 0px;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
+                                  );
     color: @text_color;
 }
 
