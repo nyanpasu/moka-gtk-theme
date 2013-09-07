@@ -45,6 +45,12 @@
     color: @selected_fg_color;
 }
 
+.view:selected:backdrop,
+.view:selected:backdrop:focus {
+    background-color: @unfocused_bg_color;
+    color: @text_color;
+}
+
 /* Selected */
 .view.rubberband,
 .rubberband {

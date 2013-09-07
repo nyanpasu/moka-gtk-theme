@@ -67,7 +67,7 @@ GtkMenuButton.button:active,
 .linked GtkMenuButton.button:active,
 .toolbar .linked.raised GtkMenuButton.button:active,
 .toolbar GtkMenuButton.button.linked.raised:active {
-    border-style: 1px solid;
+    border-style: solid;
     border-color: @selected_bg_color;
     border-radius: 4px 4px 0px 0px;
     background-image: linear-gradient(to bottom,

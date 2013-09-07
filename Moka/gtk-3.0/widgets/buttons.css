@@ -50,7 +50,7 @@
 
 
 .button:hover {
-    border-color: shade(@selected_bg_color, 1.1);
+    border-color: @hover_selection_color;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_color_a,
                                   @button_hover_gradient_color_b
@@ -110,29 +110,40 @@
                                   @button_unfocused_gradient_color_b
                                   );
 }
-}
 
 
 /* Default Button */
 .button.default {
     border-color: @selected_bg_color;
-    background-color: shade(@selected_bg_color, 1.08);
     color: @text_color;
+    background-image: linear-gradient(to bottom,
+                              @button_gradient_color_a,
+                              @button_gradient_color_b
+                              );
 }
 
 .button.default:hover {
-    border-color: shade(@selected_bg_color, 1.1);
-    background-color: @selected_bg_color;
+    border-color: @hover_selection_color;
     color: @hover_text_color;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_a,
+                                  @button_hover_gradient_color_b
+                                  );
 }
 
 .button.default:active {
     border-color: @selected_bg_color;
-    background-color: shade(@selected_bg_color, 0.95);
     color: @active_text_color;
+    background-image: linear-gradient(to bottom,
+                              @button_active_gradient_color_a,
+                              @button_active_gradient_color_b
+                              );
 }
 
 .button.default:active:hover {
-    border-color: shade(@selected_bg_color, 1.2);
-    background-color: shade(@selected_bg_color, 1.05);
+    border-color:  @hover_selection_color;
+    background-image: linear-gradient(to bottom,
+                              @button_active_gradient_color_a,
+                              @button_active_gradient_color_b
+                              );
 }
