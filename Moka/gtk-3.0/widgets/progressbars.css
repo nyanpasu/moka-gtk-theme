@@ -78,6 +78,7 @@ GtkProgressBar {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@selected_bg_color, 0.8);
+    background-color: none;
     background-image: linear-gradient(to bottom,
                                       @unfocused_progressbar_bg_color_a,
                                       @unfocused_progressbar_bg_color_b
@@ -93,22 +94,34 @@ GtkProgressBar {
 .trough row:hover,
 .trough row:selected,
 .trough row:selected:focus {
-    border-width: 0px;
+    border-width: 1px;
+    border-radius: 0px;
     border-style: solid;
     border-color: @borders;
-    box-shadow: inset 1px 1px @borders,
-              inset -1px -1px @borders; 
     background-image: linear-gradient(to bottom,
                                       @trough_bg_color_a,
                                       @trough_bg_color_b
                                       );
 }
 
+.trough.vertical,
+.trough.vertical row,
+.trough.vertical row:selected,
+.trough.vertical row:selected:focus {
+    border-width: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: @borders;
+    background-image: linear-gradient(to left,
+                                      @trough_bg_color_a,
+                                      @trough_bg_color_b
+                                      );
+}
+
 .trough:insensitive,
-.trough.vertical:insensitive {
-    border-width: 0;
-    box-shadow: inset 1px 1px @insensitive_borders_color,
-          inset -1px -1px @insensitive_borders_color;
+.trough.vertical:insensitive {  
+    border-color: @insensitive_borders_color;
+    background-color: none;
     background-image: linear-gradient(to bottom,
                                   @insensitive_trough_bg_color_a,
                                   @insensitive_trough_bg_color_b
@@ -117,16 +130,10 @@ GtkProgressBar {
 
 .trough:backdrop,
 .trough.vertical:backdrop {
-    border-width: 0;
-    box-shadow: inset 1px 1px @unfocused_borders_color,
-          inset -1px -1px @unfocused_borders_color;
+    border-color: @unfocused_borders_color;
+    background-color: none;
     background-image: linear-gradient(to bottom,
                                   @backdrop_trough_bg_color_a,
                                   @backdrop_trough_bg_color_b
                                   ); 
-}
-
-.trough.vertical {
-    background-color: shade(@bg_color, 1.08);
-    background-image: none;
 }

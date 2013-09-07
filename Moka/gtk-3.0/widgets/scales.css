@@ -21,9 +21,9 @@
  **********/
 
 .scale {
-    -GtkScale-slider-length: 16;
-    -GtkRange-slider-width: 16;
-    -GtkRange-trough-border: 0;
+    -GtkScale-slider-length: 16px;
+    -GtkRange-slider-width: 16px;
+    -GtkRange-trough-border: 0px;
 }
 
 .scale.slider,
@@ -38,51 +38,47 @@
     background-repeat: no-repeat;
     color: transparent;
 
-    /* background-image in -assets variant */
+    /* Images in gtk-assets- variant */
 }
 
 /* Positive fill colors */
-.menubar .menuitem .scale.highlight.left,
 .scale.highlight.left,
-.menubar .menuitem.scale.highlight.bottom,
-.scale.vertical.highlight.bottom {
-    background-color: transparent;
-    border-width: 1px;
+.scale.vertical.highlight.bottom,
+.menubar .menuitem .scale.highlight.left,
+.menubar .menuitem.scale.highlight.bottom {
+    background-color: @selected_bg_color;
     border-color: @selected_borders_color;
-    box-shadow: inset 0px 0px 2px 1px @selection_color;
+    background-image: none;
 }
 
 /* Insensitive fill colors */
-.menubar .menuitem .scale.highlight.left:insensitive,
 .scale.highlight.left:insensitive,
-.menubar .menuitem .scale.highlight.bottom:insensitive,
-.scale.highlight.bottom:insensitive {
-    background-color: transparent;
-    border-width: 1px;
+.scale.highlight.bottom:insensitive,
+.menubar .menuitem .scale.highlight.left:insensitive,
+.menubar .menuitem .scale.highlight.bottom:insensitive {
+    background-color: @insensitive_bg_color;
     border-color: @insensitive_borders_color;
-    box-shadow: inset 0px 0px 2px 1px shade(@insensitive_bg_color, 0.9);
+    background-image: none;
 }
 
 /* Hover fill colors */
-.menubar .menuitem .scale.highlight.left:hover,
 .scale.highlight.left:hover,
-.menubar .menuitem .scale.highlight.bottom:hover,
-.scale.highlight.bottom:hover {
-    background-color: transparent;
-    border-width: 1px;
+.scale.highlight.bottom:hover,
+.menubar .menuitem .scale.highlight.left:hover,
+.menubar .menuitem .scale.highlight.bottom:hover {
+    background-color: @selection_color;
     border-color: @selected_borders_color;
-    box-shadow: inset 0px 0px 2px 1px @hover_selection_color;
+    background-image: none;
 }
 
 /* Unfocused fill colors */
-.menubar .menuitem.scale.highlight.left:backdrop,
 .scale.vertical.highlight.left:backdrop,
-.menubar .menuitem.scale.highlight.bottom:backdrop,
-.scale.vertical.highlight.bottom:backdrop {
-    background-color: transparent;
-    border-width: 1px;
+.scale.vertical.highlight.bottom:backdrop,
+.menubar .menuitem.scale.highlight.left:backdrop,
+.menubar .menuitem.scale.highlight.bottom:backdrop {
+    background-color: @unfocused_bg_color;
     border-color: @unfocused_borders_color;
-    box-shadow: inset 0px 0px 2px 1px @unfocused_bg_color;
+    background-image: none;
 }
 
 /***********
@@ -91,42 +87,76 @@
 
 /* Margins */
 .scale.trough {
+    border-width: 1px;
     margin: 6px 0;
 }
 
 .scale.trough.vertical {
+    border-width: 1px;
     margin: 0 6px;
 }
 
 /* Trough colors */
 .scale.trough,
 .scale.trough.vertical {
-    border-width: 0;
-    box-shadow: inset 0px 0px 1px 1px @borders;
+    background-color: @bg_color;
+    border-color: @borders;
 }
 
 /* Hover trough colors */
 .scale.trough:hover,
 .scale.trough.vertical:hover {
-    border-width: 1px;
-    border-color: shade(@borders, 0.95);
-    box-shadow: inset 0px 0px 1px 1px shade(@borders, 0.95);
+    background-color: @hover_bg_color;
+    border-color: @hover_borders_color;
 }
 
 /* Insensitive trough colors */
 .scale.trough:insensitive,
 .scale.trough.vertical:insensitive {
-    
-    box-shadow: inset 0px 0px 1px 1px @insensitive_borders_color;
+    background-color: @insensitive_bg_color;
+    border-color: @insensitive_borders_color;
 }
 
 /* Unfocused trough colors */
 .scale.trough:backdrop,
 .scale.trough.vertical:backdrop {
-    border-width: 0;
-    box-shadow: inset 0px 0px 1px 1px @unfocused_borders_color; 
+    background-color: @unfocused_bg_color;
+    border-color: @unfocused_borders_color; 
 }
 
-.scale.progressbar {
-    background-color: @base_color;
+/****************
+ * Progress Bar *
+ ****************/
+.scale.progressbar
+.scale.progressbar.vertical {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      @progressbar_bg_color_a,
+                                      @progressbar_bg_color_b
+                                      );
+}
+
+.scale.progressbar:insensitive,
+.scale.progressbar.vertical:insensitive {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      @insensitive_progressbar_bg_color_a,
+                                      @insensitive_progressbar_bg_color_b
+                                      );
+}
+
+
+.scale.progressbar:backdrop,
+.scale.progressbar.vertical:backdrop {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@selected_bg_color, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      @unfocused_progressbar_bg_color_a,
+                                      @unfocused_progressbar_bg_color_b
+                                      );
 }

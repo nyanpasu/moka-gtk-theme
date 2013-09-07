@@ -116,8 +116,6 @@
 <!-- TITLES -->
 
 <!-- Title alignment -->
-
-
 <draw_ops name="title_focused">
 	<title version="< 3.1"
                x="(0 `max` ((width - title_width) / 2))"

@@ -205,7 +205,6 @@
     border-color: transparent;
     border-width: 1px;
     padding: 1px;
-    icon-shadow: 0 1px alpha(black, 0.2);
 }
 
 .notebook tab .button GtkImage:hover {
