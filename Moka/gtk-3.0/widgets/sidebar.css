@@ -89,39 +89,3 @@
 .sidebar.view:hover {
     background-color: @hover_bg_color;
 }
-
-/* Images */
-.sidebar .view GtkImage,
-.sidebar GtkImage {
-    border-radius: 3px;
-    color:  @text_color;
-    border-style: solid;
-    border-color: transparent;
-    border-width: 1px;
-    padding: 1px;
-}
-
-.sidebar .view GtkImage:hover,
-.sidebar GtkImage:hover {
-    color: @active_text_color;
-    border-color: alpha(@borders, 0.4);
-}
-
-.sidebar GtkImage:active,
-.sidebar GtkImage:active:hover {
-    background-color: alpha(black, 0.08);
-    box-shadow: inset 0 1px alpha(black, 0.05);
-    color:  @button_active_text;
-    icon-shadow: 0 1px @button_active_text_shadow;
-    border-color: @borders;
-}
-
-.sidebar GtkImage:backdrop.
-.sidebar .view GtkImage:backdrop {
-    color: mix(@fg_color, @base_color, 0.7);
-    icon-shadow: none;
-}
-
-.sidebar GtkImage:backdrop:hover {
-    color: @fg_color;
-}

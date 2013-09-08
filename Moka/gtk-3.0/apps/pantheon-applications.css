@@ -155,7 +155,7 @@
 GraniteWidgetsStatusBar {
     background-color: @bg_color;
     border-color: @borders;		     
-    border-width: 1px;
+    border-top: 1px;
 }
 
 /***********

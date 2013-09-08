@@ -31,7 +31,7 @@
     background-color: @base_color;
     border-width: 1px;
     border-style: solid;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .spinbutton.entry:selected {
@@ -51,12 +51,12 @@
 }
 
 .spinbutton .button:first-child {
-    border-radius: 2px 0 0 2px;
+    border-radius: 6px 0 0 6px;
     box-shadow: none;
 }
 
 .spinbutton .button:last-child {
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 6px 6px 0;
 }
 
 .spinbutton .button:hover,
@@ -129,7 +129,6 @@
 .spinbutton.vertical .button {
     padding: 2px 4px;
     border-width: 1px;
-    border-radius: 0px;
     border-style: solid;
 }
 
@@ -195,15 +194,11 @@
 .spinbutton.vertical .button:first-child {
     border-width: 1px;
     border-bottom-width: 0;
-    border-radius: 2px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 6px 6px 0px 0px;
 }
 
 .spinbutton.vertical .button:last-child {
     border-width: 1px;
     border-top-width: 0;
-    border-radius: 2px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 0px 0px 6px 6px;
 }

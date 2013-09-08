@@ -49,11 +49,11 @@
 @define-color unfocused_selected_fg_color @fg_color;
 
 /* Hover colors */
-@define-color hover_base_color shade(@base_color, 1.1);
-@define-color hover_bg_color shade(@bg_color, 1.1);
-@define-color hover_fg_color shade(@fg_color, 1.1);
-@define-color hover_borders_color shade(@borders, 1.05);
-@define-color hover_text_color shade(@text_color, 1.3);
+@define-color hover_base_color shade(@base_color, 1.02);
+@define-color hover_bg_color shade(@bg_color, 1.02);
+@define-color hover_fg_color shade(@fg_color, 1.02);
+@define-color hover_borders_color shade(@borders, 1.02);
+@define-color hover_text_color shade(@text_color, 1.02);
 @define-color hover_selection_color shade(@selection_color, 1.3);
 
 /* Active colors */
@@ -86,14 +86,14 @@
 /*****************
  * Button colors *
  *****************/
-@define-color button_gradient_color_a shade(@gradient_color_a, 1.02);
-@define-color button_gradient_color_b shade(@gradient_color_b, 1.02);
+@define-color button_gradient_color_a @gradient_color_a;
+@define-color button_gradient_color_b @gradient_color_b;
 
 @define-color button_active_gradient_color_a @gradient_color_b;
 @define-color button_active_gradient_color_b @gradient_color_a;
 
-@define-color button_hover_gradient_color_a shade(@gradient_color_a, 1.04);
-@define-color button_hover_gradient_color_b shade(@gradient_color_b, 1.04);
+@define-color button_hover_gradient_color_a shade(@gradient_color_a, 1.02);
+@define-color button_hover_gradient_color_b shade(@gradient_color_b, 1.02);
 
 @define-color button_insensitive_gradient_color_a @insensitive_bg_color;
 @define-color button_insensitive_gradient_color_b @insensitive_bg_color;

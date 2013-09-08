@@ -4,5 +4,5 @@
 GtkStatusbar {
     padding: 0px;
     color: @fg_color;
-    border-width: 1px;
+    border-width: 0px;
 }

@@ -20,6 +20,7 @@
  * View *
  ********/
 .view {
+    border-width: 1px;
     background-color: @base_color;
     color: @text_color;
     border-color: @borders;

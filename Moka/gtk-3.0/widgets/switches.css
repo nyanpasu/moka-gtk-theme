@@ -26,15 +26,15 @@ GtkSwitch .menuitem,
 GtkSwitch .menuitem:hover {
     -GtkSwitch-slider-width: 24px;
     -GtkSwitch-slider-height: 24px;
-    padding: 1px 1px 1px 1px;
     color: transparent;
+    padding: 6px;
 }
 
 GtkSwitch:active,
 GtkSwitch:active .menuitem,
 GtkSwitch:active .menuitem:hover {
-    padding: 1px 1px 1px 1px;
     color: transparent;
+    padding: 6px;
 }
 
 GtkSwitch,
@@ -79,6 +79,7 @@ GtkSwitch.slider .menuitem:hover {
     background-position: center center;
     background-repeat: no-repeat;
     color: transparent;
+    padding: 6px;
 }
 
 
