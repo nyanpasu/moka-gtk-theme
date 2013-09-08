@@ -27,7 +27,7 @@
     border-color: @borders;
     color: @text_color;
     background-color: @base_color;
-
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
     transition: border 100ms ease-out;
 }
 
@@ -35,7 +35,7 @@
 .entry:active,
 .entry:focus {
     border-color: shade(@selected_bg_color, 1.1);
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
     transition: all 100ms ease-in;
 }
 
@@ -52,18 +52,16 @@
     border-color: @selected_bg_color;
 }
 
-.entry:insensitive {
-    background-color: @insensitive_bg_color;
-    color: @insensitive_text_color;
-}
-
 .entry:backdrop {
     background-color: @unfocused_bg_color;
     color: @unfocused_text_color;
+    box-shadow: none;
 }
 
 .entry:insensitive:backdrop {
     color: @unfocused_text_color;
+    box-shadow: none;
+    background-color: @unfocused_insensitive_bg_color;
 }
 
 .entry:selected:backdrop {

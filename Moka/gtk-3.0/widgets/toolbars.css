@@ -90,10 +90,7 @@
 .toolbar .button:active:insensitive {
     color: @insensitive_fg_color;
     border-color: @insensitive_borders_color;
-    background-image: linear-gradient(to bottom,
-                                      @button_insensitive_gradient_color_a,
-                                      @button_insensitive_gradient_color_b
-                                      );
+    background-color: @insensitive_bg_color;
 }
 
 .toolbar .separator:insensitive,
@@ -196,10 +193,7 @@
 .primary-toolbar .button:active:insensitive {
     color: @insensitive_fg_color;
     border-color: @insensitive_borders_color;
-    background-image: linear-gradient(to bottom,
-                                      @button_insensitive_gradient_color_a,
-                                      @button_insensitive_gradient_color_b
-                                      );
+    background-color: @insensitive_bg_color;
 }
 
 .primary-toolbar .separator:insensitive,
@@ -314,10 +308,7 @@
 .inline-toolbar .button:active:insensitive {
     color: @insensitive_fg_color;
     border-color: @insensitive_borders_color;
-    background-image: linear-gradient(to bottom,
-                                      @button_insensitive_gradient_color_a,
-                                      @button_insensitive_gradient_color_b
-                                      );
+    background-color: @insensitive_bg_color;
 }
 
 .inline-toolbar .separator:insensitive,
@@ -357,7 +348,7 @@
  **************/
 
 .header-bar {
-    border-width: 1px;
+    border-width: 10px;
     border-style: none;
     /*padding: top left bottom right;*/
     padding: 4px 4px 4px 4px;

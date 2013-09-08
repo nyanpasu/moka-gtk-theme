@@ -78,7 +78,7 @@ GtkProgressBar {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@selected_bg_color, 0.8);
-    background-color: none;
+    background-color: transparent;
     background-image: linear-gradient(to bottom,
                                       @unfocused_progressbar_bg_color_a,
                                       @unfocused_progressbar_bg_color_b
@@ -121,7 +121,7 @@ GtkProgressBar {
 .trough:insensitive,
 .trough.vertical:insensitive {  
     border-color: @insensitive_borders_color;
-    background-color: none;
+    background-color: transparent;
     background-image: linear-gradient(to bottom,
                                   @insensitive_trough_bg_color_a,
                                   @insensitive_trough_bg_color_b
@@ -131,7 +131,7 @@ GtkProgressBar {
 .trough:backdrop,
 .trough.vertical:backdrop {
     border-color: @unfocused_borders_color;
-    background-color: none;
+    background-color: transparent;
     background-image: linear-gradient(to bottom,
                                   @backdrop_trough_bg_color_a,
                                   @backdrop_trough_bg_color_b
