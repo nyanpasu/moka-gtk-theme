@@ -86,14 +86,14 @@
 /*****************
  * Button colors *
  *****************/
-@define-color button_gradient_color_a @gradient_color_a;
-@define-color button_gradient_color_b @gradient_color_b;
+@define-color button_gradient_color_a shade(@gradient_color_a, 1.02);
+@define-color button_gradient_color_b shade(@gradient_color_b, 1.02);
 
 @define-color button_active_gradient_color_a @gradient_color_b;
 @define-color button_active_gradient_color_b @gradient_color_a;
 
-@define-color button_hover_gradient_color_a shade(@gradient_color_a, 1.02);
-@define-color button_hover_gradient_color_b shade(@gradient_color_b, 1.02);
+@define-color button_hover_gradient_color_a shade(@gradient_color_a, 1.05);
+@define-color button_hover_gradient_color_b shade(@gradient_color_b, 1.05);
 
 @define-color button_insensitive_gradient_color_a @insensitive_bg_color;
 @define-color button_insensitive_gradient_color_b @insensitive_bg_color;

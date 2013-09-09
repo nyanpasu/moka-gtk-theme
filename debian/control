@@ -9,6 +9,7 @@ Homepage: https://github.com/snwh/moka-gtk-theme
 Package: moka-gtk-theme
 Architecture: all
 Depends: ${misc:Depends}
+ gtk2-engines-murrine
 Recommends:
  gnome-themes-standard
 Description: Moka GTK Theme
