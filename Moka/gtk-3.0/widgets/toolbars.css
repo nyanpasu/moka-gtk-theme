@@ -134,6 +134,7 @@
                                   @gradient_color_b,
                                   @gradient_color_a
                                   );
+    box-shadow: none;
 }
 
 .inline-toolbar,
