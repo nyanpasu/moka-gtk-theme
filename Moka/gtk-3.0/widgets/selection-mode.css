@@ -130,9 +130,10 @@
     color: @selected_borders_color;
 }
 
+/* Label */
 .selection-mode.toolbar .dim-label,
 .selection-mode.toolbar .selection-menu.button .dim-label {
-    color: shade(@selected_borders_color, 1.05);
+    color: @selected_bg_color;
 }
 
 .selection-mode.header-bar .selection-menu.button:hover,
