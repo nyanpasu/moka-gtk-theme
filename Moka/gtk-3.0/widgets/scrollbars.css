@@ -29,7 +29,7 @@
 
 .scrollbars-junction,
 .scrollbar.trough {
-    border-width: 0;
+    border-width: 1px;
     border-radius: 0;
     background-color: @bg_color;
     background-image: none;
@@ -73,8 +73,8 @@
 .scrollbar.slider:active,
 .scrollbar.slider.vertical:active {
     border-width: 1px;
-    border-color: shade(@selection_color, 0.8);
-    background-color: @selection_color;
+    border-color: shade(@bg_color, 0.7);
+    background-color: shade(@bg_color, 0.8);
 }
 
 /**********************
