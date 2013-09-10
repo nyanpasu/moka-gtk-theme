@@ -49,6 +49,7 @@
     background-color: shade(@bg_color, 0.9);
 }
 
+.scrollbar.horizontal,
 .scrollbar.slider.vertical {
     /* Borders are opposite what you'd expect */
     border-left: 1px; 
@@ -56,6 +57,8 @@
     border-color: @borders;
     border-radius: 0px;
 }
+
+.scrollbar.vertical,
 .scrollbar.slider.horizontal {
     /* Borders are opposite what you'd expect */
     border-top: 1px;

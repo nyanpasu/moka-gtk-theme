@@ -64,7 +64,7 @@
 .sidebar.view.separator,
 .view.separator,
 .separator {
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: @borders;
     color: @base_color;
@@ -75,7 +75,7 @@
 .sidebar.view:hover:selected {
     color: @base_color;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     background-color: @active_bg_color;
 }
 

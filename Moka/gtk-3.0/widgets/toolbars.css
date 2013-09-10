@@ -22,7 +22,8 @@
 
 .primary-toolbar {
     border-color: @borders;
-    border-width: 0px;
+    border-style: solid;
+    border: 1px;
     padding: 6px;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_a,
@@ -271,7 +272,6 @@
 }
 
 .header-bar .inline-toolbar.toolbar {
-    border-width: 0px;
     padding: 0px 6px 0px 6px;
 }
 
@@ -316,7 +316,7 @@
 .header-bar .separator,
 .header-bar .button .separator,
 .header-bar .button.separator {
-    color: @borders;
+    color: transparent;
 }
 
 /* Hover */
