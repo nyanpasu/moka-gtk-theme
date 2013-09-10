@@ -20,11 +20,11 @@
  * Floating Bar *
  ****************/
 .floating-bar {
-    background-image: linear-gradient(to bottom, 
+/*    background-image: linear-gradient(to bottom, 
                                       @base_color 20%, 
                                       shade(@base_color, 0.9)
-                                      );
-    background-color: @base_color;
+                                      );*/
+    background-color: @selected_bg_color;
     border-color: @borders;
 
     color: @text_color;

@@ -22,15 +22,15 @@
 .selection-mode.header-bar,
 .selection-mode.toolbar {
     border-style: solid;
-    border-color: @selected_bg_color;
-    background-color: shade(@selected_bg_color, 1.6);
+    border-color: @selected_borders_color;
+    background-color: @selected_bg_color;
     background-image: none;
-    color: @selected_bg_color;
+    color: @selected_fg_color;
 }
 
 .selection-mode.header-bar {
-    border-top-color: shade(@selected_bg_color, 1.6);
-    border-bottom-color: @selected_bg_color;
+    border-top-color: @selected_borders_color;
+    border-bottom-color: @selected_borders_color;
 }
 
 .selection-mode.toolbar {
@@ -41,36 +41,49 @@
 .selection-mode.header-bar .button,
 .selection-mode.toolbar .button,
 .selection-mode.toolbar GtkToolButton .button {
-    padding: 3px 2px;
     border-width: 1px;
     border-style: solid;
-    border-color: @selected_bg_color;
-    border-radius: 4px;
-    background-color: shade(@selected_bg_color, 1.68);
-    background-image: none;
-    color: shade(@selected_bg_color, 0.8);
+    border-color: @selected_borders_color;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom,
+                                  @button_gradient_color_a,
+                                  @button_gradient_color_b
+                                  );
+    color: @selected_borders_color;
+    text-shadow:none;
 }
 
 .selection-mode.header-bar .button:hover,
 .selection-mode.toolbar .button:hover,
 .selection-mode.toolbar GtkToolButton .button:hover {
-    border-color: shade(@selected_bg_color, 0.9);
-    background-color: shade(@selected_bg_color, 1.70);
-    background-image: none;
+    border-color: @selected_borders_color;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_a,
+                                  @button_hover_gradient_color_b
+                                  );
+    color: shade(@selected_borders_color, 1.05);
 }
 
 .selection-mode.header-bar .button:active,
 .selection-mode.toolbar .button:active,
 .selection-mode.toolbar GtkToolButton .button:active {
-    border-color: shade(@selected_bg_color, 0.9);
-    background-color: shade(@selected_bg_color, 1.55);
-    background-image: none;
+    border-color: @selected_borders_color;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
+                                  );
+    color: shade(@selected_borders_color, 1.1);
 }
 
 .selection-mode.header-bar .button:hover:active,
 .selection-mode.toolbar .button:hover:active,
 .selection-mode.toolbar GtkToolButton .button:hover:active {
-    border-color: shade(@selected_bg_color, 0.8);
+    border-color: @selected_borders_color;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_b,
+                                  @button_active_gradient_color_a
+                                  );
+    color: shade(@selected_borders_color, 1.1);
 }
 
 /* suggested button */
@@ -79,25 +92,25 @@
 .selection-mode.toolbar GtkToolButton.suggested-action .button {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@selected_bg_color, 0.9);
-    border-radius: 4px;
-    background-color: shade(@selected_bg_color, 1.18);
+    border-color: @selected_borders_color;
+    border-radius: 6px;
+    background-color: @selected_bg_color;
     background-image: none;
-    color: @selected_fg_color;
+    color: @base_color;
 }
 
 .selection-mode.header-bar .suggested-action.button:hover,
 .selection-mode.toolbar .suggested-action.button:hover,
 .selection-mode.toolbar GtkToolButton.suggested-action .button:hover {
-    border-color: shade(@selected_bg_color, 0.8);
-    background-color: shade(@selected_bg_color, 1.20);
+    border-color: @selected_borders_color;
+    background-color: @selected_bg_color, 1.1);
     background-image: none;
 }
 
 .selection-mode.header-bar .suggested-action.button:active,
 .selection-mode.toolbar .suggested-action.button:active,
 .selection-mode.toolbar GtkToolButton.suggested-action:active {
-    border-color: shade(@selected_bg_color, 0.9);
+    border-color: @selected_borders_color;
     background-color: shade(@selected_bg_color, 1.05);
     background-image: none;
 }
@@ -105,7 +118,7 @@
 .selection-mode.header-bar .suggested-action.button:hover:active,
 .selection-mode.toolbar .suggested-action.button:hover:active,
 .selection-mode.toolbar GtkToolButton.suggested-action .button:hover:active {
-    border-color: shade(@selected_bg_color, 0.8);
+    border-color: @selected_borders_color;
 }
 
 /* menu button */
@@ -113,24 +126,24 @@
 .selection-mode.toolbar .selection-menu.button {
     border-style: none;
     background-color: transparent;
-    background-image: none;
-    color: shade(@selected_bg_color, 0.8);
+    background-image: none;shade(@selection_color, 5.0)
+    color: @selected_borders_color;
 }
 
 .selection-mode.toolbar .dim-label,
 .selection-mode.toolbar .selection-menu.button .dim-label {
-    color: shade(@selected_bg_color, 0.7);
+    color: shade(@selected_borders_color, 1.05);
 }
 
 .selection-mode.header-bar .selection-menu.button:hover,
 .selection-mode.toolbar .dim-label:hover,
 .selection-mode.toolbar .selection-menu.button:hover,
 .selection-mode.toolbar .selection-menu.button .dim-label:hover {
-    color: shade(@selected_bg_color, 0.7);
+    color: shade(@selected_borders_color, 1.2);
 }
 
 .selection-mode.header-bar .selection-menu.button:active,
 .selection-mode.toolbar .selection-menu.button:active {
-    color: shade(@selected_bg_color, 0.8);
+    color: @selected_fg_color;
     box-shadow: none;
 }

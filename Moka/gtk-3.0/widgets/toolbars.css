@@ -29,6 +29,7 @@
                                   @gradient_color_a,
                                   @gradient_color_b
                                   );
+    box-shadow: inset 0px -1px 0px 0px @borders;
 }
 
 .primary-toolbar .button.text-button {
