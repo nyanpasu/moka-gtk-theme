@@ -31,9 +31,9 @@
 @define-color insensitive_selection_color shade(@selection_color, 1.05);
 
 /* Unfocused colors */
-@define-color unfocused_base_color shade(@base_color, 0.8);
+@define-color unfocused_base_color shade(@base_color, 0.98);
 @define-color unfocused_bg_color shade(@bg_color, 0.98);
-@define-color unfocused_fg_color shade(@fg_color, 1.5);
+@define-color unfocused_fg_color shade(@fg_color, 1.3);
 @define-color unfocused_borders_color shade(@borders, 1.05);
 @define-color unfocused_separator_color shade(@separator, 1.3);
 @define-color unfocused_text_color shade(@text_color, 2.0);

@@ -11,10 +11,12 @@
 
 .frame:backdrop {
     border-color: @unfocused_borders_color;
+    background-color: @unfocused_base_color;
 }
 
 .frame:insensitive {
     border-color: @insensitive_borders_color;
+    background-color: @insensitive_base_color;
 }
 
 /********
