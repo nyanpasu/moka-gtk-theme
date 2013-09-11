@@ -14,11 +14,13 @@
 *
 * You should have received a copy of the GNU General Public License along
 * with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
 
 /***********
  * Toolbar *
  ***********/
 
+/* Main Colors*/
 .toolbar {
     border-color: @borders;
     border-style: solid;
@@ -30,6 +32,19 @@
                                   );
 }
 
+.toolbar:backdrop {
+    border-color: @unfocused_borders_color;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    padding: 4px;
+    background-image: linear-gradient(to bottom,
+                                  @unfocused_gradient_color_a,
+                                  @unfocused_gradient_color_b
+                                  );
+}
+
+
+/* Button Padding */
 .toolbar .button.text-button {
     padding: 2px 16px;
 }
@@ -251,11 +266,19 @@
 /* Buttons */
 .inline-toolbar .button.text-button {
     padding: 2px 16px;
+    background-image: linear-gradient(to bottom,
+                              @button_gradient_color_a,
+                              @button_gradient_color_b
+                              );
 }
 
 .inline-toolbar .button.image-button,
 .inline-toolbar .button.image-button:active {
     padding: 6px 6px 6px 6px;
+    background-image: linear-gradient(to bottom,
+                              @button_gradient_color_a,
+                              @button_gradient_color_b
+                              );
 }
 
 .inline-toolbar GtkComboBox,
@@ -472,7 +495,7 @@
 .header-bar .separator:insensitive,
 .header-bar .button .separator:insensitive,
 .header-bar .button.separator:insensitive {
-    color: @insensitive_separator_color;
+    color: transparent;
 }
 
 /* Unfocused */
@@ -486,5 +509,5 @@
 .header-bar .separator:backdrop,
 .header-bar .button .separator:backdrop,
 .header-bar .button.separator:backdrop {
-    color: @unfocused_separator_color;
+    color: transparent;
 }

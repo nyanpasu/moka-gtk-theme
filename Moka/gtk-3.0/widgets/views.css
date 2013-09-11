@@ -6,6 +6,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: @borders;
+    background-color: @base_color;
 }
 
 .frame:backdrop {
@@ -69,6 +70,7 @@
  ************/
 GtkViewport.frame {
     border-width: 1px;
+    background-color: @base_color;
 }
 
 /*******************
@@ -78,7 +80,7 @@ GtkScrolledWindow.frame {
     border-width: 1px;
     border-style: solid;
     border-color: @borders;
-    background-color: @bg_color;
+    background-color: @base_color;
 }
 
 GtkScrolledWindow GtkViewport.frame {
@@ -166,7 +168,7 @@ GtkIconView.content-view.check:selected {
  * Content View *
  ****************/
 .content-view.view {
-    background-color: @bg_color;
+    background-color: @base_color;
 }
 
 .content-view.view:hover {
