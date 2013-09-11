@@ -180,7 +180,7 @@
 @define-color selection_toolbar_bg_a shade(@selection_color, 1.1);
 @define-color selection_toolbar_bg_b @selection_color;
 @define-color selection_toolbar_bg_backdrop @selection_toolbar_bg_a;
-@define-color selection_toolbar_fg @base_color
+@define-color selection_toolbar_fg @base_color;
 @define-color selection_toolbar_shadow alpha(white, 0.40);
 @define-color selection_toolbar_border shade(@selection_toolbar_bg_b, 0.75);
 

@@ -15,6 +15,108 @@
 * You should have received a copy of the GNU General Public License along
 * with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
 
+/***********
+ * Toolbar *
+ ***********/
+
+.toolbar {
+    border-color: @borders;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    padding: 6px;
+    background-image: linear-gradient(to bottom,
+                                  @gradient_color_a,
+                                  @gradient_color_b
+                                  );
+}
+
+.toolbar .button.text-button {
+    padding: 2px 16px;
+}
+
+.toolbar .button.image-button {
+    padding: 6px 6px 6px 6px;
+}
+
+.toolbar GtkComboBox,
+.toolbar .button {
+    color: @text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_gradient_color_a,
+                                  @button_gradient_color_b
+                                  );
+}
+
+.toolbar GtkComboBox:active,
+.toolbar .button:active {
+    color: @text_color;
+    border-color: @borders;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b
+                                  );
+}
+
+.toolbar .separator,
+.toolbar .button .separator,
+.toolbar .button.separator {
+    color: @insensitive_separator_color;
+}
+
+/* Hover */
+.toolbar .button:hover {
+    color: @hover_text_color;
+    border-color: @hover_selection_color;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_a,
+                                  @button_hover_gradient_color_b
+                                  );
+}
+
+.toolbar .button:active:hover {
+    color: @hover_text_color;
+    border-color: @hover_selection_color;
+    background-image: linear-gradient(to bottom,
+                                  @button_hover_gradient_color_b,
+                                  @button_hover_gradient_color_a
+                                  );
+}
+
+/* Insensitive */
+.toolbar .button:insensitive,
+.toolbar .button:active:insensitive {
+    color: @insensitive_fg_color;
+    border-color: @insensitive_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_gradient_color_a,
+                                      @button_insensitive_gradient_color_b
+                                      );
+}
+
+.toolbar .separator:insensitive,
+.toolbar .button .separator:insensitive,
+.toolbar .button.separator:insensitive {
+    color: @insensitive_separator_color;
+}
+
+/* Unfocused */
+.toolbar .button:backdrop,
+.toolbar .button:active:backdrop {
+    color: @unfocused_fg_color;
+    border-color: @unfocused_borders_color;
+    background-image: linear-gradient(to bottom,
+                                      @button_unfocused_gradient_color_a,
+                                      @button_unfocused_gradient_color_b
+                                      );
+}
+
+.toolbar .separator:backdrop,
+.toolbar .button .separator:backdrop,
+.toolbar .button.separator:backdrop {
+    color: @unfocused_separator_color;
+}
+
 
 /*******************
  * Primary Toolbar *
@@ -125,8 +227,8 @@
  .inline-toolbar,
 .inline-toolbar.toolbar {
     border-color: @borders;
-    border-width: 0px 0px 1px 0px;
-    padding: 6px;
+    border-width: 0px 1px 1px 1px;
+    padding: 4px;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_b,
                                   @gradient_color_a
@@ -136,13 +238,13 @@
 
 .inline-toolbar.toolbar:last-child {
     border-top-width: 0;
-    border-radius: 6px 6px 0px 0px;    
+    border-radius: 0px;    
     border-width: 1px;
 }
 
 .inline-toolbar.toolbar.vertical:last-child {
     border-top-width: 0;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 0px;
     border-width: 1px;
 }
 
@@ -160,6 +262,7 @@
 .inline-toolbar .button {
     color: @text_color;
     border-color: @borders;
+    padding: 4px 4px 4px 4px;
     background-image: linear-gradient(to bottom,
                                   @button_gradient_color_a,
                                   @button_gradient_color_b

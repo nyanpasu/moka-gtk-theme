@@ -15,7 +15,7 @@
  * when client-side decorations are in use and the application
  * did not set a custom titlebar.
  */
- 
+
 .titlebar.default-decoration {
     border: none;
     box-shadow: none;
@@ -52,7 +52,7 @@
 .titlebar .titlebutton:active {
     background-image: linear-gradient(to bottom,
                                       @button_active_gradient_color_a,
-                                      @button_active_gradient_color_b);
+                                      @button_active_gradient_color_b
                                       );
     color: @selected_fg_color;
     icon-shadow: none;

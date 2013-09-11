@@ -27,6 +27,7 @@
     
     transition: border 100ms ease-in-out;
 
+    padding: 3px 2px;
     border-width: 1px;
     border-style: solid;
     border-color: @borders;
