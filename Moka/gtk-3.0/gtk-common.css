@@ -25,7 +25,7 @@
 @define-color insensitive_base_color shade(@base_color, 0.95);
 @define-color insensitive_bg_color shade(@bg_color, 0.95);
 @define-color insensitive_fg_color shade(@fg_color, 1.05);
-@define-color insensitive_borders_color shade(@borders, 1.05);
+@define-color insensitive_borders_color shade(@borders, 0.95);
 @define-color insensitive_separator_color shade(@separator, 1.05);
 @define-color insensitive_text_color shade(@text_color, 1.05);
 @define-color insensitive_selection_color shade(@selection_color, 1.05);
@@ -104,7 +104,7 @@
 @define-color button_active_text @active_text_color;
 @define-color button_active_text_shadow alpha(@white, 0.2);
 
-@define-color button_text_shadow alpha(white, 0.2);
+@define-color button_text_shadow alpha(@base_color, 0.2);
 
 
 /****************

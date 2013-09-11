@@ -25,7 +25,7 @@
 }
 
 NautilusWindow .sidebar .frame {
-    border-width: 1px 0 0 0;
+    border-width: 0px 0px 0px 0px;
     border-style: solid;
     border-color: shade(@bg_color, 0.8);
     border-radius: 0;
@@ -33,7 +33,7 @@ NautilusWindow .sidebar .frame {
 
 NautilusWindow > GtkGrid > .pane-separator,
 NautilusWindow > GtkGrid > .pane-separator:hover {
-    border-width: 1px 1px 0 0;
+    border-width: 0px 1px 0px 0px;
     border-style: solid;
     border-color: shade(@bg_color, 0.8);
     background-color: @bg_color;

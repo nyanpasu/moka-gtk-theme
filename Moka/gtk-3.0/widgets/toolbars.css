@@ -25,7 +25,7 @@
     border-color: @borders;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
-    padding: 4px;
+    padding: 6px;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_a,
                                   @gradient_color_b
@@ -36,7 +36,7 @@
     border-color: @unfocused_borders_color;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
-    padding: 4px;
+    padding: 6px;
     background-image: linear-gradient(to bottom,
                                   @unfocused_gradient_color_a,
                                   @unfocused_gradient_color_b
@@ -51,6 +51,19 @@
 
 .toolbar .button.image-button {
     padding: 6px 6px 6px 6px;
+}
+
+
+.toolbar.toolbar:last-child {
+    border-top-width: 0;
+    border-radius: 0px;    
+    border-width: 1px;
+}
+
+.toolbar.toolbar.vertical:last-child {
+    border-top-width: 0;
+    border-radius: 0px;
+    border-width: 1px;
 }
 
 .toolbar GtkComboBox,
@@ -157,7 +170,8 @@
 }
 
 .primary-toolbar GtkComboBox,
-.primary-toolbar .button {
+.primary-toolbar .button,
+.primary-toolbar .button.image-button {
     color: @text_color;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
@@ -167,7 +181,8 @@
 }
 
 .primary-toolbar GtkComboBox:active,
-.primary-toolbar .button:active {
+.primary-toolbar .button:active,
+.primary-toolbar .button.image-button:active {
     color: @text_color;
     border-color: @borders;
     background-image: linear-gradient(to bottom,
@@ -239,16 +254,18 @@
  * Inline Toolbar *
  ******************/
 
- .inline-toolbar,
+.inline-toolbar,
 .inline-toolbar.toolbar {
     border-color: @borders;
     border-width: 0px 1px 1px 1px;
-    padding: 4px;
+    padding: 6px;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_b,
                                   @gradient_color_a
                                   );
     box-shadow: none;
+
+    -GtkToolbar-button-relief: normal;
 }
 
 .inline-toolbar.toolbar:last-child {
@@ -285,7 +302,7 @@
 .inline-toolbar .button {
     color: @text_color;
     border-color: @borders;
-    padding: 4px 4px 4px 4px;
+    padding: 6px 6px 6px 6px;
     background-image: linear-gradient(to bottom,
                                   @button_gradient_color_a,
                                   @button_gradient_color_b
@@ -331,7 +348,7 @@
 /* Insensitive */
 .inline-toolbar .button:insensitive,
 .inline-toolbar .button:active:insensitive {
-    color: @insensitive_fg_color;
+    color: @insensitive_text_color;
     border-color: @insensitive_borders_color;
     background-image: linear-gradient(to bottom,
                                       @button_insensitive_gradient_color_a,
@@ -398,10 +415,16 @@
     padding: 6px 6px 6px 6px;
 }
 
+/* Title */
 .header-bar .title {
     font: Bold 11;
 }
 
+.header-bar .title:backdrop {
+    color: @unfocused_text_color;
+}
+
+/* Subtitle */
 .header-bar .subtitle {
     font: 9;
 }
@@ -416,7 +439,6 @@
                                   );
 }
 
-
 .header-bar GtkComboBox:active,
 .header-bar .button:active {
     color: @text_color;
@@ -427,13 +449,27 @@
                                   );
 }
 
-.header-bar .separator,
-.header-bar .button .separator,
-.header-bar .button.separator {
-    color: transparent;
+.header-bar GtkComboBox:backdrop,
+.header-bar .button:backdrop,
+.header-bar .button.image-button:backdrop {
+    color: @unfocused_text_color;
+    border-style: none;
+    border-color: @unfocused_borders_color;
+    background-color: @unfocused_bg_color;
+    background-image: none;
 }
 
-/* Hover */
+
+.header-bar GtkComboBox:insensitive,
+.header-bar .button:insensitive {
+    color: @insensitive_text_color;
+    border-style: none;
+    border-color: @insensitive_borders_color;
+    background-color: @insensitive_bg_color;
+    background-image: none;
+}
+
+.header-bar GtkComboBox:hover,
 .header-bar .button:hover {
     color: @hover_text_color;
     border-color: @hover_selection_color;
@@ -443,6 +479,7 @@
                                   );
 }
 
+.header-bar GtkComboBox:active:hover,
 .header-bar .button:active:hover {
     color: @hover_text_color;
     border-color: @hover_selection_color;
@@ -452,9 +489,18 @@
                                   );
 }
 
+/* Separator */
+.header-bar .separator,
+.header-bar .button .separator,
+.header-bar .button.separator {
+    color: transparent;
+}
+
+/* Close button */
+
 .header-bar .button GtkImage {
-    border-radius: 3px;
-    color:  @text_color;
+    border-radius: 6px;
+    color: @text_color;
     border-style: solid;
     border-color: transparent;
     border-width: 0px;
@@ -481,33 +527,4 @@
 
 .header-bar .button GtkImage:backdrop:hover {
     color: @fg_color;
-}
-
-
-/* Insensitive */
-.header-bar .button:insensitive,
-.header-bar .button:active:insensitive {
-    color: @insensitive_fg_color;
-    border-color: @insensitive_borders_color;
-    background-color: @button_insensitive_gradient_color_a;
-}
-
-.header-bar .separator:insensitive,
-.header-bar .button .separator:insensitive,
-.header-bar .button.separator:insensitive {
-    color: transparent;
-}
-
-/* Unfocused */
-.header-bar .button:backdrop,
-.header-bar .button:active:backdrop {
-    color: @unfocused_fg_color;
-    border-color: @unfocused_borders_color;
-    background-color: @button_unfocused_gradient_color_a;
-}
-
-.header-bar .separator:backdrop,
-.header-bar .button .separator:backdrop,
-.header-bar .button.separator:backdrop {
-    color: transparent;
 }
