@@ -1,3 +1,9 @@
+moka-gtk-theme (0.4) UNRELEASED; urgency=low
+
+  * Major revisions to the style; csd support.
+
+ -- Sam Hewitt <hewittsamuel@gmail.com>  Wed, 11 Sep 2013 11:31:19 -0400
+
 moka-gtk-theme (0.2.1) UNRELEASED; urgency=low
 
   * Bug fixes.
