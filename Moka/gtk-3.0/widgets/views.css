@@ -3,7 +3,7 @@
  *********/
 
 .frame {
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid;
     border-color: @borders;
 }
