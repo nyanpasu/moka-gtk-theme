@@ -40,6 +40,7 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
 }
 
 NautilusView.frame,
+NautilusView GtkScrolledWindow.frame,
 NautilusNotebook.notebook {
     border-right-width: 0;
     border-bottom-width: 0;
@@ -65,8 +66,7 @@ NautilusToolbar .button:active *:insensitive {
 
 NautilusQueryEditor .primary-toolbar.toolbar {
     padding: 4px;
-    border-top-width: 1px;
-    border-bottom-width: 0;
+    border-width: 1px 0px 0px 0px;
 }
 
 NautilusQueryEditor .primary-toolbar.toolbar .button {
@@ -75,7 +75,7 @@ NautilusQueryEditor .primary-toolbar.toolbar .button {
 
 NautilusQueryEditor .toolbar {
     padding: 4px 4px 3px 4px;
-    border-width: 1px 0 0 0;
+    border-width: 0px 0px 0px 0px;
     border-style: solid;
     border-color: @borders;
     background-color: shade(@bg_color, 0.9);
@@ -105,5 +105,5 @@ NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar:only-chil
 }
 
 .toolbar NautilusPathBar .button {
-    padding: 1px 5px;
+    padding: 4px 5px;
 }
