@@ -7,8 +7,8 @@
     border-style: none;
     border-radius: 5px;
 
-    background-color: alpha(@theme_tooltip_bg_color, 0.90);
-    color: @theme_tooltip_fg_color;
+    background-color: alpha(@panel_color, 0.9);
+    color: white;
 
     text-shadow: 1px 1px black;
 }

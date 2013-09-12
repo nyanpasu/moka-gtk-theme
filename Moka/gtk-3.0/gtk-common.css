@@ -212,7 +212,7 @@
 /* OSD */
 @define-color osd_base @panel_color;
 @define-color osd_fg @text_color;
-@define-color osd_bg @base_color;
+@define-color osd_bg @panel_color;
 
 /* Tooltips */
 @define-color tooltip_bg_color @text_color;
