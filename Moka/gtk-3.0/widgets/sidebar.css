@@ -32,6 +32,7 @@
 
 .sidebar .frame {
     border-color: @borders;
+    border-width: 0px 1px 1px 1px;
 }
 
 /* Insensitive */

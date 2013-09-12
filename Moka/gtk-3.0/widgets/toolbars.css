@@ -165,10 +165,6 @@
     padding: 2px 16px;
 }
 
-.primary-toolbar .button.image-button {
-    padding: 6px 6px 6px 6px;
-}
-
 .primary-toolbar GtkComboBox,
 .primary-toolbar .button,
 .primary-toolbar .button.image-button {
@@ -393,15 +389,11 @@
     border-style: solid;
     border-color: @borders;
     /*padding: top left bottom right;*/
-    padding: 6px 6px 6px 6px;
+    padding: 6px;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_a,
                                   @gradient_color_b
                                   );
-}
-
-.header-bar .inline-toolbar.toolbar {
-    padding: 0px 6px 0px 6px;
 }
 
 .header-bar .button.text-button {
