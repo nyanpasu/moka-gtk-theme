@@ -25,9 +25,9 @@
 @define-color insensitive_base_color shade(@base_color, 0.95);
 @define-color insensitive_bg_color shade(@bg_color, 0.95);
 @define-color insensitive_fg_color shade(@fg_color, 1.05);
-@define-color insensitive_borders_color shade(@borders, 0.95);
+@define-color insensitive_borders_color shade(@borders, 1.05);
 @define-color insensitive_separator_color shade(@separator, 1.05);
-@define-color insensitive_text_color shade(@text_color, 1.05);
+@define-color insensitive_text_color shade(@text_color, 2.0);
 @define-color insensitive_selection_color shade(@selection_color, 1.05);
 
 /* Unfocused colors */
@@ -128,8 +128,8 @@
 @define-color trough_bg_color_a @bg_color;
 @define-color trough_bg_color_b @base_color;
 
-@define-color insensitive_trough_bg_color_a shade(@trough_bg_color_a, 2.0);
-@define-color insensitive_trough_bg_color_b shade(@trough_bg_color_b, 2.0);
+@define-color insensitive_trough_bg_color_a shade(@trough_bg_color_a, 0.95);
+@define-color insensitive_trough_bg_color_b shade(@trough_bg_color_a, 0.95);
 
 @define-color unfocused_trough_bg_color_a shade(@trough_bg_color_a, 0.98);
 @define-color unfocused_trough_bg_color_b shade(@trough_bg_color_b, 0.98);

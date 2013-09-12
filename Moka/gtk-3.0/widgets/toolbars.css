@@ -269,15 +269,13 @@
 }
 
 .inline-toolbar.toolbar:last-child {
-    border-top-width: 0;
-    border-radius: 0px;    
-    border-width: 1px;
+    border-radius: 0px 0px 6px 6px;
+    border-width: 0px 1px 1px 1px;
 }
 
 .inline-toolbar.toolbar.vertical:last-child {
-    border-top-width: 0;
-    border-radius: 0px;
-    border-width: 1px;
+    border-radius: 6px 6px 0px 0px;
+    border-width: 0px 1px 1px 1px;
 }
 
 /* Buttons */
@@ -322,7 +320,7 @@
 .inline-toolbar .separator,
 .inline-toolbar .button .separator,
 .inline-toolbar .button.separator {
-    color: @insensitive_separator_color;
+    color: @separator;
 }
 
 /* Hover */
@@ -459,14 +457,15 @@
     background-image: none;
 }
 
-
+.header-bar .button GtkImage:insensitive,
 .header-bar GtkComboBox:insensitive,
 .header-bar .button:insensitive {
     color: @insensitive_text_color;
-    border-style: none;
     border-color: @insensitive_borders_color;
-    background-color: @insensitive_bg_color;
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                  @button_insensitive_gradient_color_a,
+                                  @button_insensitive_gradient_color_b
+                                  );
 }
 
 .header-bar GtkComboBox:hover,

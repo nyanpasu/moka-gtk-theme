@@ -71,7 +71,6 @@
  * Viewport *
  ************/
 GtkViewport.frame {
-    border-width: 1px;
     background-color: @base_color;
 }
 

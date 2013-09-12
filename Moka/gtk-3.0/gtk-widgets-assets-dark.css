@@ -419,7 +419,7 @@
 
 /************
  * Switches *
- ************/
+ ************
 
 GtkSwitch.slider {
     background-image: url("assets/handle-dark.png");
@@ -459,4 +459,5 @@ GtkSwitch.trough:active:insensitive {
 
 GtkSwitch.trough:active:backdrop {
     background-image: url("assets/switch-on-backdrop-dark.png");
-}
+
+*/
