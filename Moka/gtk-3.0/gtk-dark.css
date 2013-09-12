@@ -29,7 +29,7 @@
 @define-color separator @borders; /* Separator color */
 @define-color text_color @fg_color; /* Text color */
 @define-color panel_color #444; /* Panel color */
-@define-color selection_color #8A69AD; /* Selection color */
+@define-color selection_color shade(#a172d2, 0.7); /* Selection color */
 @define-color gradient_color_a @bg_color; /* Gradient color A */
 @define-color gradient_color_b shade(@bg_color, 0.95); /* Gradient color B */
 @define-color view_bg_color #555; /* View background */

@@ -20,8 +20,7 @@
  * Notebook *
  ************/
 
-.notebook,
-.notebook GtkViewport {
+.notebook {
     border-style: solid;
     border-width: 1px;
     background-color: @base_color;    

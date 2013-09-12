@@ -102,7 +102,7 @@
 @define-color button_unfocused_gradient_color_b @unfocused_bg_color;
 
 @define-color button_active_text @active_text_color;
-@define-color button_active_text_shadow alpha(@white, 0.2);
+@define-color button_active_text_shadow alpha(@base_color, 0.2);
 
 @define-color button_text_shadow alpha(@base_color, 0.2);
 
