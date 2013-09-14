@@ -110,9 +110,9 @@
 /**************
  * Scrollbars *
  **************/
-@define-color scrollbar_trough shade(@bg_color, 0.9);
-@define-color scrollbar_trough_insensitive shade(@insensitive_bg_color, 0.9);
-@define-color scrollbar_trough_unfocused shade(@unfocused_bg_color, 0.9);
+@define-color scrollbar_trough @bg_color;
+@define-color scrollbar_trough_insensitive @insensitive_bg_color;
+@define-color scrollbar_trough_unfocused @unfocused_bg_color;
 
 /****************
  * Progressbars *
