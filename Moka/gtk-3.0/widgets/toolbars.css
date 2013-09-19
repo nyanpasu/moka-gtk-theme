@@ -24,6 +24,7 @@
 .toolbar {
     border-style: solid;
     border-color: @borders;
+    border-width: 0px 0px 1px 0px;
     padding: 6px;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_a,
