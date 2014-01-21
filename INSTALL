@@ -43,13 +43,21 @@ esac
 
 function main {
 if [ "$UID" -eq "$ROOT_UID" ]; then
-	if [ -d /usr/local/share/themes/Moka-Dark ]; then
+	if [ -d /usr/share/themes/Moka-Dark ]; then
 		echo
 		read -p "Found an existing installation. Replace it? (Y)es, (N)o : " INPUT
 		case $INPUT in
 		[Yy]* ) 
-			rm -Rf /usr/local/share/themes/Moka-Dark 2>/dev/null
-			rm -Rf /usr/local/share/themes/Moka 2>/dev/null
+			rm -Rf "/usr/share/themes/Moka-Dark" 2>/dev/null
+			# This avoids removing the GNOME Shell theme (folder "gnome-shell")
+			# which may or may not be in the same folder.
+			rm -Rf "/usr/share/themes/Moka/gtk-2.0" 2>/dev/null
+			rm -Rf "/usr/share/themes/Moka/gtk-3.0" 2>/dev/null
+			rm -Rf "/usr/share/themes/Moka/metacity-1" 2>/dev/null
+			rm -Rf "/usr/share/themes/Moka/unity" 2>/dev/null
+			rm -Rf "/usr/share/themes/Moka/AUTHORS" 2>/dev/null
+			rm -Rf "/usr/share/themes/Moka/index.theme" 2>/dev/null
+			rm -Rf "/usr/share/themes/Moka/LICENSE" 2>/dev/null
 			;;
 		[Nn]* )
 			;;
@@ -59,8 +67,8 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
 		    ;;
 		esac
 	fi
-	cp -R ./Moka-Dark/ /usr/local/share/themes/
-	cp -R ./Moka/ /usr/local/share/themes/
+	cp -R ./Moka-Dark/ /usr/share/themes/
+	cp -R ./Moka/ /usr/share/themes/
 	echo "Installation complete!"
 	set
 elif [ "$UID" -ne "$ROOT_UID" ]; then
@@ -70,7 +78,15 @@ elif [ "$UID" -ne "$ROOT_UID" ]; then
 		case $INPUT in
 		[Yy]* ) 
 			rm -Rf "$HOME/.local/share/themes/Moka-Dark" 2>/dev/null
-			rm -Rf "$HOME/.local/share/themes/Moka" 2>/dev/null
+			# This avoids removing the GNOME Shell theme (folder "gnome-shell")
+			# which may or may not be in the same folder.
+			rm -Rf "$HOME/.local/share/themes/Moka/gtk-2.0" 2>/dev/null
+			rm -Rf "$HOME/.local/share/themes/Moka/gtk-3.0" 2>/dev/null
+			rm -Rf "$HOME/.local/share/themes/Moka/metacity-1" 2>/dev/null
+			rm -Rf "$HOME/.local/share/themes/Moka/unity" 2>/dev/null
+			rm -Rf "$HOME/.local/share/themes/Moka/AUTHORS" 2>/dev/null
+			rm -Rf "$HOME/.local/share/themes/Moka/index.theme" 2>/dev/null
+			rm -Rf "$HOME/.local/share/themes/Moka/LICENSE" 2>/dev/null
 			;;
 		[Nn]* )
 			;;		
@@ -138,7 +154,7 @@ if [ "$UID" -ne "$ROOT_UID" ]; then
 	continue
 else
 	echo
-	echo "Moka GTK Theme will be installed in '/usr/local/share/themes'"
+	echo "Moka GTK Theme will be installed in '/usr/share/themes'"
 	echo "It will be available to all users."
 	continue
 fi
