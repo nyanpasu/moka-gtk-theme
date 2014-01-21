@@ -25,12 +25,6 @@ echo '#----------------------------------------------#'
 echo '#         Moka GTK Theme Install Script        #'
 echo '#----------------------------------------------#'
 
-echo '#----------------------------------------------#'
-echo '#     NOTE: The main Moka theme needs          #'
-echo '#     to be installed otherwise many           #'
-echo '#     icons will be missing.                   #'
-echo '#----------------------------------------------#'
-
 function continue {
 echo ""
 read -p "Do you want to continue? (Y)es, (N)o : " INPUT
