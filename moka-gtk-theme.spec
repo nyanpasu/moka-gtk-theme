@@ -14,7 +14,7 @@
 
 
 Name:		moka-gtk-theme
-Version:	1.0
+Version:	2.0
 Release:	0
 
 Summary:	Moka GTK Theme
