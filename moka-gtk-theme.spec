@@ -1,7 +1,6 @@
+# Spec file for package moka-gtk-theme
 #
-# spec file for package moka-gtk-theme
-#
-# Copyright (c) 2013 Sam Hewitt <hewittsamuel@gmail.com>
+# Copyright (c) 2014 Sam Hewitt <hewittsamuel@gmail.com>
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -34,9 +33,6 @@ Moka GTK3 Theme
 
 %prep
 %setup -q
-
-# Delete dead icon symlinks
-find -L . -type l -delete
 
 %build
 
