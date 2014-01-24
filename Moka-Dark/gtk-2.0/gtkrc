@@ -1,18 +1,18 @@
-# Moka GTK2 Theme
+# Moka-Dark GTK2 Theme
 
-gtk_color_scheme = "bg_color:#444\nselected_bg_color:#a172d2\nbase_color:#555" # Background: main, selected, base 
-gtk_color_scheme = "fg_color:#ddd\nselected_fg_color:#f3f3f3\ntext_color:#ddd"       # Foreground: main, selected, text
-gtk_color_scheme = "tooltip_bg_color:#444\ntooltip_fg_color:#FFF"                    # Tooltips
-gtk_color_scheme = "link_color:#a172d2"                                              # Hyperlinks
-gtk_color_scheme = "menubar_bg_color:#444\nmenubar_fg_color:#ddd"				 # Menu bar colors
-gtk_color_scheme = "toolbar_bg_color:#444\ntoolbar_fg_color:#ddd"				 # Toolbar colors
-gtk_color_scheme = "menu_bg_color:#ffffff\nmenu_fg_color:#ddd"					 # Menu colors
-gtk_color_scheme = "panel_bg_color:#ddd\npanel_fg_color:#444"					 # Panel colors
+gtk_color_scheme = "bg_color:#444444\nselected_bg_color:#a172d2\nbase_color:#555555"	# Background: main, selected, base 
+gtk_color_scheme = "fg_color:#dddddd\nselected_fg_color:#f3f3f3\ntext_color:#dddddd"	# Foreground: main, selected, text
+gtk_color_scheme = "tooltip_bg_color:#444444\ntooltip_fg_color:#ffffff"					# Tooltips
+gtk_color_scheme = "link_color:#a172d2"													# Hyperlinks
+gtk_color_scheme = "menubar_bg_color:#444444\nmenubar_fg_color:#dddddd"					# Menu bar colors
+gtk_color_scheme = "toolbar_bg_color:#444444\ntoolbar_fg_color:#dddddd"					# Toolbar colors
+gtk_color_scheme = "menu_bg_color:#ffffffffffff\nmenu_fg_color:#dddddd"					# Menu colors
+gtk_color_scheme = "panel_bg_color:#dddddd\npanel_fg_color:#444444"						# Panel colors
 
-gtk-icon-sizes		= "gtk-button=16,16"				                                # Set icon size for buttons
-gtk-button-images	= 0									                                # Disables icons for buttons with text
-gtk-toolbar-style	= 0									                                # Disables text in toolbar
-gtk-auto-mnemonics	= 1									                                # Disables lines under menu items
+gtk-icon-sizes		= "gtk-button=16,16"												# Set icon size for buttons
+gtk-button-images	= 0																	# Disables icons for buttons with text
+gtk-toolbar-style	= 0																	# Disables text in toolbar
+gtk-auto-mnemonics	= 1																	# Disables lines under menu items
 
 
 style "murrine-default" {
@@ -144,10 +144,10 @@ style "murrine-default" {
    }
 }
 
-style "murrine-thin"        =   "murrine-default"   { xthickness = 0 ythickness = 0 }
-style "murrine-wide"        =   "murrine-default"   { xthickness = 2 ythickness = 2 }
-style "murrine-wider"       =   "murrine-default"   { xthickness = 3 ythickness = 3 }
-style "murrine-widest"      =   "murrine-default"   { xthickness = 4 ythickness = 4 }
+style "murrine-thin"		=   "murrine-default"   { xthickness = 0 ythickness = 0 }
+style "murrine-wide"		=   "murrine-default"   { xthickness = 2 ythickness = 2 }
+style "murrine-wider"	   =   "murrine-default"   { xthickness = 3 ythickness = 3 }
+style "murrine-widest"	  =   "murrine-default"   { xthickness = 4 ythickness = 4 }
 
 # Notebook
 
