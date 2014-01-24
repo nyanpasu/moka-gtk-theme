@@ -1,9 +1,9 @@
 # Moka-Dark GTK2 Theme
 
-gtk_color_scheme = "bg_color:#444444\nselected_bg_color:#a172d2\nbase_color:#555555"	# Background: main, selected, base 
+gtk_color_scheme = "bg_color:#444444\nselected_bg_color:#A348B1\nbase_color:#555555"	# Background: main, selected, base 
 gtk_color_scheme = "fg_color:#dddddd\nselected_fg_color:#f3f3f3\ntext_color:#dddddd"	# Foreground: main, selected, text
 gtk_color_scheme = "tooltip_bg_color:#444444\ntooltip_fg_color:#ffffff"					# Tooltips
-gtk_color_scheme = "link_color:#a172d2"													# Hyperlinks
+gtk_color_scheme = "link_color:#A348B1"													# Hyperlinks
 gtk_color_scheme = "menubar_bg_color:#444444\nmenubar_fg_color:#dddddd"					# Menu bar colors
 gtk_color_scheme = "toolbar_bg_color:#444444\ntoolbar_fg_color:#dddddd"					# Toolbar colors
 gtk_color_scheme = "menu_bg_color:#ffffffffffff\nmenu_fg_color:#dddddd"					# Menu colors
