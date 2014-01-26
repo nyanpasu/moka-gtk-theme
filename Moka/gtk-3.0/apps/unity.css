@@ -16,6 +16,42 @@
 * with the Moka GTK theme. If not, see http://www.gnu.org/licenses/.
 */
 
+
+/* This will theme the top decoration, so the whole space above the window */
+UnityDecoration.top {
+	border: 1px solid @borders;
+    border-bottom-width: 0;
+    border-radius: 8px 8px 0 0; /* Corner radius, only the top ones should be */
+    padding: 1px 8px 0 8px; /* This padding will be applied to the content of the top layout */
+    background-color: @bg_color; /* Decoration background */
+    color: @fg_color; /* The foreground color will be used to paint the text */
+    text-shadow: @text_shadow;
+}
+
+/* Top decoration for inactive windows */
+UnityDecoration.top:backdrop {
+    border: 1px solid @unfocused_borders;
+    border-bottom-width: 0;
+    background-color: @unfocused_bg_color;
+    color: #807d78;
+}
+
+/* Left decoration, it themes only the space at the left of the window */
+UnityDecoration.left,
+/* Right decoration, it themes only the space at the right of the window */
+UnityDecoration.right,
+/* Bottom decoration, it themes all the space below the window */
+UnityDecoration.bottom {
+    background-color: @borders;
+}
+
+/* Left, right and bottom decorations themes for inactive windows */
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop,
+UnityDecoration.bottom:backdrop {
+    background-color: @unfocused_borders;
+}
+
 /***************
  * Unity Panel *
  ***************/
