@@ -26,6 +26,7 @@
     border-color: @borders;
     border-width: 0px 0px 1px 0px;
     padding: 6px;
+    background-color: @gradient_color_a;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_a,
                                   @gradient_color_b
@@ -152,6 +153,7 @@
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     padding: 6px;
+    background-color: @gradient_color_a;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_a,
                                   @gradient_color_b
@@ -252,6 +254,7 @@
     border-color: @borders;
     border-width: 0px 1px 1px 1px;
     padding: 6px;
+    background-color: @gradient_color_a;
     background-image: linear-gradient(to bottom,
                                   @gradient_color_b,
                                   @gradient_color_a

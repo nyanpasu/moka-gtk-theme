@@ -1,4 +1,4 @@
-pkgname=moka-gtk
+pkgname=moka-gtk-git
 _pkgname=moka-gtk-theme
 pkgver=1.0.0
 pkgrel=1
@@ -9,8 +9,8 @@ license=('GPL3')
 depends=(gtk-engine-murrine)
 makedepends=('git')
 optdepends=()
-provides=('moka-gtk')
-conflicts=('moka-gtk')
+provides=('moka-gtk-git')
+conflicts=('moka-gtk-git')
 source=('git+https://github.com/snwh/moka-gtk-theme.git')
 md5sums=('SKIP')
 
