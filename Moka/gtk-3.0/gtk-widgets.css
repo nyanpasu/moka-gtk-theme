@@ -58,4 +58,7 @@
     outline-color: alpha(@text_color, 0.3);
     outline-style: dashed;
     outline-offset: 2px;
+
+    color: inherit;
+    background-color: inherit;
 }
