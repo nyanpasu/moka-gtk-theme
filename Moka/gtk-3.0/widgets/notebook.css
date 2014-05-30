@@ -234,3 +234,169 @@
 .notebook tab .button GtkImage:backdrop:hover {
     color: @fg_color;
 }
+
+
+
+/*----- Dynamic Notebook -----*/
+
+.dynamic-notebook {
+    background-color: @base_color;
+    border:none;
+
+    background-clip: border-box;
+
+    text-shadow: 0 1px alpha (#fff, 0.4);
+    icon-shadow: 0 1px alpha (#fff, 0.4);
+}
+
+.dynamic-notebook:backdrop {
+    background-color: @unfocused_base_color;
+    border:none;
+
+    background-clip: border-box;
+
+    text-shadow: 0 1px alpha (#fff, 0.4);
+    icon-shadow: 0 1px alpha (#fff, 0.4);
+}
+
+
+.dynamic-notebook GtkLabel:insensitive,
+.dynamic-notebook .image:insensitive {
+   color: @insensitive_bg_color;
+}
+
+.dynamic-notebook .notebook {
+    -GtkNotebook-tab-overlap: 1px;
+    
+    border-width: 0;
+}
+
+.dynamic-notebook .notebook tab {
+    border-radius: 0;
+    background-image: none;
+    background-color: transparent;
+    border-width: 0;
+}
+
+/*----- Tab indicator bar -----*/
+
+/* Normal */
+.dynamic-notebook tab.top {
+    box-shadow:inset 0 -1px 0 0 @border_color;
+}
+.dynamic-notebook tab.bottom {
+    box-shadow:inset 0 1px 0 0 @border_color;
+}
+.dynamic-notebook tab.left {
+    box-shadow:inset -1px 0 0 0 @border_color;
+}
+.dynamic-notebook tab.right {
+    box-shadow:inset 1px 0 0 0 @border_color;
+}
+
+/* Active */
+.dynamic-notebook tab.top:active {
+    box-shadow:inset 0 -3px 0 0 @selection_color;
+}
+.dynamic-notebook tab.bottom:active {
+    box-shadow:inset 0 3px 0 0 @selection_color;
+}
+.dynamic-notebook tab.left:active {
+    box-shadow:inset -3px 0 0 0 @selection_color;
+}
+.dynamic-notebook tab.right:active {
+    box-shadow:inset 3px 0 0 0 @selection_color;
+}
+
+/* Active-Backdrop */
+.dynamic-notebook tab.top:active:backdrop {
+    box-shadow:inset 0 -3px 0 0 @unfocused_border_color;
+}
+.dynamic-notebook tab.bottom:active:backdrop {
+    box-shadow:inset 0 3px 0 0 @unfocused_border_color;
+}
+.dynamic-notebook tab.left:active:backdrop {
+    box-shadow:inset -3px 0 0 0 @unfocused_border_color;
+}
+.dynamic-notebook tab.right:active:backdrop {
+    box-shadow:inset 3px 0 0 0 @unfocused_border_color;
+}
+
+/* Backdrop */
+.dynamic-notebook tab.top:backdrop {
+    box-shadow:inset 0 -1px 0 0 @unfocused_border_color;
+}
+.dynamic-notebook tab.bottom:backdrop {
+    box-shadow:inset 0 1px 0 0 @unfocused_border_color;
+}
+.dynamic-notebook tab.left:backdrop {
+    box-shadow:inset -1px 0 0 0 @unfocused_border_color;
+}
+.dynamic-notebook tab.right:backdrop {
+    box-shadow:inset 1px 0 0 0 @unfocused_border_color;
+}
+
+/* Insensitive */
+.dynamic-notebook tab.top:insensitive {
+    box-shadow:inset 0 -1px 0 0 @insensitive_border_color;
+}
+.dynamic-notebook tab.bottom:insensitive {
+    box-shadow:inset 0 1px 0 0 @insensitive_border_color;
+}
+.dynamic-notebook tab.left:insensitive {
+    box-shadow:inset -1px 0 0 0 @insensitive_border_color;
+}
+.dynamic-notebook tab.right:insensitive {
+    box-shadow:inset 1px 0 0 0 @insensitive_border_color;
+}
+
+/*----- In-tab padding -----*/
+
+.dynamic-notebook tab.top {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-bottom: 1px;
+    padding-right: 8px;
+}
+
+.dynamic-notebook tab.bottom {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-bottom: 2px;
+    padding-right: 8px;
+}
+
+.dynamic-notebook tab.left {
+    padding: 2px 3px 2px 2px;
+}
+
+.dynamic-notebook tab.right {
+    padding: 2px 2px 2px 3px;
+}
+
+.dynamic-notebook tab.top:active {
+    padding: 2px 8px 3px 8px;
+}
+
+.dynamic-notebook tab.bottom:active {
+    padding: 3px 8px 2px 8px;
+}
+
+.dynamic-notebook tab.left:active {
+    padding: 2px 3px 2px 2px;
+}
+
+.dynamic-notebook tab.right:active {
+    padding: 2px 2px 2px 3px;
+}
+
+.dynamic-notebook .notebook tab GtkImage {
+    color: shade (@bg_color, 0.35);
+}
+
+.dynamic-notebook .notebook tab:active {
+    background: transparent;
+    border: none;
+    color: @text_color;
+    box-shadow:inset 0 -3px 0 0 @selection_color;
+}
