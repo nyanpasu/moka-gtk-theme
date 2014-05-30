@@ -1,17 +1,36 @@
+<!--  Copyright 2014 Sam Hewitt.
+*
+* This file is part of the Orchis GTK theme.
+*
+* The Orchis GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The Orchis GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the Orchis GTK theme. If not, see http://www.gnu.org/licenses/.
+ -->
+
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Moka-Dark</name>
-	<author>Sam Hewitt</author>
-	<copyright>&#194; Sam Hewitt, 2013</copyright>
-	<date>06 Sept 2013</date>
-	<description>Moka-Dark Metacity Theme</description>
+	<name>Orchis-Dark</name>
+	<author>Sam Hewitt &lt;hewittsamuel@gmail&gt;</author>
+	<copyright>&#194; Sam Hewitt, 2014</copyright>
+	<date>2014</date>
+	<description>Orchis-Dark Metacity Theme</description>
 </info>
 
+
 <!-- CONSTANTS -->
-<constant name="C_titlebar" value="#444444" />
-<constant name="C_border_focused" value="#444444" />
-<constant name="C_border_unfocused" value="#444444" />
+<constant name="C_titlebar" value="#555555" />
+<constant name="C_border_focused" value="#555555" />
+<constant name="C_border_unfocused" value="#555555" />
 <constant name="C_title_focused" value="#f7f7f7" />
 <constant name="C_title_unfocused" value="#aaaaaa" />
 
@@ -24,10 +43,10 @@
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="4" />
 	<distance name="right_titlebar_edge" value="4" />
-	<distance name="title_vertical_pad" value="0" />
+	<distance name="title_vertical_pad" value="8" />
 	<aspect_ratio name="button" value="1.0" />
-	<border name="title_border" left="4" right="4" top="4" bottom="4" />
-	<border name="button_border" left="0" right="0" top="1" bottom="0" />
+	<border name="title_border" left="4" right="4" top="6" bottom="6" />
+	<border name="button_border" left="6" right="0" top="6" bottom="6" />
 </frame_geometry>
 
 <!-- Unfocused window -->
@@ -37,14 +56,20 @@
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="4"/>
 	<distance name="right_titlebar_edge" value="4"/>
-	<border name="button_border" left="0" right="0" top="1" bottom="0" />
+	<distance name="title_vertical_pad" value="8"/>
+	<border name="button_border" left="6" right="0" top="6" bottom="6" />
 </frame_geometry>
 
 <!-- Maximized window -->
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
+	<distance name="left_width" value="1" />
+	<distance name="right_width" value="1" />
+	<distance name="bottom_height" value="1" />
+	<distance name="left_titlebar_edge" value="4" />
+	<distance name="right_titlebar_edge" value="4" />
+	<distance name="title_vertical_pad" value="8" />
+	<border name="title_border" left="4" right="4" top="6" bottom="6" />
+	<border name="button_border" left="6" right="0" top="6" bottom="6" />
 </frame_geometry>
 
 <!-- Left tiled window -->
@@ -59,8 +84,8 @@
 
 <!-- Small window -->
 <frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="0" rounded_top_right="0">
-	<distance name="title_vertical_pad" value="0" />
-	<border name="title_border" left="4" right="4" top="4" bottom="4" />
+	<distance name="title_vertical_pad" value="4" />
+	<border name="title_border" left="4" right="4" top="0" bottom="0" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0"  />
 </frame_geometry>
 
@@ -71,7 +96,7 @@
 </frame_geometry>
 
 <!-- No buttons -->
-<frame_geometry name="nobuttons" hide_buttons="true" parent="normal" >
+<frame_geometry name="nobuttons" hide_buttons="true" parent="normal">
 </frame_geometry>
 
 <!-- Border -->
@@ -79,8 +104,8 @@
 	<distance name="left_width" value="1" />
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
-	<distance name="title_vertical_pad" value="0" />
-	<border name="title_border" left="0" right="0" top="0" bottom="0" />
+	<distance name="title_vertical_pad" value="1" />
+	<border name="title_border" left="10" right="10" top="0" bottom="0" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
@@ -95,11 +120,17 @@
 </frame_geometry>
 
 <!-- Modal -->
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="0" rounded_top_right="0" rounded_bottom_right="0" rounded_bottom_left="0" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
+	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
-<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="0" rounded_top_right="0" parent="small">
+<frame_geometry name="attached" title_scale="medium" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="normal">
+	<distance name="title_vertical_pad" value="8"/>
+	<distance name="bottom_height" value="4"/>
+	<distance name="left_width" value="4"/>
+	<distance name="right_width" value="4"/>
 </frame_geometry>
+
 
 <!-- TITLES -->
 
