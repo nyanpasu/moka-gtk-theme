@@ -15,7 +15,7 @@
 
 Name:		moka-gtk-theme
 Version:	2.0
-Release:	0
+Release:	1
 
 Summary:	Moka GTK Theme
 License:    GPL-3.0+ or CC-BY-SA-3.0
@@ -24,7 +24,7 @@ Group:      System/GUI/GNOME
 Url:        http://www.mokaproject.com/moka-gtk-theme
 Source0:	%{name}-%{version}.tar.gz
 
-Requires:	moka-gtk-theme, gtk-murrine-engine
+Requires:	gtk-murrine-engine
 BuildArch:	noarch
 
 
@@ -42,6 +42,6 @@ cp -a Moka/ $RPM_BUILD_ROOT%{_datadir}/themes/
 cp -a Moka-Dark/ $RPM_BUILD_ROOT%{_datadir}/themes/
 
 %files
-%doc {AUTHORS,LICENSE}
+%doc AUTHORS LICENSE
 %{_datadir}/themes/Moka/
 %{_datadir}/themes/Moka-Dark/
