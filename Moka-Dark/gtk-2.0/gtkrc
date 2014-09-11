@@ -6,7 +6,7 @@ gtk_color_scheme = "tooltip_bg_color:#444444\ntooltip_fg_color:#ffffff"					# To
 gtk_color_scheme = "link_color:#A348B1"													# Hyperlinks
 gtk_color_scheme = "menubar_bg_color:#444444\nmenubar_fg_color:#dddddd"					# Menu bar colors
 gtk_color_scheme = "toolbar_bg_color:#444444\ntoolbar_fg_color:#dddddd"					# Toolbar colors
-gtk_color_scheme = "menu_bg_color:#ffffffffffff\nmenu_fg_color:#dddddd"					# Menu colors
+gtk_color_scheme = "menu_bg_color:#ffffffffffff\nmenu_fg_color:#555555"					# Menu colors
 gtk_color_scheme = "panel_bg_color:#dddddd\npanel_fg_color:#444444"						# Panel colors
 
 gtk-icon-sizes		= "gtk-button=16,16"												# Set icon size for buttons
